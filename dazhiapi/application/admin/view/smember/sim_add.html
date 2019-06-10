@@ -1,0 +1,257 @@
+{include file="common/head"/}
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    {include file="common/left"}
+    <div class="main-content">
+        <div class="main-content-inner">
+            {include file="common/header_nav"}
+
+            <div class="page-content">
+                <div class="page-header">
+                    <h1>
+                        您当前操作 
+                        <small>
+                            <i class="ace-icon fa fa-angle-double-right"></i>
+                            添加会员
+                        </small>
+                    </h1>
+                </div><!-- /.page-header -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+                        <form class="form-horizontal" role="form" name="simInsert" id="simInsert" method="post" action="{:url('simInsert')}">
+                            
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="s_name">姓名</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="s_name" id="s_name" placeholder="输入姓名" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>请输入真实姓名</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="s_sex">性别</label>
+                                
+                                <div class="col-sm-10 col-xs-12">
+                                    <select name="s_sex" id="s_sex" class="col-select col-xs-12 col-sm-4">
+                                        <option value="性别">性别</option>
+                                        <option value="男">男</option>
+                                        <option value="女">女</option>
+                                    </select>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span></span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <!-- <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="s_birthday">生日</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="date" name="s_birthday" id="s_birthday" placeholder="输入生日" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span></span>
+                                </div>
+                            </div> -->
+
+                            <div class="">
+                                <label class="col-sm-2 control-label no-padding-right" for="s_birthday">生日</label>
+
+                                <div>
+                                    <script language="javascript" type="text/javascript" src="__STATIC__/MyDate/skin/WdatePicker.css"></script>
+                                    <script type="text/javascript">
+                                        $(function () {
+                                            var myDate = new Date();
+                                            var year=myDate.getFullYear();
+                                            var month=myDate.getMonth()+1;
+                                            var date=myDate.getDate();
+                                            $('#mydate').click(function () {
+                                                WdatePicker({el:this,dateFmt:'yyyy-MM-dd',minDate:'1900-01-01',maxDate:year+"-"+month+"-"+date});
+                                            })
+                                        })
+                                    </script>
+
+                                    <input name="s_birthday" id="mydate" style="margin-left: 5px;" value="2008-01-01" class="Wdate" type="text">
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+
+
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="s_phone">手机号码</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="s_phone" id="s_phone" placeholder="输入手机号码" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span></span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" >现居住地</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <select class="col-xs-3 col-sm-2" id="r_privice" name="r_privice">
+                                        <option value="2">山东省</option>
+                                    </select>
+                                    <select class="col-xs-3 col-sm-2" id="r_city" name="r_city" style="margin-left: 10px;">
+                                        <option value="2">临沂市</option>
+                                    </select>
+                                    <select class="col-xs-3 col-sm-2" id="r_area" name="r_area" style="margin-left: 10px;">
+                                        <option value="2">兰山区</option>
+                                    </select>
+                                    <span class="red">*</span>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="w_name">求职意向</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <select name="w_name" id="w_name" class="col-select col-xs-12 col-sm-4">
+                                        <option value="">请选择求职意向</option>
+                                        {foreach name="data_work" id="v"}
+                                        <option value="{$v.w_name}">{$v.w_name}</option>
+                                        {/foreach}
+                                    </select>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span></span>
+                                </div>
+                            </div> 
+                            <div class="space-4"></div>
+
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <button class="btn btn-info" type="submit">
+                                        <i class="ace-icon fa fa-check bigger-110"></i>
+                                        提交
+                                    </button>
+
+                                    &nbsp; &nbsp; &nbsp;
+                                    <button class="btn" type="reset">
+                                        <i class="ace-icon fa fa-undo bigger-110"></i>
+                                        重置
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    {include file="common/foot" /}
+</div>
+<script>
+    $(function () {
+        $('#simInsert').ajaxForm({
+            beforeSubmit: checkForm, //此方法主要是提交前执行的方法，根据需要设置
+            success: complete, //这是提交后的方法
+            dataType: 'json'
+        });
+
+        function checkForm() {
+            if ('' == $.trim($('#s_name').val())) {
+                layer.alert('请输入姓名!', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#s_name').focus();
+                });
+                return false;
+            }
+
+            if ($.trim($('#s_sex').val()) == "性别") {
+                layer.alert('请选择性别！', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#s_sex').focus();
+                });
+                return false;
+            }
+            
+
+            if ('' == $.trim($('#s_phone').val())) {
+                layer.alert('手机号码不能为空！', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#s_phone').focus();
+                });
+                return false;
+            }
+            if ($.trim($('#s_phone').val()).length < 11) {
+                layer.alert('手机号不能少于11位', {icon: 6}, function (index) {
+                    layer.close(index);
+                    $('#s_phone').focus();
+                });
+                return false;
+            }
+
+            if ('' == $.trim($('#w_name').val())) {
+                layer.alert('求职意向不能为空！', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#w_name').focus();
+                });
+                return false;
+            }
+        }
+
+        function complete(data) {
+            if (data.status == 1) {
+                layer.alert(data.info, {icon: 6}, function (index) {
+                    layer.close(index);
+                    window.location.href = data.url;
+                });
+            } else {
+                layer.alert(data.info, {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#s_name').focus();
+                });
+                return false;
+            }
+        }
+    })
+    //显示地区
+    $(function () {
+        //查找省
+        var url = "{:url('getAddressByPid')}";
+        //设置省
+        $.post(url,{pid:1},function (data) {
+            setAddress($("#r_privice"),data);
+            //设置市
+            var privid = $("#r_privice option:checked").attr("value");
+            $.post(url,{pid:privid},function (city) {
+                setAddress($("#r_city"),city);
+                //设置区
+                var cityid = $("#r_city option:checked").attr("value");
+                $.post(url,{pid:cityid},function (area) {
+                    setAddress($("#r_area"),area);
+                });
+            });
+        });
+        //定义选中状态
+        $("#r_privice").change(function () {
+            var privid = $("#r_privice option:checked").attr("value");
+            $.post(url,{pid:privid},function (city) {
+                setAddress($("#r_city"),city);
+                //设置区
+                var cityid = $("#r_city option:checked").attr("value");
+                $.post(url,{pid:cityid},function (area) {
+                    setAddress($("#r_area"),area);
+                });
+            });
+        });
+        $("#r_city").change(function () {
+            //设置区
+            var cityid = $("#r_city option:checked").attr("value");
+            $.post(url,{pid:cityid},function (area) {
+                setAddress($("#r_area"),area);
+            });
+        });
+    });
+    function  setAddress(obj,data) {
+        $(obj).html("");
+        // if($(obj).attr('id')=='r_area'){
+        //     var op = $("<option value='0'>请选择</option>");
+        //     $(obj).append(op);
+        // }
+        $.map(data, function (p) {
+            var op = $("<option value='"+p.id+"' dataid='" + p.name + "'>" + p.name + "</option>");
+            $(obj).append(op);
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+{volist name="interModuleId" id="v"}
+<option value="66">未分组</option>
+<option value="{$v.id}">{$v.name}</option>
+{/volist}

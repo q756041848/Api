@@ -1,0 +1,3601 @@
+---------------------------------------------------------------
+[ 2018-08-20T13:31:15+08:00 ] 127.0.0.1 GET /
+[ info ] www._remese.com/ [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：1,787.09kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\remeseManager\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._remese.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T13:31:15+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._remese.com/login/login [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：1,739.65kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\remeseManager\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._remese.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=o6lvs40j90k5acl367i4m3obd0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\remeseManager\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\remeseManager\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T13:31:15+08:00 ] 127.0.0.1 GET /static/assets/css/font-awesome.min.css
+[ info ] www._remese.com/static/assets/css/font-awesome.min.css [运行时间：0.044002s][吞吐率：22.73req/s] [内存消耗：1,847.20kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\remeseManager\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._remese.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._remese.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=o6lvs40j90k5acl367i4m3obd0',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'font-awesome.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T13:31:15+08:00 ] 127.0.0.1 GET /static/assets/css/ace-rtl.min.css
+[ info ] www._remese.com/static/assets/css/ace-rtl.min.css [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：1,847.27kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\remeseManager\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._remese.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._remese.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=o6lvs40j90k5acl367i4m3obd0',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'ace-rtl.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T13:31:15+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._remese.com/login/login [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：1,739.29kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\remeseManager\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._remese.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._remese.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=o6lvs40j90k5acl367i4m3obd0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\remeseManager\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\remeseManager\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T13:31:16+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._remese.com/login/login [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,739.49kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\remeseManager\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._remese.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._remese.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=o6lvs40j90k5acl367i4m3obd0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\remeseManager\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\remeseManager\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T13:31:16+08:00 ] 127.0.0.1 GET /captcha
+[ info ] www._remese.com/captcha [运行时间：0.222012s][吞吐率：4.50req/s] [内存消耗：1,505.01kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\remeseManager\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._remese.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._remese.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=o6lvs40j90k5acl367i4m3obd0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\remeseManager\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:13:48+08:00 ] 127.0.0.1 GET /
+[ info ] www._yimiaopin01.com/ [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,788.84kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:13:48+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._yimiaopin01.com/login/login [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：1,891.27kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:13:48+08:00 ] 127.0.0.1 GET /static/assets/css/font-awesome.min.css
+[ info ] www._yimiaopin01.com/static/assets/css/font-awesome.min.css [运行时间：0.040003s][吞吐率：25.00req/s] [内存消耗：1,848.86kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'font-awesome.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:13:48+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._yimiaopin01.com/login/login [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：1,740.98kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:13:48+08:00 ] 127.0.0.1 GET /static/assets/css/ace-rtl.min.css
+[ info ] www._yimiaopin01.com/static/assets/css/ace-rtl.min.css [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,848.77kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'ace-rtl.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:13:48+08:00 ] 127.0.0.1 GET /captcha
+[ info ] www._yimiaopin01.com/captcha [运行时间：0.038003s][吞吐率：26.31req/s] [内存消耗：1,506.31kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\yimiaopin\yimiaopin01\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:13:48+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._yimiaopin01.com/login/login [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,741.48kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:14:48+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._yimiaopin01.com/login/login [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,891.76kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:14:48+08:00 ] 127.0.0.1 GET /static/assets/css/font-awesome.min.css
+[ info ] www._yimiaopin01.com/static/assets/css/font-awesome.min.css [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,849.34kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'font-awesome.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:14:48+08:00 ] 127.0.0.1 GET /static/assets/css/ace-rtl.min.css
+[ info ] www._yimiaopin01.com/static/assets/css/ace-rtl.min.css [运行时间：0.057003s][吞吐率：17.54req/s] [内存消耗：1,849.22kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'ace-rtl.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:14:48+08:00 ] 127.0.0.1 GET /captcha
+[ info ] www._yimiaopin01.com/captcha [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：1,506.29kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\yimiaopin\yimiaopin01\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:14:48+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._yimiaopin01.com/login/login [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：1,741.48kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:14:48+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._yimiaopin01.com/login/login [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,741.48kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:25:09+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._yimiaopin01.com/login/login [运行时间：0.040002s][吞吐率：25.00req/s] [内存消耗：1,741.90kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:25:09+08:00 ] 127.0.0.1 GET /static/assets/css/font-awesome.min.css
+[ info ] www._yimiaopin01.com/static/assets/css/font-awesome.min.css [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：1,849.34kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'font-awesome.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:25:09+08:00 ] 127.0.0.1 GET /static/assets/css/ace-rtl.min.css
+[ info ] www._yimiaopin01.com/static/assets/css/ace-rtl.min.css [运行时间：0.042003s][吞吐率：23.81req/s] [内存消耗：1,849.14kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'ace-rtl.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:25:09+08:00 ] 127.0.0.1 GET /captcha
+[ info ] www._yimiaopin01.com/captcha [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,506.35kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\yimiaopin\yimiaopin01\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:25:09+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._yimiaopin01.com/login/login [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：1,741.48kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:25:09+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._yimiaopin01.com/login/login [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：1,741.48kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:25:19+08:00 ] 127.0.0.1 POST /login/action
+[ info ] www._yimiaopin01.com/login/action [运行时间：0.177010s][吞吐率：5.65req/s] [内存消耗：2,684.33kb] [文件加载：52]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'action',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www._yimiaopin01.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'code' => '4eps',
+)
+[ info ] [ RUN ] app\admin\controller\Login->action[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057003s ] mysql:host=localhost;port=3306;dbname=remese;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.076005s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` WHERE  `username` = 'admin'  AND `is_open` = 1 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] UPDATE `ls_admin`  SET `hits`=`hits`+1  WHERE  `admin_id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `ls_admin`  SET `ip`='127.0.0.1'  WHERE  `admin_id` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:25:19+08:00 ] 127.0.0.1 GET /index/index
+[ info ] www._yimiaopin01.com/index/index [运行时间：0.149009s][吞吐率：6.71req/s] [内存消耗：2,786.64kb] [文件加载：53]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\index\index.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'notice_no_read',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=remese;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 230 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 255 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` IS NULL  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_notice` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ls_notice` WHERE  `n_uid` = 1  AND `n_isread` = 0 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:25:36+08:00 ] 127.0.0.1 GET /login/logout
+[ info ] www._yimiaopin01.com/login/logout [运行时间：0.043002s][吞吐率：23.25req/s] [内存消耗：1,758.95kb] [文件加载：42]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->logout[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:25:36+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._yimiaopin01.com/login/login [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,741.52kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:25:36+08:00 ] 127.0.0.1 GET /static/assets/css/font-awesome.min.css
+[ info ] www._yimiaopin01.com/static/assets/css/font-awesome.min.css [运行时间：0.045002s][吞吐率：22.22req/s] [内存消耗：1,848.89kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'font-awesome.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:25:36+08:00 ] 127.0.0.1 GET /static/assets/css/ace-rtl.min.css
+[ info ] www._yimiaopin01.com/static/assets/css/ace-rtl.min.css [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：1,848.70kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'ace-rtl.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:25:36+08:00 ] 127.0.0.1 GET /captcha
+[ info ] www._yimiaopin01.com/captcha [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,506.38kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\yimiaopin\yimiaopin01\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:25:36+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._yimiaopin01.com/login/login [运行时间：0.043002s][吞吐率：23.25req/s] [内存消耗：1,741.48kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:25:36+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._yimiaopin01.com/login/login [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,741.48kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:28:12+08:00 ] 127.0.0.1 POST /login/action
+[ info ] www._yimiaopin01.com/login/action [运行时间：0.259015s][吞吐率：3.86req/s] [内存消耗：2,632.31kb] [文件加载：51]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'action',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www._yimiaopin01.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'code' => '3pmi',
+)
+[ info ] [ RUN ] app\admin\controller\Login->action[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097005s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_sys_user` [ RunTime:0.057003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_sys_user` WHERE  `u_username` = 'admin'  AND `u_is_open` = 1 LIMIT 1 [ RunTime:0.057004s ]
+[ error ] [0]数据表字段不存在:[hits][D:\code\yimiaopin\yimiaopin01\thinkphp\library\think\db\Builder.php:111]
+---------------------------------------------------------------
+[ 2018-08-20T19:28:17+08:00 ] 127.0.0.1 POST /login/action
+[ info ] www._yimiaopin01.com/login/action [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：2,545.81kb] [文件加载：49]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'action',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www._yimiaopin01.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'code' => '3pmi',
+)
+[ info ] [ RUN ] app\admin\controller\Login->action[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:28:19+08:00 ] 127.0.0.1 GET /captcha?0.7144963338887531
+[ info ] www._yimiaopin01.com/captcha?0.7144963338887531 [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,506.58kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  '0_7144963338887531' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\yimiaopin\yimiaopin01\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:28:28+08:00 ] 127.0.0.1 GET /static/assets/css/font-awesome.min.css
+[ info ] www._yimiaopin01.com/static/assets/css/font-awesome.min.css [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,849.38kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'font-awesome.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:28:29+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._yimiaopin01.com/login/login [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,741.53kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:28:29+08:00 ] 127.0.0.1 GET /static/assets/css/ace-rtl.min.css
+[ info ] www._yimiaopin01.com/static/assets/css/ace-rtl.min.css [运行时间：0.080004s][吞吐率：12.50req/s] [内存消耗：1,849.14kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'ace-rtl.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:28:29+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._yimiaopin01.com/login/login [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：1,741.53kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:28:36+08:00 ] 127.0.0.1 POST /login/action
+[ info ] www._yimiaopin01.com/login/action [运行时间：0.398023s][吞吐率：2.51req/s] [内存消耗：2,632.31kb] [文件加载：51]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'action',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www._yimiaopin01.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'code' => 'c3a3',
+)
+[ info ] [ RUN ] app\admin\controller\Login->action[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.258015s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_sys_user` [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_sys_user` WHERE  `u_username` = 'admin'  AND `u_is_open` = 1 LIMIT 1 [ RunTime:0.050003s ]
+[ error ] [0]数据表字段不存在:[hits][D:\code\yimiaopin\yimiaopin01\thinkphp\library\think\db\Builder.php:111]
+---------------------------------------------------------------
+[ 2018-08-20T19:29:02+08:00 ] 127.0.0.1 GET /captcha?0.8019696990831304
+[ info ] www._yimiaopin01.com/captcha?0.8019696990831304 [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：1,506.59kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  '0_8019696990831304' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\yimiaopin\yimiaopin01\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:29:06+08:00 ] 127.0.0.1 POST /login/action
+[ info ] www._yimiaopin01.com/login/action [运行时间：0.315018s][吞吐率：3.17req/s] [内存消耗：2,713.20kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'action',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www._yimiaopin01.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'code' => 'lxlr',
+)
+[ info ] [ RUN ] app\admin\controller\Login->action[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.109006s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_sys_user` [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_sys_user` WHERE  `u_username` = 'admin'  AND `u_is_open` = 1 LIMIT 1 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] UPDATE `ls_sys_user`  SET `u_hits`=`u_hits`+1  WHERE  `u_id` = 1 [ RunTime:0.049003s ]
+[ error ] [0]数据表字段不存在:[ip][D:\code\yimiaopin\yimiaopin01\thinkphp\library\think\db\Builder.php:111]
+---------------------------------------------------------------
+[ 2018-08-20T19:29:14+08:00 ] 127.0.0.1 GET /captcha?0.2931857487844385
+[ info ] www._yimiaopin01.com/captcha?0.2931857487844385 [运行时间：0.040002s][吞吐率：25.00req/s] [内存消耗：1,506.58kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  '0_2931857487844385' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\yimiaopin\yimiaopin01\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:29:21+08:00 ] 127.0.0.1 POST /login/action
+[ info ] www._yimiaopin01.com/login/action [运行时间：0.304017s][吞吐率：3.29req/s] [内存消耗：2,713.20kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'action',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www._yimiaopin01.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'code' => 'vivj',
+)
+[ info ] [ RUN ] app\admin\controller\Login->action[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.088005s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_sys_user` [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_sys_user` WHERE  `u_username` = 'admin'  AND `u_is_open` = 1 LIMIT 1 [ RunTime:0.053003s ]
+[ sql ] [ SQL ] UPDATE `ls_sys_user`  SET `u_hits`=`u_hits`+1  WHERE  `u_id` = 1 [ RunTime:0.052003s ]
+[ error ] [0]数据表字段不存在:[ip][D:\code\yimiaopin\yimiaopin01\thinkphp\library\think\db\Builder.php:111]
+---------------------------------------------------------------
+[ 2018-08-20T19:29:44+08:00 ] 127.0.0.1 GET /captcha?0.9894816278295542
+[ info ] www._yimiaopin01.com/captcha?0.9894816278295542 [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：1,506.59kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  '0_9894816278295542' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\yimiaopin\yimiaopin01\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:29:51+08:00 ] 127.0.0.1 POST /login/action
+[ info ] www._yimiaopin01.com/login/action [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：2,546.23kb] [文件加载：49]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'action',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www._yimiaopin01.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'code' => 'vgr6',
+)
+[ info ] [ RUN ] app\admin\controller\Login->action[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:29:53+08:00 ] 127.0.0.1 GET /captcha?0.16608542701438145
+[ info ] www._yimiaopin01.com/captcha?0.16608542701438145 [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,506.60kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  '0_16608542701438145' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\yimiaopin\yimiaopin01\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-20T19:29:58+08:00 ] 127.0.0.1 POST /login/action
+[ info ] www._yimiaopin01.com/login/action [运行时间：0.496028s][吞吐率：2.02req/s] [内存消耗：2,684.33kb] [文件加载：52]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'action',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www._yimiaopin01.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'code' => '2ra3',
+)
+[ info ] [ RUN ] app\admin\controller\Login->action[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.194011s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_sys_user` [ RunTime:0.063004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_sys_user` WHERE  `u_username` = 'admin'  AND `u_is_open` = 1 LIMIT 1 [ RunTime:0.060003s ]
+[ sql ] [ SQL ] UPDATE `ls_sys_user`  SET `u_hits`=`u_hits`+1  WHERE  `u_id` = 1 [ RunTime:0.078005s ]
+[ sql ] [ SQL ] UPDATE `ls_sys_user`  SET `u_ip`='127.0.0.1'  WHERE  `u_id` = 1 [ RunTime:0.062003s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:29:59+08:00 ] 127.0.0.1 GET /index/index
+[ info ] www._yimiaopin01.com/index/index [运行时间：0.184011s][吞吐率：5.43req/s] [内存消耗：2,607.25kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.078005s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yimiaopin01.ls_admin' doesn't exist[D:\code\yimiaopin\yimiaopin01\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-08-20T19:42:10+08:00 ] 127.0.0.1 GET /index/index
+[ info ] www._yimiaopin01.com/index/index [运行时间：0.616035s][吞吐率：1.62req/s] [内存消耗：2,653.11kb] [文件加载：55]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082005s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.046002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.042003s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 230 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.040002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 255 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.037002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.037002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` IS NULL  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.040002s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yimiaopin01.ls_notice' doesn't exist[D:\code\yimiaopin\yimiaopin01\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-08-20T19:42:15+08:00 ] 127.0.0.1 GET /
+[ info ] www._yimiaopin01.com/ [运行时间：0.739043s][吞吐率：1.35req/s] [内存消耗：2,652.38kb] [文件加载：55]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.126007s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.059004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.049002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 230 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 255 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` IS NULL  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.048003s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yimiaopin01.ls_notice' doesn't exist[D:\code\yimiaopin\yimiaopin01\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-08-20T19:43:02+08:00 ] 127.0.0.1 GET /
+[ info ] www._yimiaopin01.com/ [运行时间：0.563032s][吞吐率：1.78req/s] [内存消耗：2,643.65kb] [文件加载：55]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\index\index.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.143008s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.040003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.037002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 230 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 255 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` IS NULL  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.038002s ]
+[ error ] [8]未定义变量: notice_no_read[D:\code\yimiaopin\yimiaopin01\runtime\temp\3f0e67991f5c876d71fb8976449fde62.php:210]
+---------------------------------------------------------------
+[ 2018-08-20T19:43:34+08:00 ] 127.0.0.1 GET /
+[ info ] www._yimiaopin01.com/ [运行时间：0.540031s][吞吐率：1.85req/s] [内存消耗：2,774.40kb] [文件加载：53]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\index\index.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.065004s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.050002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.049002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 230 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 255 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.047003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` IS NULL  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.042002s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:43:49+08:00 ] 127.0.0.1 GET /sys/adminlist?se=15
+[ info ] www._yimiaopin01.com/sys/adminlist?se=15 [运行时间：0.802046s][吞吐率：1.25req/s] [内存消耗：3,148.13kb] [文件加载：56]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'adminlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'se' => '15',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->adminList[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\sys\admin_list.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'testval',
+  6 => 'page',
+  7 => 'admin_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.129008s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.058003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.066004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 230 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 255 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.063003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` LIMIT 1 [ RunTime:0.049002s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ag`.`title` FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` LIMIT 0,15 [ RunTime:0.050003s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:44:59+08:00 ] 127.0.0.1 GET /sys/adminlist?se=15
+[ info ] www._yimiaopin01.com/sys/adminlist?se=15 [运行时间：0.698040s][吞吐率：1.43req/s] [内存消耗：2,898.63kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'adminlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'se' => '15',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->adminList[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\sys\admin_list.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'testval',
+  6 => 'page',
+  7 => 'admin_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084004s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.047003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 230 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.048002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 255 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.048002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` LIMIT 1 [ RunTime:0.047002s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ag`.`title` FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` LIMIT 0,15 [ RunTime:0.047003s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:45:02+08:00 ] 127.0.0.1 GET /sys/adminlist?se=15
+[ info ] www._yimiaopin01.com/sys/adminlist?se=15 [运行时间：1.004057s][吞吐率：1.00req/s] [内存消耗：2,898.45kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'adminlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminlist?se=15',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'se' => '15',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->adminList[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\sys\admin_list.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'testval',
+  6 => 'page',
+  7 => 'admin_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.170009s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.077004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.066004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.078004s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.059004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 230 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.099005s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 255 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.084005s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.070004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` LIMIT 1 [ RunTime:0.061003s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ag`.`title` FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` LIMIT 0,15 [ RunTime:0.063004s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:45:03+08:00 ] 127.0.0.1 GET /sys/adminrule?tid=18
+[ info ] www._yimiaopin01.com/sys/adminrule?tid=18 [运行时间：0.811046s][吞吐率：1.23req/s] [内存消耗：3,378.60kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'adminrule',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminlist?se=15',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'tid' => '18',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->adminRule[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\sys\admin_rule.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'admin_rule',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.109006s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.057004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.087005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 230 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.069003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 255 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` ORDER BY `sort` ASC [ RunTime:0.067004s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:45:04+08:00 ] 127.0.0.1 GET /sys/adminrule?tid=18
+[ info ] www._yimiaopin01.com/sys/adminrule?tid=18 [运行时间：1.123064s][吞吐率：0.89req/s] [内存消耗：3,059.10kb] [文件加载：52]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'adminrule',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminlist?se=15',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'tid' => '18',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->adminRule[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\sys\admin_rule.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'admin_rule',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.166009s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.081004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.060004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.146008s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.092005s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 230 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.075005s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 255 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.060003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.071004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.069004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.109006s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` ORDER BY `sort` ASC [ RunTime:0.062004s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:45:09+08:00 ] 127.0.0.1 GET /sys/ruledel?id=230
+[ info ] www._yimiaopin01.com/sys/ruledel?id=230 [运行时间：0.619036s][吞吐率：1.62req/s] [内存消耗：2,863.10kb] [文件加载：55]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'ruledel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminrule?tid=18',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'id' => '230',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->ruleDel[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071004s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.076004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 230 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.040002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 255 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.039003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.049002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.049003s ]
+[ sql ] [ SQL ] DELETE FROM `ls_auth_rule`    WHERE  `id` = 230 [ RunTime:0.044003s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:45:09+08:00 ] 127.0.0.1 GET /sys/adminrule
+[ info ] www._yimiaopin01.com/sys/adminrule [运行时间：0.780045s][吞吐率：1.28req/s] [内存消耗：3,027.45kb] [文件加载：52]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'adminrule',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminrule?tid=18',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->adminRule[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\sys\admin_rule.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'admin_rule',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081005s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.066003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.100006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.060004s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 255 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.062003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.079005s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.061004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.064003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` ORDER BY `sort` ASC [ RunTime:0.109006s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:45:14+08:00 ] 127.0.0.1 GET /sys/ruledel?id=255
+[ info ] www._yimiaopin01.com/sys/ruledel?id=255 [运行时间：1.186068s][吞吐率：0.84req/s] [内存消耗：2,856.48kb] [文件加载：55]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'ruledel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminrule',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'id' => '255',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->ruleDel[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.174010s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.077004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.069003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.083004s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.365021s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 255 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.072004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.088005s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.074005s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.065003s ]
+[ sql ] [ SQL ] DELETE FROM `ls_auth_rule`    WHERE  `id` = 255 [ RunTime:0.061003s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:45:15+08:00 ] 127.0.0.1 GET /sys/adminrule
+[ info ] www._yimiaopin01.com/sys/adminrule [运行时间：1.011057s][吞吐率：0.99req/s] [内存消耗：3,013.10kb] [文件加载：52]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'adminrule',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminrule',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->adminRule[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\sys\admin_rule.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'admin_rule',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.135008s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.070004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.065004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.361020s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.064004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.064004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.081004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` ORDER BY `sort` ASC [ RunTime:0.063003s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:45:18+08:00 ] 127.0.0.1 GET /sys/ruledel?id=258
+[ info ] www._yimiaopin01.com/sys/ruledel?id=258 [运行时间：0.619035s][吞吐率：1.62req/s] [内存消耗：2,853.91kb] [文件加载：55]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'ruledel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminrule',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'id' => '258',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->ruleDel[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.092005s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.061003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.060004s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.057003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.057004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.056003s ]
+[ sql ] [ SQL ] DELETE FROM `ls_auth_rule`    WHERE  `id` = 258 [ RunTime:0.056003s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:45:19+08:00 ] 127.0.0.1 GET /sys/adminrule
+[ info ] www._yimiaopin01.com/sys/adminrule [运行时间：0.519029s][吞吐率：1.93req/s] [内存消耗：2,988.67kb] [文件加载：52]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'adminrule',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminrule',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->adminRule[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\sys\admin_rule.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'admin_rule',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114007s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` ORDER BY `sort` ASC [ RunTime:0.052003s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:45:32+08:00 ] 127.0.0.1 GET /sys/ruledel?id=254
+[ info ] www._yimiaopin01.com/sys/ruledel?id=254 [运行时间：0.723042s][吞吐率：1.38req/s] [内存消耗：2,848.63kb] [文件加载：55]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'ruledel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminrule',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'id' => '254',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->ruleDel[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.142008s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.073004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.078005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.067003s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.108006s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.055003s ]
+[ sql ] [ SQL ] DELETE FROM `ls_auth_rule`    WHERE  `id` = 254 [ RunTime:0.057004s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:45:32+08:00 ] 127.0.0.1 GET /sys/adminrule
+[ info ] www._yimiaopin01.com/sys/adminrule [运行时间：0.605035s][吞吐率：1.65req/s] [内存消耗：2,982.52kb] [文件加载：52]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'adminrule',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminrule',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->adminRule[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\sys\admin_rule.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'admin_rule',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.145008s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.066004s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.064003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` ORDER BY `sort` ASC [ RunTime:0.072004s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:45:45+08:00 ] 127.0.0.1 GET /sys/ruledel?id=263
+[ info ] www._yimiaopin01.com/sys/ruledel?id=263 [运行时间：1.046060s][吞吐率：0.96req/s] [内存消耗：2,848.63kb] [文件加载：55]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'ruledel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminrule',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'id' => '263',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->ruleDel[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.361021s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.063003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.073004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.064004s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.073004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.114007s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.087005s ]
+[ sql ] [ SQL ] DELETE FROM `ls_auth_rule`    WHERE  `id` = 263 [ RunTime:0.149009s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:45:45+08:00 ] 127.0.0.1 GET /sys/adminrule
+[ info ] www._yimiaopin01.com/sys/adminrule [运行时间：0.830048s][吞吐率：1.20req/s] [内存消耗：2,980.31kb] [文件加载：52]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'adminrule',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminrule',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->adminRule[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\sys\admin_rule.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'admin_rule',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.174010s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.078004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.079005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.168009s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.103005s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.057004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` ORDER BY `sort` ASC [ RunTime:0.078004s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:45:51+08:00 ] 127.0.0.1 GET /sys/ruledel?id=264
+[ info ] www._yimiaopin01.com/sys/ruledel?id=264 [运行时间：0.758044s][吞吐率：1.32req/s] [内存消耗：2,848.63kb] [文件加载：55]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'ruledel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminrule',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'id' => '264',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->ruleDel[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084005s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.201011s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.055004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.062003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.053003s ]
+[ sql ] [ SQL ] DELETE FROM `ls_auth_rule`    WHERE  `id` = 264 [ RunTime:0.129008s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:45:51+08:00 ] 127.0.0.1 GET /sys/adminrule
+[ info ] www._yimiaopin01.com/sys/adminrule [运行时间：0.654038s][吞吐率：1.53req/s] [内存消耗：2,972.77kb] [文件加载：52]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'adminrule',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminrule',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->adminRule[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\sys\admin_rule.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'admin_rule',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115007s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.079004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.118007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.057004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.080004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` ORDER BY `sort` ASC [ RunTime:0.053003s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:45:58+08:00 ] 127.0.0.1 GET /sys/adminrule
+[ info ] www._yimiaopin01.com/sys/adminrule [运行时间：0.714041s][吞吐率：1.40req/s] [内存消耗：2,972.91kb] [文件加载：52]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'adminrule',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminrule',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->adminRule[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\sys\admin_rule.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'admin_rule',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.106006s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.072004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.091005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.105006s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.055004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.040002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` ORDER BY `sort` ASC [ RunTime:0.068004s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:46:03+08:00 ] 127.0.0.1 GET /sys/ruledel?id=267
+[ info ] www._yimiaopin01.com/sys/ruledel?id=267 [运行时间：0.758044s][吞吐率：1.32req/s] [内存消耗：2,847.23kb] [文件加载：55]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'ruledel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminrule',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'id' => '267',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->ruleDel[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.169009s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.078005s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.055004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.175010s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.051002s ]
+[ sql ] [ SQL ] DELETE FROM `ls_auth_rule`    WHERE  `id` = 267 [ RunTime:0.050002s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:46:04+08:00 ] 127.0.0.1 GET /sys/adminrule
+[ info ] www._yimiaopin01.com/sys/adminrule [运行时间：0.830047s][吞吐率：1.20req/s] [内存消耗：2,965.22kb] [文件加载：52]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'adminrule',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminrule',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->adminRule[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\sys\admin_rule.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'admin_rule',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.385022s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.069004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` ORDER BY `sort` ASC [ RunTime:0.099006s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:46:07+08:00 ] 127.0.0.1 GET /sys/sys?se=2
+[ info ] www._yimiaopin01.com/sys/sys?se=2 [运行时间：0.555032s][吞吐率：1.80req/s] [内存消耗：3,276.90kb] [文件加载：55]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'sys',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminrule',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'se' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->sys[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\sys\sys.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'sys',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099005s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.077005s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.058003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.058003s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.040003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.042002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 2  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.042003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_sys` [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_sys` WHERE  `sys_id` = 1 LIMIT 1 [ RunTime:0.039003s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:46:51+08:00 ] 127.0.0.1 POST /sys/runsys
+[ info ] www._yimiaopin01.com/sys/runsys [运行时间：0.696040s][吞吐率：1.44req/s] [内存消耗：3,192.05kb] [文件加载：57]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'runsys',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'content-length' => '235',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www._yimiaopin01.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www._yimiaopin01.com/sys/sys?se=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'sys_name' => '极速聘',
+  'sys_url' => 'http://www.linyidz.cn',
+  'sys_title' => '极速聘极速聘',
+  'sys_key' => '极速聘',
+  'sys_des' => '极速聘',
+  'bah' => '',
+  'copyright' => '',
+  'ads' => '',
+  'tel' => '',
+  'email' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->runsys[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104006s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.058003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.059004s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 2  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_sys` [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_sys` WHERE  `sys_id` = 1 LIMIT 1 [ RunTime:0.056003s ]
+[ sql ] [ SQL ] UPDATE `ls_sys`  SET `sys_name`='极速聘',`sys_url`='http://www.linyidz.cn',`sys_title`='极速聘极速聘',`sys_key`='极速聘',`sys_des`='极速聘',`ads`='',`tel`='',`email`=''  WHERE  `sys_id` = 1 [ RunTime:0.070004s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:46:54+08:00 ] 127.0.0.1 GET /sys/adminlist?se=15
+[ info ] www._yimiaopin01.com/sys/adminlist?se=15 [运行时间：0.514030s][吞吐率：1.95req/s] [内存消耗：2,881.21kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'adminlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/sys?se=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+  'se' => '15',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->adminList[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\sys\admin_list.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'testval',
+  6 => 'page',
+  7 => 'admin_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.073004s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.047002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.047003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` LIMIT 1 [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ag`.`title` FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` LIMIT 0,15 [ RunTime:0.052003s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:46:58+08:00 ] 127.0.0.1 GET /index/index
+[ info ] www._yimiaopin01.com/index/index [运行时间：0.450026s][吞吐率：2.22req/s] [内存消耗：2,588.01kb] [文件加载：51]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminlist?se=15',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\index\index.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094006s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.053003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.058003s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.050003s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:47:42+08:00 ] 127.0.0.1 GET /index/index
+[ info ] www._yimiaopin01.com/index/index [运行时间：0.457026s][吞吐率：2.19req/s] [内存消耗：2,742.61kb] [文件加载：53]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminlist?se=15',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\index\index.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097005s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.050002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.049002s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.046002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.047003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.057003s ]
+---------------------------------------------------------------
+[ 2018-08-20T19:48:13+08:00 ] 127.0.0.1 GET /index/index
+[ info ] www._yimiaopin01.com/index/index [运行时间：0.472027s][吞吐率：2.12req/s] [内存消耗：2,742.60kb] [文件加载：53]
+[ info ] [ LANG ] D:\code\yimiaopin\yimiaopin01\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._yimiaopin01.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._yimiaopin01.com/sys/adminlist?se=15',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ppvd3rjdcs5ckrt831a3lr1ab6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\code\yimiaopin\yimiaopin01\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\code\yimiaopin\yimiaopin01\public/../application/admin\view\index\index.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101006s ] mysql:host=47.104.173.59;port=3306;dbname=yimiaopin01;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.056003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.057004s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 15  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.049002s ]

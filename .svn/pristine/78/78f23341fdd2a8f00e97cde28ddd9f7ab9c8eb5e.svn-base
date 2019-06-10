@@ -1,0 +1,840 @@
+---------------------------------------------------------------
+[ 2018-10-24T17:23:35+08:00 ] 127.0.0.1 GET /
+[ info ] www._qmp.com/ [运行时间：0.164009s][吞吐率：6.10req/s] [内存消耗：1,780.42kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\quanminpin\quanminpinweb02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._qmp.com',
+  'connection' => 'keep-alive',
+  'purpose' => 'prefetch',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=1189688320; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1534914159,1534920679',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-24T17:23:35+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._qmp.com/login/login [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,742.68kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\quanminpin\quanminpinweb02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._qmp.com',
+  'connection' => 'keep-alive',
+  'purpose' => 'prefetch',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=1189688320; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1534914159,1534920679; PHPSESSID=ekmq944gde4eefodl7sjq0i9s2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\quanminpin\quanminpinweb02\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\quanminpin\quanminpinweb02\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-24T17:23:35+08:00 ] 127.0.0.1 GET /static/assets/css/font-awesome.min.css
+[ info ] www._qmp.com/static/assets/css/font-awesome.min.css [运行时间：0.032001s][吞吐率：31.25req/s] [内存消耗：1,840.45kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\quanminpin\quanminpinweb02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._qmp.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'purpose' => 'prefetch',
+  'referer' => 'http://www._qmp.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=1189688320; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1534914159,1534920679; PHPSESSID=ekmq944gde4eefodl7sjq0i9s2',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'font-awesome.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-24T17:23:35+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._qmp.com/login/login [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：1,742.43kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\quanminpin\quanminpinweb02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._qmp.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'purpose' => 'prefetch',
+  'referer' => 'http://www._qmp.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=1189688320; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1534914159,1534920679; PHPSESSID=ekmq944gde4eefodl7sjq0i9s2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\quanminpin\quanminpinweb02\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\quanminpin\quanminpinweb02\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-24T17:23:36+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._qmp.com/login/login [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：1,742.45kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\quanminpin\quanminpinweb02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._qmp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=1189688320; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1534914159,1534920679; PHPSESSID=ekmq944gde4eefodl7sjq0i9s2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\quanminpin\quanminpinweb02\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\quanminpin\quanminpinweb02\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-24T17:23:37+08:00 ] 127.0.0.1 GET /captcha
+[ info ] www._qmp.com/captcha [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：1,507.41kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\quanminpin\quanminpinweb02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._qmp.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._qmp.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=1189688320; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1534914159,1534920679; PHPSESSID=ekmq944gde4eefodl7sjq0i9s2',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\quanminpin\quanminpinweb02\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-24T17:23:37+08:00 ] 127.0.0.1 GET /static/assets/css/ace-rtl.min.css
+[ info ] www._qmp.com/static/assets/css/ace-rtl.min.css [运行时间：0.043003s][吞吐率：23.25req/s] [内存消耗：1,840.50kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\quanminpin\quanminpinweb02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._qmp.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._qmp.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=1189688320; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1534914159,1534920679; PHPSESSID=ekmq944gde4eefodl7sjq0i9s2',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'ace-rtl.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-24T17:23:37+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._qmp.com/login/login [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,742.62kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\quanminpin\quanminpinweb02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._qmp.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._qmp.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=1189688320; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1534914159,1534920679; PHPSESSID=ekmq944gde4eefodl7sjq0i9s2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\quanminpin\quanminpinweb02\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\quanminpin\quanminpinweb02\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-24T17:23:37+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._qmp.com/login/login [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,742.62kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\quanminpin\quanminpinweb02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._qmp.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._qmp.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=1189688320; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1534914159,1534920679; PHPSESSID=ekmq944gde4eefodl7sjq0i9s2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\quanminpin\quanminpinweb02\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\quanminpin\quanminpinweb02\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-24T17:23:37+08:00 ] 127.0.0.1 GET /favicon.ico
+[ info ] www._qmp.com/favicon.ico [运行时间：0.060003s][吞吐率：16.67req/s] [内存消耗：1,840.13kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\quanminpin\quanminpinweb02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'favicon.ico',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._qmp.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._qmp.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=1189688320; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1534914159,1534920679; PHPSESSID=ekmq944gde4eefodl7sjq0i9s2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-24T17:23:37+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._qmp.com/login/login [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,742.68kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\quanminpin\quanminpinweb02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._qmp.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._qmp.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=1189688320; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1534914159,1534920679; PHPSESSID=ekmq944gde4eefodl7sjq0i9s2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\quanminpin\quanminpinweb02\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\quanminpin\quanminpinweb02\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-24T17:23:49+08:00 ] 127.0.0.1 POST /login/action
+[ info ] www._qmp.com/login/action [运行时间：0.366021s][吞吐率：2.73req/s] [内存消耗：2,685.47kb] [文件加载：52]
+[ info ] [ LANG ] D:\code\quanminpin\quanminpinweb02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'action',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._qmp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www._qmp.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www._qmp.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=1189688320; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1534914159,1534920679; PHPSESSID=ekmq944gde4eefodl7sjq0i9s2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'code' => 'rbey',
+)
+[ info ] [ RUN ] app\admin\controller\Login->action[ D:\code\quanminpin\quanminpinweb02\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031001s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.156009s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` WHERE  `username` = 'admin'  AND `is_open` = 1 LIMIT 1 [ RunTime:0.033002s ]
+[ sql ] [ SQL ] UPDATE `dzjn_admin`  SET `hits`=`hits`+1  WHERE  `admin_id` = 1 [ RunTime:0.060003s ]
+[ sql ] [ SQL ] UPDATE `dzjn_admin`  SET `ip`='127.0.0.1'  WHERE  `admin_id` = 1 [ RunTime:0.018001s ]
+---------------------------------------------------------------
+[ 2018-10-24T17:23:50+08:00 ] 127.0.0.1 GET /index/index
+[ info ] www._qmp.com/index/index [运行时间：0.482028s][吞吐率：2.07req/s] [内存消耗：2,628.60kb] [文件加载：51]
+[ info ] [ LANG ] D:\code\quanminpin\quanminpinweb02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._qmp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._qmp.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=1189688320; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1534914159,1534920679; PHPSESSID=ekmq944gde4eefodl7sjq0i9s2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\code\quanminpin\quanminpinweb02\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\code\quanminpin\quanminpinweb02\public/../application/admin\view\index\index.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028001s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.130007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.086005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` IS NULL  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2018-10-24T17:23:57+08:00 ] 127.0.0.1 GET /vmember/vippeople?se=279
+[ info ] www._qmp.com/vmember/vippeople?se=279 [运行时间：0.984056s][吞吐率：1.02req/s] [内存消耗：2,830.34kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\quanminpin\quanminpinweb02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vmember',
+    2 => 'vippeople',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._qmp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._qmp.com/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=1189688320; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1534914159,1534920679; PHPSESSID=ekmq944gde4eefodl7sjq0i9s2',
+)
+[ info ] [ PARAM ] array (
+  'se' => '279',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Vmember->vipPeople[ D:\code\quanminpin\quanminpinweb02\application\admin\controller\Vmember.php ]
+[ info ] [ VIEW ] D:\code\quanminpin\quanminpinweb02\public/../application/admin\view\vmember\vip_people.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'uid',
+  6 => 'testval',
+  7 => 'v_phone',
+  8 => 'v_place',
+  9 => 'v_cardid',
+  10 => 'page',
+  11 => 'res',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.143008s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.064003s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.058003s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.035002s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 279  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_user_login` [ RunTime:0.077005s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_user_login` `u` LEFT JOIN `dzjn_vmember_vipbase` `v` ON `u`.`l_id`=`v`.`v_loginid` WHERE  `l_type` = '2' ORDER BY `v_id` ASC [ RunTime:0.224012s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dzjn_user_login` `u` LEFT JOIN `dzjn_vmember_vipbase` `v` ON `u`.`l_id`=`v`.`v_loginid` WHERE  `l_type` = '2' LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_user_login` `u` LEFT JOIN `dzjn_vmember_vipbase` `v` ON `u`.`l_id`=`v`.`v_loginid` WHERE  `l_type` = '2' LIMIT 0,15 [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2018-10-24T17:34:35+08:00 ] 127.0.0.1 GET /vmember/vippeople?se=279
+[ info ] www._qmp.com/vmember/vippeople?se=279 [运行时间：0.423024s][吞吐率：2.36req/s] [内存消耗：2,830.45kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\quanminpin\quanminpinweb02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vmember',
+    2 => 'vippeople',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._qmp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._qmp.com/vmember/vippeople?se=279',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=1189688320; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1534914159,1534920679; PHPSESSID=ekmq944gde4eefodl7sjq0i9s2',
+)
+[ info ] [ PARAM ] array (
+  'se' => '279',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Vmember->vipPeople[ D:\code\quanminpin\quanminpinweb02\application\admin\controller\Vmember.php ]
+[ info ] [ VIEW ] D:\code\quanminpin\quanminpinweb02\public/../application/admin\view\vmember\vip_people.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'uid',
+  6 => 'testval',
+  7 => 'v_phone',
+  8 => 'v_place',
+  9 => 'v_cardid',
+  10 => 'page',
+  11 => 'res',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.034002s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 279  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_user_login` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_user_login` `u` LEFT JOIN `dzjn_vmember_vipbase` `v` ON `u`.`l_id`=`v`.`v_loginid` WHERE  `l_type` = '2' ORDER BY `v_id` ASC [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dzjn_user_login` `u` LEFT JOIN `dzjn_vmember_vipbase` `v` ON `u`.`l_id`=`v`.`v_loginid` WHERE  `l_type` = '2' LIMIT 1 [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_user_login` `u` LEFT JOIN `dzjn_vmember_vipbase` `v` ON `u`.`l_id`=`v`.`v_loginid` WHERE  `l_type` = '2' LIMIT 0,15 [ RunTime:0.023001s ]
+---------------------------------------------------------------
+[ 2018-10-24T17:34:37+08:00 ] 127.0.0.1 GET /vmember/vippeople?se=279
+[ info ] www._qmp.com/vmember/vippeople?se=279 [运行时间：0.383022s][吞吐率：2.61req/s] [内存消耗：2,830.45kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\quanminpin\quanminpinweb02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vmember',
+    2 => 'vippeople',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._qmp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._qmp.com/vmember/vippeople?se=279',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=1189688320; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1534914159,1534920679; PHPSESSID=ekmq944gde4eefodl7sjq0i9s2',
+)
+[ info ] [ PARAM ] array (
+  'se' => '279',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Vmember->vipPeople[ D:\code\quanminpin\quanminpinweb02\application\admin\controller\Vmember.php ]
+[ info ] [ VIEW ] D:\code\quanminpin\quanminpinweb02\public/../application/admin\view\vmember\vip_people.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'uid',
+  6 => 'testval',
+  7 => 'v_phone',
+  8 => 'v_place',
+  9 => 'v_cardid',
+  10 => 'page',
+  11 => 'res',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033002s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 279  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_user_login` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_user_login` `u` LEFT JOIN `dzjn_vmember_vipbase` `v` ON `u`.`l_id`=`v`.`v_loginid` WHERE  `l_type` = '2' ORDER BY `v_id` ASC [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dzjn_user_login` `u` LEFT JOIN `dzjn_vmember_vipbase` `v` ON `u`.`l_id`=`v`.`v_loginid` WHERE  `l_type` = '2' LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_user_login` `u` LEFT JOIN `dzjn_vmember_vipbase` `v` ON `u`.`l_id`=`v`.`v_loginid` WHERE  `l_type` = '2' LIMIT 0,15 [ RunTime:0.022002s ]
+---------------------------------------------------------------
+[ 2018-10-24T17:34:41+08:00 ] 127.0.0.1 GET /scmember/company?se=280
+[ info ] www._qmp.com/scmember/company?se=280 [运行时间：0.977056s][吞吐率：1.02req/s] [内存消耗：2,720.11kb] [文件加载：51]
+[ info ] [ LANG ] D:\code\quanminpin\quanminpinweb02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'scmember',
+    2 => 'company',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._qmp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._qmp.com/vmember/vippeople?se=279',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=1189688320; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1534914159,1534920679; PHPSESSID=ekmq944gde4eefodl7sjq0i9s2',
+)
+[ info ] [ PARAM ] array (
+  'se' => '280',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Scmember->company[ D:\code\quanminpin\quanminpinweb02\application\admin\controller\Scmember.php ]
+[ info ] [ VIEW ] D:\code\quanminpin\quanminpinweb02\public/../application/admin\view\scmember\company.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'uid',
+  6 => 'c_name',
+  7 => 'c_contacts',
+  8 => 'c_phone',
+  9 => 'c_addr',
+  10 => 'type',
+  11 => 'scale',
+  12 => 'c_type',
+  13 => 'c_scale',
+  14 => 'company',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033002s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 280  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_scmember_company` [ RunTime:0.184010s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_scmember_company` ORDER BY `c_id` DESC [ RunTime:0.170010s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_scmember_company_type` [ RunTime:0.171010s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_scmember_company_type` [ RunTime:0.060003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_scmember_company_scale` [ RunTime:0.042003s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_scmember_company_scale` [ RunTime:0.046002s ]
+---------------------------------------------------------------
+[ 2018-10-24T17:34:42+08:00 ] 127.0.0.1 GET /vmember/vippeople?se=279
+[ info ] www._qmp.com/vmember/vippeople?se=279 [运行时间：0.314018s][吞吐率：3.18req/s] [内存消耗：2,830.43kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\quanminpin\quanminpinweb02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'vmember',
+    2 => 'vippeople',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._qmp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._qmp.com/scmember/company?se=280',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=1189688320; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1534914159,1534920679; PHPSESSID=ekmq944gde4eefodl7sjq0i9s2',
+)
+[ info ] [ PARAM ] array (
+  'se' => '279',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Vmember->vipPeople[ D:\code\quanminpin\quanminpinweb02\application\admin\controller\Vmember.php ]
+[ info ] [ VIEW ] D:\code\quanminpin\quanminpinweb02\public/../application/admin\view\vmember\vip_people.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'uid',
+  6 => 'testval',
+  7 => 'v_phone',
+  8 => 'v_place',
+  9 => 'v_cardid',
+  10 => 'page',
+  11 => 'res',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023001s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 279  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_user_login` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_user_login` `u` LEFT JOIN `dzjn_vmember_vipbase` `v` ON `u`.`l_id`=`v`.`v_loginid` WHERE  `l_type` = '2' ORDER BY `v_id` ASC [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dzjn_user_login` `u` LEFT JOIN `dzjn_vmember_vipbase` `v` ON `u`.`l_id`=`v`.`v_loginid` WHERE  `l_type` = '2' LIMIT 1 [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_user_login` `u` LEFT JOIN `dzjn_vmember_vipbase` `v` ON `u`.`l_id`=`v`.`v_loginid` WHERE  `l_type` = '2' LIMIT 0,15 [ RunTime:0.016001s ]

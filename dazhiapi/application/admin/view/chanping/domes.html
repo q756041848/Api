@@ -1,0 +1,85 @@
+{include file="common/head"/}
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    {include file="common/left"}
+    <div class="main-content">
+        <div class="main-content-inner">
+            {include file="common/header_nav"}
+            <div class="breadcrumbs breadcrumbs-fixed" id="breadcrumbs">
+                <ul class="breadcrumb">
+                    <li>
+                        <i class="ace-icon fa fa-home home-icon"></i>
+                        <a href="#">首页</a>
+                    </li>
+                    <li class="active">欢迎使用{:config("sys_name")}诚言国际管理系统</li>
+                </ul><!-- /.breadcrumb -->
+
+                <div class="nav-search" id="nav-search">
+                    <form class="form-search">
+                        <span class="input-icon">
+                            <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+                            <i class="ace-icon fa fa-search nav-search-icon"></i>
+                        </span>
+                    </form>
+                </div>
+            </div>
+
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+                        <div class="row maintop">
+                            <p>11</p>
+                        </div>
+                        <!--首页内容-->
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="table-responsive">
+                                    <button onclick="add()">插入1</button>
+                                    <button onclick="ha()">回滚</button>
+                                    <button>查看结果</button>
+
+                                    <button>删除1</button>
+                                    <button>回滚</button>
+                                    <button>查看结果</button>
+                                </div>
+                            </div><!-- /.span -->
+                        </div><!-- /.row -->
+                        <!--首页内容-->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+
+
+        </div>
+    </div>
+</div>
+{include file="common/foot" /}
+</div><!-- /.main-container -->
+</body>
+<script>
+    function add() {
+        $.ajax({
+            url:"{:url('dadds')}",
+            type:'post',
+            data:{val:'aaa'},
+            success:function (res){
+                alert(res.status);
+            }
+        });
+    }
+
+    function ha() {
+        $.ajax({
+            url:"{:url('dadd')}",
+            type:'post',
+            data:{ha:1},
+            success:function (res){
+                alert(res.status);
+            }
+        });
+    }
+</script>
+</html>

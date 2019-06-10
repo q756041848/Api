@@ -1,0 +1,11 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\phpStudy\WWW\gs\public/../application/admin\view\chanping\content.html";i:1554687112;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>ID:<?php echo $id; ?></h1>
+</body>
+</html>

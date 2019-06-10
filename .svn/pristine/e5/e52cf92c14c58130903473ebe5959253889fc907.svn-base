@@ -1,0 +1,96 @@
+<!--默认分组展开接口列表-->
+{volist name="$contt" id="con"}
+<ul class="ullist" id="ul1">
+    <li id="li1">
+        <div onclick="jiekou({$con.c_id})" style="display: block;background:#e7f0f7;">
+            <span class="get">GET</span>
+            <span style="padding-left: 20px">{$con.c_url}</span>
+            <span style="float: right;padding-right:10px;color: #0f6ab4;font-size: 10px">{$con.c_title}</span>
+        </div>
+
+        <div id="JieKouShow1" style="display: none;background:#e7f0f7;float:left;" class="alert alert-info">
+
+            <div class="panel-body ">
+                <h4>最后更新时间：</h4>
+                <h5>
+                    {$con.c_time|date ='Y-m-d H:i:s',###}        </h5>
+                <!--接口说明-->
+                <h4>接口说明:</h4>
+                <div class="markdown">{$con.c_description}</div>
+                <div style="margin:0;padding:0;display:inline"></div>
+                <h4 data-sw-translate="">请求参数</h4>
+                <form id="forms{$con.c_id}">
+
+                    <table class="fullwidth">
+                        <thead>
+                        <tr>
+                            <th style="width: 100px; max-width: 100px" data-sw-translate="">参数</th>
+                            <th style="width: 310px; max-width: 310px" data-sw-translate="">值</th>
+                            <th style="width: 200px; max-width: 200px" data-sw-translate="">说明</th>
+                            <th style="width: 100px; max-width: 100px" data-sw-translate="">参数位置</th>
+                            <th style="width: 220px; max-width: 230px" data-sw-translate="">数据类型</th>
+                        </tr>
+                        </thead>
+
+                    </table><table class="parameters" id="parameter1">
+                    <tbody  class="parameters" id="parameter{$con.c_id}">
+                    <tr>
+                        <td></td>
+                    </tr>
+                    </tbody></table>
+
+                </form>
+
+
+                <div style="margin:0;padding:0;display:inline;"></div>
+                <h4 data-sw-translate="">请求响应</h4>
+                <table class="fullwidth">
+                    <thead>
+                    <tr>
+                        <th style="width: 100px; max-width: 100px" data-sw-translate="">状态码</th>
+                        <th style="width: px; max-width: 310px" data-sw-translate="">说明</th>
+                        <th style="width: px; max-width: 200px" data-sw-translate="">响应信息</th>
+                    </tr>
+                    </thead>
+
+                </table><table class="responses" id="response1{$con.c_id}">
+                <tbody><tr>
+                    <td></td>
+                </tr>
+                </tbody></table>
+
+
+
+                <div class="sandbox_header">
+                    <input class="submit" type="button" value="测试" onclick="ceshi(1)">
+                    <a href="#" class="response_hider" id="response_hider1" style="display: none;" onclick="yinchang(1)">隐藏响应</a>
+                </div>
+
+                <div class="response" id="yinchang1" style="display: none">
+                    <h4 style="margin-top: 10px">Curl</h4>
+                    <div style="overflow-y:auto; overflow-x:auto; width:940px;" class="markdown">
+                        <pre id="markdownc1"></pre>
+                    </div>
+                    <h4>请求URL</h4>
+                    <div style="overflow-y:auto; overflow-x:auto; width:940px;">
+                        <pre>http://shop.linyidz.cn/wechat/index.php/student/Studentman/getstuinfo</pre>
+                    </div>
+                    <h4>Request Headers</h4>
+                    <div style="width: 940px">
+                        <pre>GET</pre>
+                    </div>
+                    <h4>响应内容</h4>
+                    <div style="overflow-y:auto; overflow-x:auto; width:940px;" class="markdown ">
+                        <pre id="markdown1"></pre>
+                    </div>
+                    <h4>响应码</h4>
+                    <div style="width: 940px" class="markdown">
+                        <pre id="markdownh1"></pre>
+                    </div>
+                    <h4>响应头</h4>
+                    <pre id="markdowns1" style="width: 940px">                    </pre>
+                </div>
+            </div>
+        </div></li>
+</ul>
+{/volist}

@@ -1,0 +1,28 @@
+<?php
+return array (
+  'sys_id' => 1,
+  'sys_name' => '极速聘',
+  'sys_url' => 'http://www.linyidz.cn',
+  'sys_title' => '优途HR极速聘',
+  'sys_key' => '极速聘',
+  'sys_des' => '极速聘',
+  'email_open' => 1,
+  'email_name' => '876902658@qq.com',
+  'email_pwd' => 'maggie198586',
+  'email_smtpname' => 'smtp.qq.com',
+  'email_emname' => '876902658',
+  'email_rename' => '网站管理员',
+  'wesys_name' => 'chichu',
+  'wesys_number' => 'chichu12345',
+  'wesys_id' => '12231231231231111',
+  'wesys_type' => 1,
+  'wesys_appid' => '12312312312',
+  'wesys_appsecret' => '123123123123123',
+  'wesys_token' => 'weixin',
+  'bah' => '',
+  'copyright' => '',
+  'ads' => '',
+  'tel' => '',
+  'email' => '',
+);
+?>

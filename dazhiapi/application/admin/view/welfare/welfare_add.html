@@ -1,0 +1,119 @@
+{include file="common/head"/}
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    {include file="common/left"}
+    <div class="main-content">
+        <div class="main-content-inner">
+            {include file="common/header_nav"}
+
+            <div class="page-content">
+                <div class="page-header">
+                    <h1>
+                        您当前操作
+                        <small>
+                            <i class="ace-icon fa fa-angle-double-right"></i>
+                            添加福利
+                        </small>
+                    </h1>
+                </div><!-- /.page-header -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+                        <form class="form-horizontal" role="form" name="adminInsert" id="adminInsert" method="post" action="{:url('welfare_add')}">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="username">工作福利</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="username" id="username" placeholder="输入工作福利" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>学历必须是中文</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="pwd">福利排序</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="pwd" id="pwd" placeholder="输入排序数值" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>数值越大越靠前</span>
+                                </div>
+                            </div>
+
+
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <button class="btn btn-info" type="submit">
+                                        <i class="ace-icon fa fa-check bigger-110"></i>
+                                        提交
+                                    </button>
+
+                                    &nbsp; &nbsp; &nbsp;
+                                    <button class="btn" type="reset">
+                                        <i class="ace-icon fa fa-undo bigger-110"></i>
+                                        重置
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    {include file="common/foot" /}
+</div>
+<script>
+    $(function () {
+        $('#adminInsert').ajaxForm({
+            beforeSubmit: checkForm, //此方法主要是提交前执行的方法，根据需要设置
+            success: complete, //这是提交后的方法
+            dataType: 'json'
+        });
+
+        function checkForm() {
+            if ('' == $.trim($('#username').val())) {
+                layer.alert('福利不能为空!', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#username').focus();
+                });
+                return false;
+            }
+
+            var username = $.trim($('input[name="username"]').val()); //获取INPUT值
+            var myReg = /^[\u4e00-\u9fa5]+$/;//验证中文
+            if (!myReg.test(username)) {
+                layer.alert('福利必须是中文', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#username').focus();
+                });
+                return false;
+            }
+
+
+            if ('' == $.trim($('#pwd').val())) {
+                layer.alert('排序数值不能为空', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#pwd').focus();
+                });
+                return false;
+            }
+
+        }
+
+    })
+    function complete(data) {
+        if (data.status == 1) {
+            layer.alert(data.info, {icon: 6}, function (index) {
+                layer.close(index);
+                window.location.href = data.url;
+            });
+        } else {
+            layer.alert(data.info, {icon: 5}, function (index) {
+                layer.close(index);
+                $('#username').focus();
+            });
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

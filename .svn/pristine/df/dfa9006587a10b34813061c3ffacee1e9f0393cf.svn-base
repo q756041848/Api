@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple online,Simple offline 专注于API接口文档管理及线上线下傻瓜式测试的API服务平台">
+    <meta name="Keywords" content="swagger,sosoapi,api 接口,接口管理">
+
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="__STATIC__/xcss/bootstrap.min.css" rel="stylesheet">
+    <link href="__STATIC__/xcss/font-awesome.min.css" rel="stylesheet"/>
+    <link href="__STATIC__/xcss/bootstrapvalidator.min.css" rel="stylesheet">
+    <link href="__STATIC__/xcss/chosen.min.css" rel="stylesheet"/>
+    <link href="__STATIC__/xcss/summernote.css" rel="stylesheet" />
+    <link href="__STATIC__/xcss/jquery.jgrowl.min.css" rel="stylesheet" />
+    <link href="__STATIC__/xcss/animate.css" rel="stylesheet">
+
+    <link href="__STATIC__/xcss/theme.css" rel="stylesheet">
+    <link href="__STATIC__/xcss/component.css" rel="stylesheet">
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <title>大智api</title>
+
+    <!-- PAGE LEVEL STYLES -->
+    <!-- <link href="" rel="stylesheet" /> -->
+    <style type="text/css">
+        .radio {
+            padding-left: 20px;
+        }
+
+        .radio, .checkbox {
+            position: relative;
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <!-- END PAGE LEVEL  STYLES -->
+</head>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#logout").click(function(){
+            layer.confirm('你确定要退出吗？', {icon: 3}, function(index){
+                layer.close(index);
+                window.location.href="{:url('login/logout')}";
+            });
+        });
+    });
+
+    $(function(){
+        $('#cache').click(function(){
+            layer.confirm('确认要清除缓存？', {icon: 3}, function(data){
+                $.post('{:url("clear")}',{},function(data){
+                    layer.msg(data.info, {icon: 6}, function (index) {
+                        layer.close(index);
+                        window.location.href = data.url;
+                    });
+                });
+            });
+        });
+    });
+</script>
+
+

@@ -1,0 +1,311 @@
+{include file="common/head"/}
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    {include file="common/left"}
+    <div class="main-content" onload="init()">
+        <div class="main-content-inner">
+            {include file="common/header_nav"}
+
+            <div class="page-content">
+                <div class="page-header">
+                    <h1>
+                        您当前操作
+                        <small>
+                            <i class="ace-icon fa fa-angle-double-right"></i>
+                            添加企业会员
+                        </small>
+                    </h1>
+                </div><!-- /.page-header -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+                        <form class="form-horizontal" role="form" name="companyInsert" id="companyInsert" method="post" action="{:url('companyInsert')}">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="group_id">企业名称</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="c_name" id="c_name" placeholder="输入企业名称" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="c_contacts">联系人</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="c_contacts" id="c_contacts" placeholder="输入联系人姓名" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span></span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="c_phone">联系电话</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="c_phone" id="c_phone" placeholder="输入联系电话" class="col-xs-12 col-md-4" maxlength="11" />
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>只能填写数字</span>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="c_type">企业类型</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <select name="c_type" id="c_type" class="col-select col-xs-12 col-sm-4">
+                                        <option value="">请选择企业类型</option>
+                                        {foreach name="c_type" id="v"}
+                                        <option value="{$v.c_type_name}">{$v.c_type_name}</option>
+                                        {/foreach}
+                                    </select>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>企业类型不能为空</span>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="c_scale">企业规模</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <select name="c_scale" id="c_scale" class="col-select col-xs-12 col-sm-4">
+                                        <option value="">请选择企业规模</option>
+                                        {foreach name="c_scale" id="v"}
+                                        <option value="{$v.c_scale_name}">{$v.c_scale_name}</option>
+                                        {/foreach}
+                                    </select>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>企业规模不能为空</span>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="c_addr">企业地址</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="c_addr" id="c_addr" placeholder="输入企业地址" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl" >&nbsp;&nbsp;<span class="red"></span><button id="clickMap" type="button">搜索</button></span>
+                                </div>
+                            </div>
+                            <input type="hidden" id="c_longitude" name="c_longitude">
+                            <input type="hidden" name="c_latitude" id="c_latitude">
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                               <label class="col-sm-2 control-label no-padding-right" for="c_addr"></label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <div id="container" style="width: 500px; height: 200px;" ></div>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="c_des">企业介绍</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <textarea name="c_des" id="c_des" class="col-xs-12 col-md-4"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <button class="btn btn-info" type="submit">
+                                        <i class="ace-icon fa fa-check bigger-110"></i>
+                                        提交
+                                    </button>
+
+                                    &nbsp; &nbsp; &nbsp;
+                                    <button class="btn" type="reset">
+                                        <i class="ace-icon fa fa-undo bigger-110"></i>
+                                        重置
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    {include file="common/foot" /}
+</div>
+
+<script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp"></script>
+        <script>
+
+        window.onload = function(){
+
+        //直接加载地图
+
+
+            //初始化地图函数  自定义函数名init
+            function init() {
+                //定义map变量 调用 qq.maps.Map() 构造函数   获取地图显示容器
+                var center = new qq.maps.LatLng(39.916527,116.397128);
+                 map = new qq.maps.Map(document.getElementById("container"), {
+                    center: center,      // 地图的中心地理坐标。
+                    zoom:15 
+                });
+                 var marker = new qq.maps.Marker({
+                    position: center,
+                    map: map,
+                    draggable: true,
+                });
+                qq.maps.event.addListener(  
+                marker,  
+                'dragend',  
+                function(e) {
+                    $('#c_longitude').val(e.latLng.lng);
+                    $('#c_latitude').val(e.latLng.lat);
+                });  
+            }
+            var geocoder = new qq.maps.Geocoder({
+            complete : function(result){
+                map.setCenter(result.detail.location);
+                marker = new qq.maps.Marker({
+                    map:map,
+                    draggable: true,
+                    position: result.detail.location
+                });
+                $('#c_longitude').val(result.detail.location.lng);
+                $('#c_latitude').val(result.detail.location.lat);
+                qq.maps.event.addListener(  
+                marker,  
+                'dragend',  
+                function(e) {  
+                    $('#c_longitude').val(e.latLng.lng);
+                    $('#c_latitude').val(e.latLng.lat);
+                }); 
+            }
+        });
+
+             document.getElementById('clickMap').onclick  = function codeAddress() {
+                var address = document.getElementById("c_addr").value;
+                //通过getLocation();方法获取位置信息值
+                geocoder.getLocation(address);
+            }
+
+            //调用初始化函数地图
+            init();
+        }
+
+            
+    </script>
+
+<!--编辑器js调用-->
+<!-- 配置文件 -->
+<script type="text/javascript" src="__STATIC__/ueditor/ueditor.config.js"></script>
+<!-- 编辑器源文件 -->
+<script type="text/javascript" src="__STATIC__/ueditor/ueditor.all.js"></script>
+<script type="text/javascript" src="__STATIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('c_des',{
+        initialFrameWidth:518.33, //初始化编辑器宽度,默认1000
+        initialFrameHeight:150,
+        //是否可以拉伸长高,默认true(当开启时，自动长高失效)
+        scaleEnabled:false,
+    });
+</script>
+<!--编辑器js调用-->
+<script>
+    $(function () {
+        $('#companyInsert').ajaxForm({
+            beforeSubmit: checkForm, //此方法主要是提交前执行的方法，根据需要设置
+            success: complete, //这是提交后的方法
+            dataType: 'json'
+        });
+
+        function checkForm() {
+            if ('' == $.trim($('#c_name').val())) {
+                layer.alert('企业名称不能为空!', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#c_name').focus();
+                });
+                return false;
+            }
+
+            var c_name = $.trim($('input[name="c_name"]').val()); //获取INPUT值
+            var myReg = /^[\u4e00-\u9fa5]+$/;//验证中文
+            if (c_name.indexOf(" ") >= 0) {
+                layer.alert('企业名称包含了空格，请重新输入!', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#c_name').focus();
+                });
+                return false;
+            }
+
+            if ('' == $.trim($('#c_contacts').val())) {
+                layer.alert('真实姓名不能为空', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#c_contacts').focus();
+                });
+                return false;
+            }
+
+            if ('' == $.trim($('#c_phone').val())) {
+                layer.alert('联系电话不能为空', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#c_phone').focus();
+                });
+                return false;
+            }
+
+            var c_phone = parseInt($.trim($('#c_phone').val()));
+            if (isNaN(c_phone)) {
+                layer.alert('联系电话只能为数字', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#c_phone').focus();
+                });
+                return false;
+            }
+
+            if ($.trim($('#c_phone').val()).length < 11) {
+                layer.alert('联系电话不能少于11位', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#c_phone').focus();
+                });
+                return false;
+            }
+
+            if ('' == $.trim($('#c_type').val())) {
+                layer.alert('企业类型不能为空', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#c_type').focus();
+                });
+                return false;
+            }
+
+            if ('' == $.trim($('#c_scale').val())) {
+                layer.alert('企业规模不能为空', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#c_scale').focus();
+                });
+                return false;
+            }
+
+            if ('' == $.trim($('#c_addr').val())) {
+                layer.alert("企业地址不能为空", {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#c_addr').focus();
+                });
+                return false;
+            }
+
+        }
+
+        function complete(data) {
+            if (data.status == 1) {
+                layer.alert(data.info, {icon: 6}, function (index) {
+                    layer.close(index);
+                    window.location.href = data.url;
+                });
+            } else {
+                layer.alert(data.info, {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#c_name').focus();
+                });
+                return false;
+            }
+        }
+    })
+
+</script>
+</body>
+</html>

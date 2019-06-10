@@ -1,0 +1,13 @@
+{volist name="$Cshow" id="v" key="k"}
+<li onclick="code_ajax({$v.c_id})" class="file" id="c{$v.c_id}">
+    <span class="button level1 switch noline_docu"></span>
+    <a title="{$v.c_code}">
+        <span class="glyphicon glyphicon-align-justify"></span>
+        <span>{$v.c_code}</span>
+        <span class="file_count" style="display: none;">
+                    <span title="编辑错误码" class="glyphicon glyphicon-pencil"></span>
+                    <span title="删除错误码" class="glyphicon glyphicon-trash" onclick="code_del({$v.c_id})"></span>
+		</span>
+    </a>
+</li>
+{/volist}

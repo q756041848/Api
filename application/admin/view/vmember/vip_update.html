@@ -1,0 +1,531 @@
+<link rel="stylesheet" href="__STATIC__/imgupload/css/cropper.min.css">
+<link rel="stylesheet" href="__STATIC__/imgupload/css/ImgCropping.css">
+{include file="common/head"/}
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    {include file="common/left"}
+    <div class="main-content">
+        <div class="main-content-inner">
+            {include file="common/header_nav"}
+            <div class="page-content">
+                <div class="page-header">
+                    <h1>
+                        您当前操作
+                        <small>
+                            <i class="ace-icon fa fa-angle-double-right"></i>
+                            修改高端会员
+                        </small>
+                    </h1>
+                </div><!-- /.page-header -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+                        <form class="form-horizontal" role="form" name="editAdmin" id="adminInsert" method="post" action="{:url('dovipUpdate')}">
+                            <input name="v_id" id="admin_id" type="hidden" value="{$info.v_id}"/>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="username">姓名</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" value="{$info.v_name}" name="v_name" id="username" placeholder="输入会员姓名" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" >性别</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    {if condition="$info['v_sex'] eq '男'"}
+                                    <input type="radio" name="v_sex" value="男" checked/>男
+                                    <input type="radio" name="v_sex" value="女"/>女
+                                    {else /}
+                                    <input type="radio" name="v_sex" value="男"/>男
+                                    <input type="radio" name="v_sex" value="女" checked/>女
+                                    {/if}
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="v_nation">民族</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="v_nation" value="{$info.v_nation}" id="v_nation" placeholder="输入民族" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="v_political">政治面貌</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="v_political" value="{$info.v_political}" id="v_political" placeholder="输入政治面貌" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="v_height">身高</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="v_height" value="{$info.v_height}" id="v_height"  placeholder="输入身高" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red"> </span>选填</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="v_cardid">身份证</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="v_cardid" id="v_cardid" value="{$info.v_cardid}" placeholder="输入身份证" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="">
+                                <label class="col-sm-2 control-label no-padding-right" for="mydate">出生年月日</label>
+
+                                <div>
+                                    <script language="javascript" type="text/javascript" src="__STATIC__/MyDate/skin/WdatePicker.css"></script>
+                                    <script type="text/javascript">
+                                        $(function () {
+                                            var myDate = new Date();
+                                            var year=myDate.getFullYear();
+                                            var month=myDate.getMonth()+1;
+                                            var date=myDate.getDate();
+                                            $('#mydate').click(function () {
+                                                WdatePicker({el:this,dateFmt:'yyyy-MM-dd',minDate:'1900-01-01',maxDate:year+"-"+month+"-"+date});
+                                            })
+                                        })
+                                    </script>
+                                    <input name="v_birthday" id="mydate" style="margin-left: 5px;" value="{$info.v_birthday}" class="Wdate" type="text">
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="v_place">籍贯</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="v_place" value="{$info.v_place}" id="v_place" placeholder="输入籍贯" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="v_education">学历</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <select name="v_education" id="v_education" class="col-select col-xs-12 col-sm-4">
+                                        {volist name="edu" id="v"}
+                                        {if condition="$info['v_education'] eq $v['e_name']"}
+                                        <option value="{$v.e_name}" selected>{$v.e_name}</option>
+                                        {else /}
+                                        <option value="{$v.e_name}">{$v.e_name}</option>
+                                        {/if}
+                                        {/volist}
+                                    </select>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">婚否</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    {if condition="$info['v_marry'] eq '是'"}
+                                    <input type="radio" name="v_marry"   value="是" checked/>是
+                                    <input type="radio" name="v_marry"   value="否"/>否
+                                    {else/}
+                                    <input type="radio" name="v_marry"   value="是"/>是
+                                    <input type="radio" name="v_marry"   value="否" checked/>否
+                                    {/if}
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span></span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="v_phone">电话</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="v_phone" value="{$info.v_phone}" id="v_phone" placeholder="输入手机号码" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="v_email">邮箱</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="v_email" value="{$info.v_email}" id="v_email" placeholder="输入会员邮箱" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="v_txplace">通讯地址</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="v_txplace" value="{$info.v_txplace}" id="v_txplace" placeholder="输入通讯地址" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="v_zipcode">邮编</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="v_zipcode" value="{$info.v_zipcode}" id="v_zipcode" placeholder="输入邮编" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="v_jmam">紧急联系人</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="v_jmam" value="{$info.v_jmam}" id="v_jmam" placeholder="输入紧急联系人姓名" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red"> </span>选填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="v_jrelationship">与本人关系</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="v_jrelationship" value="{$info.v_jrelationship}" id="v_jrelationship"  placeholder="输入与本人关系" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red"> </span>选填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="v_jphone">紧急联系电话</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="v_jphone" value="{$info.v_jphone}" id="v_jphone" placeholder="输入手机号码" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red"></span>选填</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="v_salary">期望薪资</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="v_salary" value="{$info.v_salary}" id="v_salary" placeholder="输入期望薪资"
+                                           class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red"></span>选填</span>
+                                </div>
+                            </div>
+                            <!--上传照片-->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">照片</label>
+                                <div class="col-sm-10 col-xs-12">
+
+                                    <button id="replaceImg" class="l-btn">更换图片</button>
+                                    <div style="width: 320px;height: 320px;border: solid 1px #555;padding: 5px;margin-top: 10px">
+                                        <img id="finalImg" src="/uploads/{$info.v_photograph}" width="100%">
+                                    </div>
+                                    <!--图片裁剪框 start-->
+                                    <div style="display: none" class="tailoring-container">
+                                        <div class="black-cloth" onclick="closeTailor(this)"></div>
+                                        <div class="tailoring-content">
+                                            <div class="tailoring-content-one">
+                                                <label title="上传图片" for="chooseImg" class="l-btn choose-btn">
+                                                    <input type="file" accept="image/jpg,image/jpeg,image/png"
+                                                           name="file" id="chooseImg" class="hidden"
+                                                           onchange="selectImg(this)">
+                                                    选择图片
+                                                </label>
+                                                <div class="close-tailoring" onclick="closeTailor(this)">×</div>
+                                            </div>
+                                            <div class="tailoring-content-two">
+                                                <div class="tailoring-box-parcel">
+                                                    <img id="tailoringImg">
+                                                </div>
+                                                <div class="preview-box-parcel">
+                                                    <p>图片预览：</p>
+                                                    <div class="square previewImg"></div>
+                                                    <div class="circular previewImg"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tailoring-content-three">
+                                                <button class="l-btn cropper-reset-btn" id="restoration">复位</button>
+                                                <button class="l-btn cropper-rotate-btn" id="rotate">旋转</button>
+                                                <button class="l-btn cropper-scaleX-btn" id="reversing">换向</button>
+                                                <button class="l-btn sureCut" id="sureCut">确定</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--图片裁剪框 end-->
+
+                                </div>
+                            </div>
+                            <!--上传照片-->
+
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <button class="btn btn-info" type="submit">
+                                        <i class="ace-icon fa fa-check bigger-110"></i>
+                                        提交
+                                    </button>
+
+                                    &nbsp; &nbsp; &nbsp;
+                                    <button class="btn" type="reset">
+                                        <i class="ace-icon fa fa-undo bigger-110"></i>
+                                        重置
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    {include file="common/foot" /}
+</div>
+<script>
+    $(function () {
+        //组织冒泡事件
+        $("#replaceImg").click(function(event){
+            event.preventDefault(); //阻止默认动作即该链接不会跳转。
+            event.stopPropagation();//阻止冒泡事件，上级的单击事件不会被调用
+            return false;//不仅阻止了事件往上冒泡，而且阻止了事件本身
+        });
+        $("#sureCut").click(function(event){
+            event.preventDefault(); //阻止默认动作即该链接不会跳转。
+            event.stopPropagation();//阻止冒泡事件，上级的单击事件不会被调用
+            return false;//不仅阻止了事件往上冒泡，而且阻止了事件本身
+        });
+        $("#restoration").click(function(event){
+            event.preventDefault(); //阻止默认动作即该链接不会跳转。
+            event.stopPropagation();//阻止冒泡事件，上级的单击事件不会被调用
+            return false;//不仅阻止了事件往上冒泡，而且阻止了事件本身
+        });
+        $("#rotate").click(function(event){
+            event.preventDefault(); //阻止默认动作即该链接不会跳转。
+            event.stopPropagation();//阻止冒泡事件，上级的单击事件不会被调用
+            return false;//不仅阻止了事件往上冒泡，而且阻止了事件本身
+        });
+        $("#reversing").click(function(event){
+            event.preventDefault(); //阻止默认动作即该链接不会跳转。
+            event.stopPropagation();//阻止冒泡事件，上级的单击事件不会被调用
+            return false;//不仅阻止了事件往上冒泡，而且阻止了事件本身
+        });
+
+        $('#adminInsert').ajaxForm({
+            beforeSubmit: checkForm, //此方法主要是提交前执行的方法，根据需要设置
+            success: complete, //这是提交后的方法
+            dataType: 'json'
+        });
+
+        function checkForm() {
+            //姓名
+            if ('' == $.trim($('#username').val())) {
+                layer.alert('会员姓名不能为空!', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#username').focus();
+                });
+                $("div[type=dialog]").css('top','300px');
+                return false;
+            }
+            if ('' == $.trim($('#v_nation').val())) {
+                layer.alert('民族不能为空!', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#v_nation').focus();
+                });
+                $("div[type=dialog]").css('top','300px');
+                return false;
+            }
+            if ('' == $.trim($('#v_political').val())) {
+                layer.alert('政治面貌不能为空!', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#v_political').focus();
+                });
+                $("div[type=dialog]").css('top','300px');
+                return false;
+            }
+//            var vcardid=$('input[name="v_cardid"]').val();
+//            var reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+//            if ('' == $.trim($('#v_cardid').val())) {
+//                layer.alert('身份证不能为空!', {icon: 5}, function (index) {
+//                    layer.close(index);
+//                    $('#v_cardid').focus();
+//                });
+//                $("div[type=dialog]").css('top','300px');
+//                return false;
+//            }else if(!reg.test(vcardid)){
+//                layer.alert('身份证输入有误', {icon: 5}, function (index) {
+//                    layer.close(index);
+//                    $('#v_cardid').focus();
+//                });
+//                $("div[type=dialog]").css('top','300px');
+//                return false;
+//            }
+            if ('' == $.trim($('#v_place').val())) {
+                layer.alert('籍贯不能为空!', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#v_place').focus();
+                });
+                $("div[type=dialog]").css('top','300px');
+                return false;
+            }
+            var vphone=$('input[name="v_phone"]').val();
+            var myreg=/^[1][0-9]{10}$/;
+            if ('' == $.trim($('#v_phone').val())) {
+                layer.alert('会员电话不能为空!', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#v_phone').focus();
+                });
+                $("div[type=dialog]").css('top','300px');
+                return false;
+            }else if(!myreg.test(vphone)){
+                layer.alert('会员电话输入有误', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#tel').focus();
+                });
+                $("div[type=dialog]").css('top','300px');
+                return false;
+            }
+            var vemail=$('input[name="v_email"]').val();
+            var vemailreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+            if ('' == $.trim($('#v_email').val())) {
+                layer.alert('会员邮箱不能为空!', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#v_email').focus();
+                });
+                $("div[type=dialog]").css('top','300px');
+                return false;
+            }else if(!vemailreg.test(vemail)){
+                layer.alert('会员邮箱输入有误', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#tel').focus();
+                });
+                $("div[type=dialog]").css('top','300px');
+                return false;
+            }
+            if ('' == $.trim($('#v_txplace').val())) {
+                layer.alert('通讯地址不能为空!', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#v_txplace').focus();
+                });
+                $("div[type=dialog]").css('top','300px');
+                return false;
+            }
+
+            var sort = $('input[name="v_zipcode"]').val(); //获取INPUT值
+            var myReg = /^[0-9]*$/;//验证中文
+//            alert(myReg.test(sort));
+            if ('' == $.trim($('#v_zipcode').val())) {
+                layer.alert('邮编不能为空', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#v_zipcode').focus();
+                });
+                $("div[type=dialog]").css('top','300px');
+                return false;
+            }else if (!myReg.test(sort)) {
+                layer.alert('邮编必须是数字', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#v_zipcode').focus();
+                });
+                $("div[type=dialog]").css('top','300px');
+                return false;
+            }
+        }
+
+        function complete(data) {
+            if (data.status == 1) {
+                layer.alert(data.info, {icon: 6}, function (index) {
+                    layer.close(index);
+                    window.location.href = data.url;
+                });
+                $("div[type=dialog]").css('top','300px');
+            } else {
+                layer.alert(data.info, {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#username').focus();
+                });
+                $("div[type=dialog]").css('top','300px');
+                return false;
+            }
+        }
+    })
+
+</script>
+
+
+<script src="__STATIC__/imgupload/js/cropper.min.js"></script>
+<script>
+    //弹出框水平垂直居中
+    (window.onresize = function () {
+        var win_height = $(window).height();
+        var win_width = $(window).width();
+        if (win_width <= 768) {
+            $(".tailoring-content").css({
+                "top": (win_height - $(".tailoring-content").outerHeight()) / 2,
+                "left": 0
+            });
+        } else {
+            $(".tailoring-content").css({
+                "top": (win_height - $(".tailoring-content").outerHeight()) / 8,
+                "left": (win_width - $(".tailoring-content").outerWidth()) / 2
+            });
+        }
+    })();
+    //弹出图片裁剪框
+    $("#replaceImg").on("click", function () {
+        $(".tailoring-container").toggle();
+    });
+    //图像上传
+    function selectImg(file) {
+        if (!file.files || !file.files[0]) {
+            return;
+        }
+        var reader = new FileReader();
+        reader.onload = function (evt) {
+            var replaceSrc = evt.target.result;
+            //更换cropper的图片
+            $('#tailoringImg').cropper('replace', replaceSrc, false);//默认false，适应高度，不失真
+        }
+        reader.readAsDataURL(file.files[0]);
+    }
+    //cropper图片裁剪
+    $('#tailoringImg').cropper({
+        aspectRatio: 1 / 1,//默认比例
+        preview: '.previewImg',//预览视图
+        guides: false,  //裁剪框的虚线(九宫格)
+        autoCropArea: 0.5,  //0-1之间的数值，定义自动剪裁区域的大小，默认0.8
+        movable: false, //是否允许移动图片
+        dragCrop: true,  //是否允许移除当前的剪裁框，并通过拖动来新建一个剪裁框区域
+        movable: true,  //是否允许移动剪裁框
+        resizable: true,  //是否允许改变裁剪框的大小
+        zoomable: false,  //是否允许缩放图片大小
+        mouseWheelZoom: false,  //是否允许通过鼠标滚轮来缩放图片
+        touchDragZoom: true,  //是否允许通过触摸移动来缩放图片
+        rotatable: true,  //是否允许旋转图片
+        crop: function (e) {
+            // 输出结果数据裁剪图像。
+        }
+    });
+    //旋转
+    $(".cropper-rotate-btn").on("click", function () {
+        $('#tailoringImg').cropper("rotate", 45);
+    });
+    //复位
+    $(".cropper-reset-btn").on("click", function () {
+        $('#tailoringImg').cropper("reset");
+    });
+    //换向
+    var flagX = true;
+    $(".cropper-scaleX-btn").on("click", function () {
+        if (flagX) {
+            $('#tailoringImg').cropper("scaleX", -1);
+            flagX = false;
+        } else {
+            $('#tailoringImg').cropper("scaleX", 1);
+            flagX = true;
+        }
+        flagX != flagX;
+    });
+    //裁剪后的处理
+    $("#sureCut").on("click", function () {
+        if ($("#tailoringImg").attr("src") == null) {
+            return false;
+        } else {
+            var cas = $('#tailoringImg').cropper('getCroppedCanvas');//获取被裁剪后的canvas
+            var base64url = cas.toDataURL('image/png'); //转换为base64地址形式
+            $("#finalImg").prop("src", base64url);//显示为图片的形式
+
+            //关闭裁剪框
+            closeTailor();
+        }
+    });
+    //关闭裁剪框
+    function closeTailor() {
+        $(".tailoring-container").toggle();
+    }
+</script>
+</body>
+</html>

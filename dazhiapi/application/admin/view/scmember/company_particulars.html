@@ -1,0 +1,117 @@
+{include file="common/head"/}
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    {include file="common/left"}
+    <div class="main-content">
+        <div class="main-content-inner">
+            {include file="common/header_nav"}
+
+            <div class="page-content">
+                <div class="page-header">
+                    <h1>
+                        您当前操作 
+                        <small>
+                            <i class="ace-icon fa fa-angle-double-right"></i>
+                            企业会员资料详情
+                        </small>
+                    </h1>
+                </div><!-- /.page-header -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+                        <form class="form-horizontal" >
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" >企业名称</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="s_name" id="s_name" value="{$particulars.c_name}" disabled="disabled" class="col-xs-12 col-md-4"/>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" >联系人</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="s_name" id="s_name" value="{$particulars.c_contacts}" disabled="disabled" class="col-xs-12 col-md-4"/>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" >联系电话</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="s_name" id="s_name" value="{$particulars.c_phone}" disabled="disabled" class="col-xs-12 col-md-4"/>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" >企业类型</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="s_name" id="s_name" value="{$particulars.c_type}" disabled="disabled" class="col-xs-12 col-md-4"/>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" >企业规模</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="s_name" id="s_name" value="{$particulars.c_scale}" disabled="disabled" class="col-xs-12 col-md-4"/>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">企业地址</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="s_name" id="s_name" value="{$particulars.c_addr}" disabled="disabled" class="col-xs-12 col-md-4"/>
+                                    
+                                </div>
+                            </div>
+                            
+                            <input type="hidden" id="c_longitude" name="c_longitude" value="{$particulars.c_longitude}">
+                            <input type="hidden" name="c_latitude" id="c_latitude" value="{$particulars.c_latitude}">
+                            <div class="form-group">
+                               <label class="col-sm-2 control-label no-padding-right" ></label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <div id="container" style="width: 500px; height: 200px;"  ></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">企业介绍</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <div id="container" style="width: 480px; height: 200px; padding:10px;"  >{$particulars.c_des|htmlspecialchars_decode}</div>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    {include file="common/foot" /}
+</div>
+<script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp"></script>
+<script type="text/javascript">
+     window.onload = function(){
+            //初始化地图函数  自定义函数名init
+            function init() {
+                var center = new qq.maps.LatLng($('#c_latitude').val(),$('#c_longitude').val());
+                var map = new qq.maps.Map(document.getElementById("container"), {
+                    // 地图的中心地理坐标。
+                    center: center,
+                    zoom:15
+                });
+                var marker = new qq.maps.Marker({
+                    position: center,
+                    map: map,
+                });
+            }
+            init();
+        }
+</script>
+</body>
+</html>

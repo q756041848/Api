@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>大智_Api</title>
+    <link href='__STATIC__/css/typography.css' media='screen' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='__STATIC__/css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+    .ext-hidden {
+        display: none;
+    }
+
+    #condition {
+        width: 410px;
+    }
+
+    #apiKey {
+        width: 170px;
+    }
+
+    #apiPosition {
+        font-size: 0.9em;
+        height: 1.8em;
+        width: 180px;
+    }
+
+    #btn-api-auth {
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 6px 8px;
+        font-size: 0.9em;
+        color: white;
+        background-color: #547f00;
+        border-radius: 4px;
+    }
+
+    ul.api-auth {
+        display: none;
+        position: absolute;
+        top: 40px;
+        overflow: hidden;
+        background-color: #fff;
+        overflow-y: auto;
+        border: 1px solid #999;
+        border-top: 0;
+        box-shadow: 0 3px 5px #999;
+        z-index: 9999;
+        padding: 10px 0;
+    }
+
+    ul.api-auth li {
+        height: 30px;
+        line-height: 30px;
+        overflow: hidden;
+        padding: 0 10px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .input-select {
+        width: 200px;
+        height: 25px;
+
+    }
+
+    .input-select input {
+        background-color: #fff;
+        position: absolute;
+        border: 0;
+        outline: 0;
+        background: none;
+    }
+
+    .input-select ul {
+        width: 200px;
+        display: none;
+        position: absolute;
+        top: 40px;
+        overflow: hidden;
+        background-color: #fff;
+        overflow-y: auto;
+        /*border: 1px solid #999;*/
+        border-top: 0;
+        box-shadow: 0 3px 5px #999;
+        z-index: 9999;
+    }
+
+    .input-select ul li {
+        height: 30px;
+        line-height: 30px;
+        overflow: hidden;
+        padding: 0 10px;
+        cursor: pointer;
+    }
+
+    .input-select ul li.on {
+        background-color: #e0e0e0;
+    }
+
+    #apiBtn {
+        text-decoration: none;
+        font-weight: bold;
+        padding: 6px 8px;
+        font-size: 0.9em;
+        color: white;
+        background-color: #547f00;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -o-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -khtml-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    .dev-status a {
+        text-transform: uppercase;
+        text-decoration: none !important;
+        color: white !important;
+        background-color: #e67e22;
+        display: inline-block;
+        width: 50px;
+        font-size: 0.7em;
+        text-align: center;
+        padding: 7px 4px 4px 4px;
+        border-radius: 2px;
+        text-decoration: none;
+    }
+
+    .swagger-section #header a#logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-decoration: none;
+        background: transparent url(__STATIC__/img/API.png) no-repeat left center;
+        padding: 20px 0 20px 40px;
+        color: white;
+    }
+
+    .toggleOperation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .touc {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    /*默认显示的文字*/
+    .morenfont {
+        color: #999;
+        font-size: 20px;
+        font-weight: bold;
+        float: left;
+        clear: both;
+    }
+    .fenzu{
+        float: right;
+    }
+
+    /*返回码文本*/
+    .alert-success {
+        background-color: #ebf7f0;
+        /*margin-top: 25px;*/
+        border-color: #d6e9c6;
+        color: #666;
+    }
+    .alert {
+         padding: 0px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        clear: both;
+    }
+
+
+
+    /*li标签*/
+
+    .ullist{
+        background: #e7f0f7;
+        height:30px;
+        line-height: 30px;
+        padding: 0px;
+        border: 1px solid#c3d9ec;
+        /*display: none;*/
+    }
+
+    /*span的GET小按钮*/
+    .get{
+        float:left;
+        text-align:center;
+        height: 30px;
+        width: 50px;
+        background:#0f6ab4;
+        color: #fff;
+        font-size: 10px;
+        margin-top: -1px;
+        margin-left: -1px;
+    }
+
+    /*展开内容*/
+    #default{
+        display: none;
+    }
+    .morenfont:hover{
+        color: #000;
+    }
+</style>
+<body class="swagger-section">
+<!--头部-->
+<div id='header'>
+    <div class="swagger-ui-wrap " style="max-width:1000px;">
+        <a id="logo">大智_Api</a>
+        <form id='api_selector'>
+            <div class='input'><input placeholder="接口名称  /  请求url  /  标签" id="condition" name="condition" type="text"/></div>
+            <div class='input'><a id="explore"  onclick="preview()">浏览</a></div>
+        </form>
+    </div>
+</div>
+<!--头部-->
+
+
+<!--文档信息-->
+    <div class="swagger-ui-wrap container" style="padding: 0px">
+        <div style="color: #000;font-size: 20px;font-weight: bold;margin-top: 50px;">{$p_title}</div>
+        <p></p>
+        <p>{$p_txt}</p>
+    </div>
+<!--文档信息-->
+
+
+
+<!--文件夹-->
+<div class="swagger-ui-wrap container" style="max-width:1000px;margin-top: 10px;margin-bottom: 30px;">
+    <!--全局返回码按钮开关-->
+   <p><div class="morenfont CodeShow">全局返回码</div>
+    <div class="fenzu">
+        <a class="CodeShow">显示/隐藏</a>
+    </div></p>
+    <!--全局返回码按钮开关-->
+
+
+
+
+
+    <!--全局返回码显示文本-->
+    <div style="width: 100%;height:25px;"></div>
+    <div id="code" class="alert alert-success" style="display: none">
+        <table class="table table-condensed">
+           <tr>
+               <th>返回码</th>
+               <th>返回信息</th>
+               <th>说明</th>
+           </tr>
+            {volist name="$code" id="code"}
+            <tr>
+                <td width="15%">{$code.c_code}</td>
+                <td>{$code.c_mes}</td>
+                <td width="70%">{$code.c_explain}</td>
+            </tr>
+            {/volist}
+        </table>
+    </div>
+    <!--全局返回码显示文本-->
+
+
+
+
+
+    <!--默认分组展开开关-->
+    <p><div class="morenfont defaultShow">默认分组</div>
+    <div class="fenzu">
+        <a class="defaultShow">显示/隐藏</a>
+    </div></p>
+    <!--默认分组展开开关-->
+
+
+
+    <div id="default">
+    {volist name="$con" id="con"}
+    <!--默认分组展开接口列表-->
+    <div style="width: 100%;height:5px;"></div>
+    <ul class="ullist">
+        <li>
+            <div style="width: 100%">
+                <span class="get">GET</span>
+                <span style="padding-left: 20px">{$con.c_title}</span>
+                <span style="float: right;padding-right:10px;color: #0f6ab4;font-size: 10px">{$con.name}</span>
+            </div>
+        </li>
+    </ul>
+    <!--默认分组展开接口列表-->
+    {/volist}
+    </div>
+    <p style="margin: 10px 0px 0px 0px;border-bottom: 1px solid#e0e0e0;"></p>
+    <!--循环遍历文件夹-->
+    {volist name="$pfolder" id="v" key="k"}
+        <!--判断有无子接口-->
+        {if condition="$v.con"}
+        <p><div class="morenfont" onclick="fileshow({$v.id})">{$v.name}</div>
+        <div class="fenzu">
+            <a onclick="fileshow({$v.id})">显示/隐藏</a>
+        </div></p>
+        <div id="{$v.id}" style="display: none">
+            {volist name="$v.con" id="con"}
+            <!--默认分组展开接口列表-->
+            <div style="max-width: 1000px;height:5px;"></div>
+            <ul class="ullist">
+                <li>
+                    <div onclick="jiekou({$con.c_id})" style="width: 100%">
+                        <span class="get">
+
+                            {volist name="$method" id="wx"}
+                            {if condition="$con.c_method eq $key" }
+                            {$wx}
+                            {/if}
+                            {/volist}
+
+                        </span>
+                        <span style="padding-left: 20px">
+                        {$con.c_url}
+                    </span>
+                        <span   style="float: right;padding-right:10px;color: #0f6ab4;font-size: 10px">{$con.c_title}</span>
+                    </div>
+
+                    <div id="JieKouShow{$con.c_id}" style="display: none;background:#e7f0f7;
+ max-height: 940px;
+                    float:left;" class="alert alert-info">
+                          
+            <div class="panel-body ">
+                <h4>最后更新时间：</h4>
+                <h5>
+                    {$con.c_time|date ='Y-m-d H:i:s',###}
+                </h5>
+                <!--接口说明-->
+                <h4>接口说明:</h4>
+                <div class="markdown">{$con.c_description}</div>
+             <div style="margin:0;padding:0;display:inline"></div>
+                <h4 data-sw-translate="">请求参数</h4>
+                <form id="forms">
+
+                <table class="fullwidth">
+                    <thead>
+                    <tr>
+                        <th style="width: 100px; max-width: 100px" data-sw-translate="">参数</th>
+                        <th style="width: 310px; max-width: 310px" data-sw-translate="">值</th>
+                        <th style="width: 200px; max-width: 200px" data-sw-translate="">说明</th>
+                        <th style="width: 100px; max-width: 100px" data-sw-translate="">参数位置</th>
+                        <th style="width: 220px; max-width: 230px" data-sw-translate="">数据类型</th>
+                    </tr>
+                    </thead>
+
+                 <table class="parameters" id="parameter{$con.c_id}">
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+                </table>
+                    </form>
+
+
+                <div style="margin:0;padding:0;display:inline;"></div>
+                <h4 data-sw-translate="">请求响应</h4>
+                <table class="fullwidth">
+                    <thead>
+                    <tr>
+                        <th style="width: 100px; max-width: 100px" data-sw-translate="">状态码</th>
+                        <th style="width: px; max-width: 310px" data-sw-translate="">说明</th>
+                        <th style="width: px; max-width: 200px" data-sw-translate="">响应信息</th>
+                    </tr>
+                    </thead>
+
+                    <table class="responses" id="response{$con.c_id}">
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+
+                </table>
+
+                <div class="sandbox_header">
+                    <input class="submit" type="button" value="测试" data-sw-translate="">
+                    <a href="#" class="response_hider" style="display: none;" data-sw-translate="">隐藏响应</a>
+                </div>
+
+                <div class="response" style="display: none">
+                    <h4 style="margin-top: 10px">Curl</h4>
+                    <div style="overflow-y:auto; overflow-x:auto; width:940px;" class="markdown">
+                        <pre id="markdownc"></pre>
+                    </div>
+                    <h4>请求URL</h4>
+                    <div style="overflow-y:auto; overflow-x:auto; width:940px;">
+                        <pre>{$con.c_url}</pre>
+                    </div>
+                    <h4>Request Headers</h4>
+                    <div style="width: 940px">
+                        <pre>{volist name="method" id="vk"}{if condition="$con.c_produce eq $key"}{$vk}{/if}{/volist}</pre>
+                    </div>
+                    <h4>响应内容</h4>
+                    <div style="overflow-y:auto; overflow-x:auto; width:940px;" class="markdown ">
+                        <pre id="markdown"></pre>
+                    </div>
+                    <h4>响应码</h4>
+                    <div style="width: 940px" class="markdown">
+                        <pre id="markdownh"></pre>
+                    </div>
+                    <h4>响应头</h4>
+                    <pre id="markdowns" style="width: 940px">
+                    </pre>
+                </div>
+                    </div>
+                </li>
+            </ul>
+            <!--默认分组展开接口列表-->
+            {/volist}
+        </div>
+        {/if}
+    {/volist}
+    <!--循环遍历文件夹-->
+
+
+</div>
+<!--文件夹-->
+
+
+
+
+<!--折叠（Collapse）-->
+<div class="panel-group container collapse " id="accordion" style="max-width: 1000px">
+    <div class="panel panel-default ">
+        <div class="panel-heading ">
+            <h4 class="panel-title  toggleOperation ">
+                <a data-toggle="collapse" data-parent="#accordion" href="">url</a>
+                <a data-toggle="collapse" data-parent="#accordion" href=''>说明</a>
+            </h4>
+        </div>
+
+        <div id="" class="content bg-success">
+            <div class="panel-body ">
+                <h4>最后更新时间：</h4>
+                <h5>最后时间1999<!--vo.c_time|date ='Y-m-d H:i:s',###--></h5>
+                <h4>接口说明:</h4>
+                <div class="markdown"></div>
+                <h5>接口说明一大堆</h5>
+            </div>
+
+                <!--请求参数-->
+                <div style="margin:0;padding:0;display:inline"></div>
+                <h4 data-sw-translate="">请求参数</h4>
+                <table class="fullwidth">
+                    <thead><tr>
+                        <th style="width: 100px; max-width: 100px" data-sw-translate="">参数</th>
+                        <th style="width: 310px; max-width: 310px" data-sw-translate="">值</th>
+                        <th style="width: 200px; max-width: 200px" data-sw-translate="">说明</th>
+                        <th style="width: 100px; max-width: 100px" data-sw-translate="">参数位置</th>
+                        <th style="width: 220px; max-width: 230px" data-sw-translate="">数据类型</th>
+                    </tr></thead>
+                </table>
+
+                <!--循环遍历的请求参数-->
+                    <table class="operation-params" id="fullwidth"></table>
+                <!--循环遍历的请求参数-->
+
+
+
+
+                <div style="margin:0;padding:0;display:inline"></div>
+                <h4 data-sw-translate="">请求响应</h4>
+                <table class="fullwidth">
+                    <thead><tr>
+                         <th style="width: 100px; max-width: 100px" data-sw-translate="">参数</th>
+                        <th style="width: 310px; max-width: 310px" data-sw-translate="">值</th>
+                        <th style="width: 200px; max-width: 200px" data-sw-translate="">说明</th>
+                        <th style="width: 100px; max-width: 100px" data-sw-translate="">参数位置</th>
+                        <th style="width: 220px; max-width: 230px" data-sw-translate="">数据类型</th>
+                    </tr></thead>
+                </table>
+
+                <!--循环遍历的请求响应-->
+                    <table class="operation-params" id="fullwidth"></table>
+                <!--循环遍历的请求响应-->
+
+
+                <!--测试按钮-->
+                <div class="sandbox_header">
+                    <input class="submit" type="button" value="测试" data-sw-translate="">
+                    <a href="#" class="response_hider" style="display: none;" data-sw-translate="">隐藏响应</a>
+                </div>
+
+                <!--测试下面隐藏的按钮-->
+                <div class="response" style="display: none">
+                    <h4>Curl</h4>
+                    <div style="overflow-y:auto; overflow-x:auto; width:940px;" class="markdown"><pre id="markdownc"></pre></div>
+                    <h4>请求URL</h4>
+                    <div style="overflow-y:auto; overflow-x:auto; width:940px;"><pre></pre></div>
+                    <h4>Request Headers</h4>
+                    <div style="width: 940px"><pre>1</pre></div>
+                    <h4>响应内容</h4>
+                    <div style="overflow-y:auto; overflow-x:auto; width:940px;" class="markdown "><pre id="markdown"></pre></div>
+                    <h4>响应码</h4>
+                    <div style="width: 940px" class="markdown"><pre id="markdownh"></pre></div>
+                    <h4>响应头</h4>
+                    <pre id="markdowns" style="width: 940px"></pre>
+                </div>
+
+        </div>
+    </div>
+
+
+
+</div>
+<body>
+<!--测试按钮-->
+
+
+<script>
+
+        //加工form
+    function numbers(objs){
+        var obj = {};
+        $.each(objs,function(i,v){ obj[v.name] = v.value; });
+        return obj;
+    }
+
+    // <!--接口隐藏-->
+    function jiekou(val) {
+        $.ajax({
+            url: "parameter",
+            type: "post",
+            data: {c_id:val},
+            success: function (res) {
+                $('.parameters').empty();
+                var arr1 = JSON.parse(res);
+                if (arr1){ for (var i=0;i<=arr1.length;i++)
+                    {
+                       $("#parameter"+val).append(
+                        
+                            +"<table class='fullwidth'>"
+                            + "<thead>"
+                            + "<tr>"
+                            + "<td style='width: 100px; max-width: 100px'>" + arr1[i].code + "</td>"
+                            +"<input type='hidden'  name='code' value="+ arr1[i].code +">"
+                            + "<td style='width: 310px; max-width: 310px'><input class='parameter' name='id' id='cid' type='text' value=''></td>"
+                            + "<td style='width: 200px; max-width: 200px'>" + arr1[i].type + "</td>"
+                            + "<td style='width: 100px; max-width: 100px'>" + arr1[i].default + "</td>"
+                            + "<td style='width: 220px; max-width: 230px'>" + arr1[i].titles + "</td>"
+                            + "</tr>"
+                            + "</thead>"
+                            + "</table>"  
+                        );
+
+                };}
+
+
+   
+
+            }
+        });
+            $.ajax({
+            url: "response",
+            type: "post",
+            data: {c_id:val},
+            success: function (res)
+            {
+                $('.responses').empty();
+                  var arr2 = JSON.parse(res);
+                console.log(arr2);
+                if (arr2) {
+                    for (var i = 0; i <= arr2.length - 1; i++){
+                        $('#response' + val).append(
+                            "<table class='fullwidth'>"
+                            + "<thead>"
+                            + "<tr>"
+                            + "<td style='width: 100px; max-width: 100px'>" + arr2[i].name + "</td>"
+                            + "<td style='width: 310px; max-width: 310px'>" + arr2[i].miaoshu + "</td>"
+                            + "<td style='width: 200px; max-width: 200px'>" + arr2[i].type + "</td>"
+                            + "</tr>"
+                            + "</thead>"
+                            + "</table>"
+                        );
+                    }
+                };
+            }
+        });
+        $("#JieKouShow"+val).slideToggle("slow");
+    }
+
+
+    // <!--文件夹隐藏-->
+    function fileshow(val){
+        $("#"+val).slideToggle("slow");
+    }
+
+    // <!--返回码隐藏-->
+    $(".CodeShow").click(function () {
+        $("#code").slideToggle("slow");
+    })
+
+    //默认分组隐藏
+    $(".defaultShow").click(function () {
+        $("#default").slideToggle("slow");
+    })
+
+
+   // <!--测试按钮-->
+    $('.submit').click(function (val) {
+        var form = $("#forms").serializeArray();
+        var date = numbers(form);
+        console.log(date);
+
+        // date['id'] = $('#cid').val();
+
+        $('.response').show();
+        $('.response_hider').show();
+        // var id = $('#cid').val();
+        $.ajax({
+            url: "curl",
+            type: "post",
+            data: date,
+            success: function (res) {
+
+                console.log(res);
+                var jsonstr = JSON.stringify(res[0]);
+                var jsonstrs = JSON.stringify(res[3][3]);
+                var jsonstrc = JSON.stringify(res[2]);
+                var header_info = JSON.stringify(res[3][0]);
+                $('#markdown').html(jsonstr);
+                $('#markdowns').html(jsonstrs);
+                $('#markdownc').html(jsonstrc);
+                $('#markdownh').html(header_info);
+            }
+        });
+    });
+    //隐藏
+    $('.response_hider').click(function () {
+        $('.response').hide();
+    });
+
+</script>
+</html>

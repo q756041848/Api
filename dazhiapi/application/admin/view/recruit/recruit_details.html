@@ -1,0 +1,187 @@
+{include file="common/head"/}
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    {include file="common/left"}
+    <div class="main-content">
+        <div class="main-content-inner">
+            {include file="common/header_nav"}
+
+            <div class="page-content">
+                <div class="page-header">
+                    <h1>
+                        您当前操作
+                        <small>
+                            <i class="ace-icon fa fa-angle-double-right"></i>
+                            查看招聘信息
+                        </small>
+                    </h1>
+                </div><!-- /.page-header -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+                        <form class="form-horizontal">
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">公司名称：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <div style="line-height: 36px">
+                                        {$info.c_name}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">招聘标题：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <div style="line-height: 36px">
+                                        {$info.r_title}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">工作岗位：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <div style="line-height: 36px">
+                                        {$info.r_work}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">公司规模：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <div style="line-height: 36px">
+                                        {$info.c_scale}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">工作经验：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <div style="line-height: 36px">
+                                        {$info.r_exper}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">招聘数量：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <div style="line-height: 36px">
+                                        {$info.r_number}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">个人学历：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <div style="line-height: 36px">
+                                        {$info.r_education}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">工作地点：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <div style="line-height: 36px">
+                                        {$info.r_province}省{$info.r_city}市{$info.r_detailaddress}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">工作类型：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <div style="line-height: 36px">
+                                        {$info.r_type}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">工作福利：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <div style="line-height: 36px">
+                                        {$info.r_welfare}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">工作描述：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <div style="line-height: 36px">
+                                        {$info.r_desc}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right"> 工作环境： </label>
+                                <div class="col-sm-10 col-xs-12" style="padding-top:5px;">
+                                    <div style="line-height: 36px">
+                                        {volist name="images" id="vo"}
+                                            <img src="__STATIC__/uploads/{$vo.i_image}" width="200" height="200">
+                                        {/volist}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right"> 是否审核： </label>
+                                <div class="col-sm-10 col-xs-12" style="padding-top:5px;">
+                                    <div style="line-height: 36px">
+                                        {$info.r_check}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">招聘排序：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <div style="line-height: 36px">
+                                        {$info.r_sort}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">创建时间：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <div style="line-height: 36px">
+                                        {$info.r_time}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                        </form>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    {include file="common/foot" /}
+</div>
+
+</body>
+</html>

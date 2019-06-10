@@ -1,0 +1,1807 @@
+---------------------------------------------------------------
+[ 2018-08-25T19:29:19+08:00 ] 0.0.0.0 GET /
+[ info ] localhost/ [运行时间：0.040432s][吞吐率：24.73req/s] [内存消耗：1,483.84kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-25T19:29:19+08:00 ] 0.0.0.0 GET /login/login
+[ info ] localhost/login/login [运行时间：0.024615s][吞吐率：40.63req/s] [内存消耗：1,596.88kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\quanminpin02\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\quanminpin02\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-25T19:29:19+08:00 ] 0.0.0.0 GET /static/assets/css/font-awesome.min.css
+[ info ] localhost/static/assets/css/font-awesome.min.css [运行时间：0.026855s][吞吐率：37.24req/s] [内存消耗：1,536.60kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://localhost/login/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'font-awesome.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-25T19:29:20+08:00 ] 0.0.0.0 GET /static/assets/css/ace-rtl.min.css
+[ info ] localhost/static/assets/css/ace-rtl.min.css [运行时间：0.025680s][吞吐率：38.94req/s] [内存消耗：1,536.55kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://localhost/login/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'ace-rtl.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-25T19:29:20+08:00 ] 0.0.0.0 GET /captcha
+[ info ] localhost/captcha [运行时间：0.031880s][吞吐率：31.37req/s] [内存消耗：1,249.63kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/login/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\quanminpin02\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-25T19:29:20+08:00 ] 0.0.0.0 GET /login/login
+[ info ] localhost/login/login [运行时间：0.023242s][吞吐率：43.03req/s] [内存消耗：1,471.81kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://localhost/login/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\quanminpin02\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\quanminpin02\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-25T19:29:20+08:00 ] 0.0.0.0 GET /login/login
+[ info ] localhost/login/login [运行时间：0.022197s][吞吐率：45.05req/s] [内存消耗：1,471.81kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://localhost/login/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\quanminpin02\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\quanminpin02\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-25T19:29:20+08:00 ] 0.0.0.0 GET /favicon.ico
+[ info ] localhost/favicon.ico [运行时间：0.023834s][吞吐率：41.96req/s] [内存消耗：1,536.59kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'favicon.ico',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/login/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-25T19:29:20+08:00 ] 0.0.0.0 GET /login/login
+[ info ] localhost/login/login [运行时间：0.023639s][吞吐率：42.30req/s] [内存消耗：1,471.86kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/login/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\quanminpin02\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\quanminpin02\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-25T19:29:42+08:00 ] 0.0.0.0 POST /login/action
+[ info ] localhost/login/action [运行时间：11.372388s][吞吐率：0.09req/s] [内存消耗：2,220.82kb] [文件加载：52]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'action',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/login/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'code' => 'e88c',
+)
+[ info ] [ RUN ] app\admin\controller\Login->action[ D:\code\quanminpin02\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:11.212345s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.036607s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` WHERE  `username` = 'admin'  AND `is_open` = 1 LIMIT 1 [ RunTime:0.029538s ]
+[ sql ] [ SQL ] UPDATE `dzjn_admin`  SET `hits`=`hits`+1  WHERE  `admin_id` = 1 [ RunTime:0.028908s ]
+[ sql ] [ SQL ] UPDATE `dzjn_admin`  SET `ip`='0.0.0.0'  WHERE  `admin_id` = 1 [ RunTime:0.026603s ]
+---------------------------------------------------------------
+[ 2018-08-25T19:29:52+08:00 ] 0.0.0.0 GET /static/assets/css/font-awesome.min.css
+[ info ] localhost/static/assets/css/font-awesome.min.css [运行时间：13.320411s][吞吐率：0.08req/s] [内存消耗：2,281.12kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://localhost/login/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'font-awesome.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:10.040789s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.039954s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.029918s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.032998s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.027614s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.024303s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.022850s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.026940s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.031342s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` IS NULL  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.031779s ]
+[ error ] [8]Undefined property: app\admin\controller\Error::$moduleid[D:\code\quanminpin02\application\admin\controller\Error.php:12]
+---------------------------------------------------------------
+[ 2018-08-25T19:29:53+08:00 ] 0.0.0.0 GET /static/assets/css/ace-rtl.min.css
+[ info ] localhost/static/assets/css/ace-rtl.min.css [运行时间：13.614212s][吞吐率：0.07req/s] [内存消耗：2,281.06kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://localhost/login/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'ace-rtl.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.043586s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.030283s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.024237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.029978s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.023218s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.026126s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.027959s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.026673s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.023920s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` IS NULL  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.024680s ]
+[ error ] [8]Undefined property: app\admin\controller\Error::$moduleid[D:\code\quanminpin02\application\admin\controller\Error.php:12]
+---------------------------------------------------------------
+[ 2018-08-25T19:30:03+08:00 ] 0.0.0.0 GET /index/index
+[ info ] localhost/index/index [运行时间：20.903747s][吞吐率：0.05req/s] [内存消耗：2,361.23kb] [文件加载：53]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/login/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\code\quanminpin02\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\code\quanminpin02\public/../application/admin\view\index\index.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:10.047242s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.025595s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.026064s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.035483s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.025353s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.024238s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.023730s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.023903s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.024832s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` IS NULL  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.023717s ]
+---------------------------------------------------------------
+[ 2018-08-25T19:30:03+08:00 ] 0.0.0.0 GET /captcha?0.01741177141278527
+[ info ] localhost/captcha?0.01741177141278527 [运行时间：17.950003s][吞吐率：0.06req/s] [内存消耗：1,250.59kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/login/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  '0_01741177141278527' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\quanminpin02\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-25T19:30:03+08:00 ] 0.0.0.0 GET /captcha?0.9020694258351374
+[ info ] localhost/captcha?0.9020694258351374 [运行时间：16.224055s][吞吐率：0.06req/s] [内存消耗：1,250.73kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/login/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  '0_9020694258351374' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\quanminpin02\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-25T19:30:03+08:00 ] 0.0.0.0 GET /captcha?0.8354687601946087
+[ info ] localhost/captcha?0.8354687601946087 [运行时间：14.906679s][吞吐率：0.07req/s] [内存消耗：1,250.73kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/login/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  '0_8354687601946087' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\quanminpin02\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-25T19:30:03+08:00 ] 0.0.0.0 GET /captcha?0.01741177141278527
+[ info ] localhost/captcha?0.01741177141278527 [运行时间：0.019464s][吞吐率：51.38req/s] [内存消耗：1,250.44kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  '0_01741177141278527' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\quanminpin02\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-25T19:30:03+08:00 ] 0.0.0.0 GET /captcha?0.9020694258351374
+[ info ] localhost/captcha?0.9020694258351374 [运行时间：0.020934s][吞吐率：47.77req/s] [内存消耗：1,250.44kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  '0_9020694258351374' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\quanminpin02\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-25T19:30:03+08:00 ] 0.0.0.0 GET /captcha?0.8354687601946087
+[ info ] localhost/captcha?0.8354687601946087 [运行时间：0.021226s][吞吐率：47.11req/s] [内存消耗：1,250.44kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  '0_8354687601946087' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\quanminpin02\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-25T19:30:18+08:00 ] 0.0.0.0 GET /scmember/company?se=280
+[ info ] localhost/scmember/company?se=280 [运行时间：0.535908s][吞吐率：1.87req/s] [内存消耗：2,489.42kb] [文件加载：53]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'scmember',
+    2 => 'company',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  'se' => '280',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Scmember->company[ D:\code\quanminpin02\application\admin\controller\Scmember.php ]
+[ info ] [ VIEW ] D:\code\quanminpin02\public/../application/admin\view\scmember\company.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'type',
+  6 => 'scale',
+  7 => 'testval',
+  8 => 'c_type',
+  9 => 'c_scale',
+  10 => 'company',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.040525s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.030941s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.027420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.037492s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.034272s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.029724s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.025701s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.026492s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.025844s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 280  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.023764s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_scmember_company` [ RunTime:0.034286s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_scmember_company` ORDER BY `c_id` DESC [ RunTime:0.025169s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_scmember_company_type` [ RunTime:0.037506s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_scmember_company_type` [ RunTime:0.031578s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_scmember_company_scale` [ RunTime:0.037031s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_scmember_company_scale` [ RunTime:0.028288s ]
+---------------------------------------------------------------
+[ 2018-08-25T19:30:23+08:00 ] 0.0.0.0 GET /scmember/companyparticulars?c_id=20
+[ info ] localhost/scmember/companyparticulars?c_id=20 [运行时间：0.440515s][吞吐率：2.27req/s] [内存消耗：2,404.28kb] [文件加载：53]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'scmember',
+    2 => 'companyparticulars',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/scmember/company?se=280',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  'c_id' => '20',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Scmember->companyParticulars[ D:\code\quanminpin02\application\admin\controller\Scmember.php ]
+[ info ] [ VIEW ] D:\code\quanminpin02\public/../application/admin\view\scmember\company_particulars.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'particulars',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057843s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.033517s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.026389s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.029696s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.035995s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.034275s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.037666s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.026213s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.031795s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 280  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.035785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_scmember_company` [ RunTime:0.028858s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_scmember_company` WHERE  `c_id` = 20 LIMIT 1 [ RunTime:0.025866s ]
+---------------------------------------------------------------
+[ 2018-08-25T19:30:28+08:00 ] 0.0.0.0 GET /scmember/company?se=280
+[ info ] localhost/scmember/company?se=280 [运行时间：0.539442s][吞吐率：1.85req/s] [内存消耗：2,310.57kb] [文件加载：51]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'scmember',
+    2 => 'company',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  'se' => '280',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Scmember->company[ D:\code\quanminpin02\application\admin\controller\Scmember.php ]
+[ info ] [ VIEW ] D:\code\quanminpin02\public/../application/admin\view\scmember\company.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'type',
+  6 => 'scale',
+  7 => 'testval',
+  8 => 'c_type',
+  9 => 'c_scale',
+  10 => 'company',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.045934s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.036967s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.029237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.034795s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.024681s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.025995s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.023660s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.027082s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.024074s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 280  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.032738s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_scmember_company` [ RunTime:0.031895s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_scmember_company` ORDER BY `c_id` DESC [ RunTime:0.026453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_scmember_company_type` [ RunTime:0.030815s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_scmember_company_type` [ RunTime:0.030785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_scmember_company_scale` [ RunTime:0.043399s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_scmember_company_scale` [ RunTime:0.036145s ]
+---------------------------------------------------------------
+[ 2018-08-25T20:07:39+08:00 ] 0.0.0.0 GET /work/index?se=299
+[ info ] localhost/work/index?se=299 [运行时间：11.464013s][吞吐率：0.09req/s] [内存消耗：2,468.65kb] [文件加载：56]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/scmember/company?se=280',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  'se' => '299',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\code\quanminpin02\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\code\quanminpin02\public/../application/admin\view\work\work.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'testval',
+  6 => 'menu',
+  7 => 'page',
+  8 => 'work_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:11.035234s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.027773s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.058501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.030806s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.022383s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.028288s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.027754s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.026590s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.022942s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 299  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.030047s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_work` [ RunTime:0.028749s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dzjn_data_work` LIMIT 1 [ RunTime:0.023254s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_data_work` ORDER BY `w_sort` DESC LIMIT 0,15 [ RunTime:0.021973s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_data_work` WHERE  (  w_pid=0 ) [ RunTime:0.021823s ]
+---------------------------------------------------------------
+[ 2018-08-25T20:11:25+08:00 ] 0.0.0.0 GET /recruit/index?se=301
+[ info ] localhost/recruit/index?se=301 [运行时间：10.678359s][吞吐率：0.09req/s] [内存消耗：2,586.91kb] [文件加载：56]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'recruit',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/work/index?se=299',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  'se' => '301',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Recruit->index[ D:\code\quanminpin02\application\admin\controller\Recruit.php ]
+[ info ] [ VIEW ] D:\code\quanminpin02\public/../application/admin\view\recruit\recruit.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'tl',
+  6 => 'wok',
+  7 => 'ep',
+  8 => 'wp',
+  9 => 'typ',
+  10 => 'work',
+  11 => 'exper',
+  12 => 'type',
+  13 => 'page',
+  14 => 'admin_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:10.043155s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.037078s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.025468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.032802s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.027490s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.031809s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.036561s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.031647s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.029608s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 301  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.025559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_work` [ RunTime:0.034518s ]
+[ sql ] [ SQL ] SELECT `w_id`,`w_name` FROM `dzjn_data_work` [ RunTime:0.034285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_exper` [ RunTime:0.041708s ]
+[ sql ] [ SQL ] SELECT `e_id`,`e_name` FROM `dzjn_data_exper` [ RunTime:0.029881s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_worktype` [ RunTime:0.031058s ]
+[ sql ] [ SQL ] SELECT `t_id`,`t_name` FROM `dzjn_data_worktype` [ RunTime:0.030896s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_recruit` [ RunTime:0.033056s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dzjn_recruit` `r` INNER JOIN `dzjn_data_work` `work` ON `r`.`r_work`=`work`.`w_id` INNER JOIN `dzjn_data_exper` `exper` ON `r`.`r_exper`=`exper`.`e_id` INNER JOIN `dzjn_data_education` `edu` ON `r`.`r_education`=`edu`.`e_id` INNER JOIN `dzjn_data_scale` `scale` ON `r`.`r_scale`=`scale`.`s_id` INNER JOIN `dzjn_data_worktype` `type` ON `r`.`r_type`=`type`.`t_id` INNER JOIN `dzjn_data_check` `ck` ON `r`.`r_check`=`ck`.`ck_id` WHERE  `r_work` LIKE '%%'  AND `r_exper` LIKE '%%'  AND `r_type` LIKE '%%' LIMIT 1 [ RunTime:0.028126s ]
+[ sql ] [ SQL ] SELECT work.w_name as work_name,exper.e_name as exp_name,edu.e_name as edu_name,`ck_name`,`s_name`,`t_name`,`r_id`,`r_title`,`r_scale`,`r_welfare`,`r_number`,`r_workplace`,`r_type`,`r_desc`,`r_check`,`r_sort`,`r_time` FROM `dzjn_recruit` `r` INNER JOIN `dzjn_data_work` `work` ON `r`.`r_work`=`work`.`w_id` INNER JOIN `dzjn_data_exper` `exper` ON `r`.`r_exper`=`exper`.`e_id` INNER JOIN `dzjn_data_education` `edu` ON `r`.`r_education`=`edu`.`e_id` INNER JOIN `dzjn_data_scale` `scale` ON `r`.`r_scale`=`scale`.`s_id` INNER JOIN `dzjn_data_worktype` `type` ON `r`.`r_type`=`type`.`t_id` INNER JOIN `dzjn_data_check` `ck` ON `r`.`r_check`=`ck`.`ck_id` WHERE  `r_work` LIKE '%%'  AND `r_exper` LIKE '%%'  AND `r_type` LIKE '%%' ORDER BY `r_sort` DESC LIMIT 0,15 [ RunTime:0.043180s ]
+---------------------------------------------------------------
+[ 2018-08-25T20:11:46+08:00 ] 0.0.0.0 GET /recruit/recruitdetails?r_id=68
+[ info ] localhost/recruit/recruitdetails?r_id=68 [运行时间：11.410610s][吞吐率：0.09req/s] [内存消耗：2,424.54kb] [文件加载：53]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'recruit',
+    2 => 'recruitdetails',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/recruit/index?se=301',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  'r_id' => '68',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Recruit->recruitDetails[ D:\code\quanminpin02\application\admin\controller\Recruit.php ]
+[ info ] [ VIEW ] D:\code\quanminpin02\public/../application/admin\view\recruit\recruit_details.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'wel',
+  6 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:11.023000s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.029628s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.026695s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.032408s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.025769s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.027857s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.025652s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.027609s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.031336s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 301  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.028888s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_recruit` [ RunTime:0.030376s ]
+[ sql ] [ SQL ] SELECT work.w_name as work_name,exper.e_name as exp_name,edu.e_name as edu_name,`ck_name`,`s_name`,`t_name`,`r_id`,`r_title`,`r_scale`,`r_welfare`,`r_number`,`r_workplace`,`r_type`,`r_desc`,`r_check`,`r_sort`,`r_time` FROM `dzjn_recruit` `r` INNER JOIN `dzjn_data_work` `work` ON `r`.`r_work`=`work`.`w_id` INNER JOIN `dzjn_data_exper` `exper` ON `r`.`r_exper`=`exper`.`e_id` INNER JOIN `dzjn_data_education` `edu` ON `r`.`r_education`=`edu`.`e_id` INNER JOIN `dzjn_data_scale` `scale` ON `r`.`r_scale`=`scale`.`s_id` INNER JOIN `dzjn_data_worktype` `type` ON `r`.`r_type`=`type`.`t_id` INNER JOIN `dzjn_data_check` `ck` ON `r`.`r_check`=`ck`.`ck_id` WHERE  (  r_id=68 ) LIMIT 1 [ RunTime:0.029589s ]
+[ sql ] [ SQL ] SELECT r.r_id,(SELECT GROUP_CONCAT(w.w_name) FROM dzjn_data_welfare w WHERE FIND_IN_SET(w.w_id,r.r_welfare)) AS wel FROM dzjn_recruit r WHERE r_id = '68' [ RunTime:0.028840s ]
+---------------------------------------------------------------
+[ 2018-08-25T20:15:47+08:00 ] 0.0.0.0 GET /recruit/index?se=301
+[ info ] localhost/recruit/index?se=301 [运行时间：11.598000s][吞吐率：0.09req/s] [内存消耗：2,410.77kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'recruit',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/recruit/recruitdetails?r_id=68',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+  'se' => '301',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Recruit->index[ D:\code\quanminpin02\application\admin\controller\Recruit.php ]
+[ info ] [ VIEW ] D:\code\quanminpin02\public/../application/admin\view\recruit\recruit.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'tl',
+  6 => 'wok',
+  7 => 'ep',
+  8 => 'wp',
+  9 => 'typ',
+  10 => 'work',
+  11 => 'exper',
+  12 => 'type',
+  13 => 'page',
+  14 => 'admin_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:11.034272s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.030984s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.026516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.028067s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.026299s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.025803s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.027821s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.026428s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.028463s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 301  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.027432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_work` [ RunTime:0.030339s ]
+[ sql ] [ SQL ] SELECT `w_id`,`w_name` FROM `dzjn_data_work` [ RunTime:0.027608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_exper` [ RunTime:0.029360s ]
+[ sql ] [ SQL ] SELECT `e_id`,`e_name` FROM `dzjn_data_exper` [ RunTime:0.029239s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_worktype` [ RunTime:0.032460s ]
+[ sql ] [ SQL ] SELECT `t_id`,`t_name` FROM `dzjn_data_worktype` [ RunTime:0.024842s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_recruit` [ RunTime:0.028571s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dzjn_recruit` `r` INNER JOIN `dzjn_data_work` `work` ON `r`.`r_work`=`work`.`w_id` INNER JOIN `dzjn_data_exper` `exper` ON `r`.`r_exper`=`exper`.`e_id` INNER JOIN `dzjn_data_education` `edu` ON `r`.`r_education`=`edu`.`e_id` INNER JOIN `dzjn_data_scale` `scale` ON `r`.`r_scale`=`scale`.`s_id` INNER JOIN `dzjn_data_worktype` `type` ON `r`.`r_type`=`type`.`t_id` INNER JOIN `dzjn_data_check` `ck` ON `r`.`r_check`=`ck`.`ck_id` WHERE  `r_work` LIKE '%%'  AND `r_exper` LIKE '%%'  AND `r_type` LIKE '%%' LIMIT 1 [ RunTime:0.026244s ]
+[ sql ] [ SQL ] SELECT work.w_name as work_name,exper.e_name as exp_name,edu.e_name as edu_name,`ck_name`,`s_name`,`t_name`,`r_id`,`r_title`,`r_scale`,`r_welfare`,`r_number`,`r_workplace`,`r_type`,`r_desc`,`r_check`,`r_sort`,`r_time` FROM `dzjn_recruit` `r` INNER JOIN `dzjn_data_work` `work` ON `r`.`r_work`=`work`.`w_id` INNER JOIN `dzjn_data_exper` `exper` ON `r`.`r_exper`=`exper`.`e_id` INNER JOIN `dzjn_data_education` `edu` ON `r`.`r_education`=`edu`.`e_id` INNER JOIN `dzjn_data_scale` `scale` ON `r`.`r_scale`=`scale`.`s_id` INNER JOIN `dzjn_data_worktype` `type` ON `r`.`r_type`=`type`.`t_id` INNER JOIN `dzjn_data_check` `ck` ON `r`.`r_check`=`ck`.`ck_id` WHERE  `r_work` LIKE '%%'  AND `r_exper` LIKE '%%'  AND `r_type` LIKE '%%' ORDER BY `r_sort` DESC LIMIT 0,15 [ RunTime:0.033195s ]
+---------------------------------------------------------------
+[ 2018-08-25T20:16:08+08:00 ] 0.0.0.0 GET /recruit/recruitadd
+[ info ] localhost/recruit/recruitadd [运行时间：11.684412s][吞吐率：0.09req/s] [内存消耗：2,487.14kb] [文件加载：53]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'recruit',
+    2 => 'recruitadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/recruit/index?se=301',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Recruit->recruitAdd[ D:\code\quanminpin02\application\admin\controller\Recruit.php ]
+[ info ] [ VIEW ] D:\code\quanminpin02\public/../application/admin\view\recruit\recruit_add.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'wk',
+  6 => 'exper',
+  7 => 'education',
+  8 => 'welfare',
+  9 => 'scale',
+  10 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:11.039726s ] mysql:host=47.104.173.59;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.038364s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.029119s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.029033s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.027392s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.025923s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.030319s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.025913s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.025876s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 301  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.025771s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_work` [ RunTime:0.032242s ]
+[ sql ] [ SQL ] SELECT `w_id`,`w_name` FROM `dzjn_data_work` [ RunTime:0.024658s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_exper` [ RunTime:0.035548s ]
+[ sql ] [ SQL ] SELECT `e_id`,`e_name` FROM `dzjn_data_exper` [ RunTime:0.027471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_education` [ RunTime:0.031554s ]
+[ sql ] [ SQL ] SELECT `e_id`,`e_name` FROM `dzjn_data_education` [ RunTime:0.027282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_welfare` [ RunTime:0.027946s ]
+[ sql ] [ SQL ] SELECT `w_id`,`w_name` FROM `dzjn_data_welfare` [ RunTime:0.022777s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_scale` [ RunTime:0.031361s ]
+[ sql ] [ SQL ] SELECT `s_id`,`s_name` FROM `dzjn_data_scale` [ RunTime:0.023960s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_worktype` [ RunTime:0.027782s ]
+[ sql ] [ SQL ] SELECT `t_id`,`t_name` FROM `dzjn_data_worktype` [ RunTime:0.025022s ]
+---------------------------------------------------------------
+[ 2018-08-25T20:24:00+08:00 ] 0.0.0.0 GET /recruit/recruitadd
+[ info ] localhost/recruit/recruitadd [运行时间：0.074349s][吞吐率：13.45req/s] [内存消耗：2,487.30kb] [文件加载：53]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'recruit',
+    2 => 'recruitadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/recruit/index?se=301',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Recruit->recruitAdd[ D:\code\quanminpin02\application\admin\controller\Recruit.php ]
+[ info ] [ VIEW ] D:\code\quanminpin02\public/../application/admin\view\recruit\recruit_add.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'wk',
+  6 => 'exper',
+  7 => 'education',
+  8 => 'welfare',
+  9 => 'scale',
+  10 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003494s ] mysql:host=localhost;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.003404s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.001064s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.002879s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 301  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_work` [ RunTime:0.002942s ]
+[ sql ] [ SQL ] SELECT `w_id`,`w_name` FROM `dzjn_data_work` [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_exper` [ RunTime:0.003062s ]
+[ sql ] [ SQL ] SELECT `e_id`,`e_name` FROM `dzjn_data_exper` [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_education` [ RunTime:0.003228s ]
+[ sql ] [ SQL ] SELECT `e_id`,`e_name` FROM `dzjn_data_education` [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_welfare` [ RunTime:0.003074s ]
+[ sql ] [ SQL ] SELECT `w_id`,`w_name` FROM `dzjn_data_welfare` [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_scale` [ RunTime:0.003751s ]
+[ sql ] [ SQL ] SELECT `s_id`,`s_name` FROM `dzjn_data_scale` [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_worktype` [ RunTime:0.003244s ]
+[ sql ] [ SQL ] SELECT `t_id`,`t_name` FROM `dzjn_data_worktype` [ RunTime:0.000304s ]
+---------------------------------------------------------------
+[ 2018-08-25T20:46:28+08:00 ] 0.0.0.0 GET /api.php/main/getRecruit
+[ info ] localhost/api.php/main/getRecruit [运行时间：0.043685s][吞吐率：22.89req/s] [内存消耗：2,157.43kb] [文件加载：48]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'main',
+    2 => 'getRecruit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\api\controller\Main->getRecruit[ D:\code\quanminpin02\application\api\controller\Main.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003084s ] mysql:host=localhost;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_recruit` [ RunTime:0.003893s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_recruit` ORDER BY `r_sort` DESC LIMIT 0,15 [ RunTime:0.001368s ]
+---------------------------------------------------------------
+[ 2018-08-25T20:46:28+08:00 ] 0.0.0.0 GET /favicon.ico
+[ info ] localhost/favicon.ico [运行时间：0.056497s][吞吐率：17.70req/s] [内存消耗：2,281.48kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'favicon.ico',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/api.php/main/getRecruit',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010406s ] mysql:host=localhost;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.003351s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.003483s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 301  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.000429s ]
+[ error ] [8]Undefined property: app\admin\controller\Error::$moduleid[D:\code\quanminpin02\application\admin\controller\Error.php:12]
+---------------------------------------------------------------
+[ 2018-08-25T22:50:20+08:00 ] 0.0.0.0 GET /
+[ info ] localhost/ [运行时间：0.047583s][吞吐率：21.02req/s] [内存消耗：2,223.87kb] [文件加载：51]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'purpose' => 'prefetch',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\code\quanminpin02\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\code\quanminpin02\public/../application/admin\view\index\index.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001239s ] mysql:host=localhost;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.003356s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.002995s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 301  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.000342s ]
+---------------------------------------------------------------
+[ 2018-08-25T22:50:34+08:00 ] 0.0.0.0 GET /api.php/main/getwork
+[ info ] localhost/api.php/main/getwork [运行时间：0.028825s][吞吐率：34.69req/s] [内存消耗：1,492.80kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'main',
+    2 => 'getwork',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-25T22:50:34+08:00 ] 0.0.0.0 GET /favicon.ico
+[ info ] localhost/favicon.ico [运行时间：0.042872s][吞吐率：23.33req/s] [内存消耗：2,281.45kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'favicon.ico',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/api.php/main/getwork',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001018s ] mysql:host=localhost;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.003222s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.003132s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 301  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.000323s ]
+[ error ] [8]Undefined property: app\admin\controller\Error::$moduleid[D:\code\quanminpin02\application\admin\controller\Error.php:12]
+---------------------------------------------------------------
+[ 2018-08-25T22:50:47+08:00 ] 0.0.0.0 GET /api.php/data/getwork
+[ info ] localhost/api.php/data/getwork [运行时间：0.051085s][吞吐率：19.58req/s] [内存消耗：2,180.79kb] [文件加载：51]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'data',
+    2 => 'getwork',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\api\controller\Data->getWork[ D:\code\quanminpin02\application\api\controller\Data.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011137s ] mysql:host=localhost;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_work` [ RunTime:0.003412s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_data_work` ORDER BY `w_sort` DESC [ RunTime:0.000330s ]
+[ error ] [2]Use of undefined constant w_id - assumed 'w_id' (this will throw an Error in a future version of PHP)[D:\code\quanminpin02\application\api\controller\Data.php:31]
+---------------------------------------------------------------
+[ 2018-08-25T22:50:47+08:00 ] 0.0.0.0 GET /favicon.ico
+[ info ] localhost/favicon.ico [运行时间：0.051914s][吞吐率：19.26req/s] [内存消耗：2,281.45kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'favicon.ico',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/api.php/data/getwork',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010348s ] mysql:host=localhost;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.003242s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.003091s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 301  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.000340s ]
+[ error ] [8]Undefined property: app\admin\controller\Error::$moduleid[D:\code\quanminpin02\application\admin\controller\Error.php:12]
+---------------------------------------------------------------
+[ 2018-08-25T22:52:58+08:00 ] 0.0.0.0 GET /api.php/data/getwork
+[ info ] localhost/api.php/data/getwork [运行时间：0.048674s][吞吐率：20.54req/s] [内存消耗：2,180.61kb] [文件加载：51]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'data',
+    2 => 'getwork',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\api\controller\Data->getWork[ D:\code\quanminpin02\application\api\controller\Data.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010322s ] mysql:host=localhost;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_work` [ RunTime:0.004720s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_data_work` ORDER BY `w_sort` DESC [ RunTime:0.000548s ]
+[ error ] [2]array_shift() expects exactly 1 parameter, 2 given[D:\code\quanminpin02\application\api\controller\Data.php:36]
+---------------------------------------------------------------
+[ 2018-08-25T22:52:58+08:00 ] 0.0.0.0 GET /favicon.ico
+[ info ] localhost/favicon.ico [运行时间：0.054045s][吞吐率：18.50req/s] [内存消耗：2,282.18kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'favicon.ico',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/api.php/data/getwork',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010448s ] mysql:host=localhost;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.003411s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.003076s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 301  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.000284s ]
+[ error ] [8]Undefined property: app\admin\controller\Error::$moduleid[D:\code\quanminpin02\application\admin\controller\Error.php:12]
+---------------------------------------------------------------
+[ 2018-08-25T22:53:11+08:00 ] 0.0.0.0 GET /api.php/data/getwork
+[ info ] localhost/api.php/data/getwork [运行时间：0.042876s][吞吐率：23.32req/s] [内存消耗：2,145.37kb] [文件加载：48]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'api'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'data',
+    2 => 'getwork',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\api\controller\Data->getWork[ D:\code\quanminpin02\application\api\controller\Data.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010342s ] mysql:host=localhost;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_data_work` [ RunTime:0.003195s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_data_work` ORDER BY `w_sort` DESC [ RunTime:0.000446s ]
+---------------------------------------------------------------
+[ 2018-08-25T22:53:11+08:00 ] 0.0.0.0 GET /favicon.ico
+[ info ] localhost/favicon.ico [运行时间：0.053425s][吞吐率：18.72req/s] [内存消耗：2,282.18kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\quanminpin02\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'favicon.ico',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3472.3 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/api.php/data/getwork',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9011744768; PHPSESSID=163vmg3s8icjl3oocfsearrhtk',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010822s ] mysql:host=localhost;port=3306;dbname=quanminpin02;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_admin` [ RunTime:0.003267s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_admin` `a` LEFT JOIN `dzjn_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dzjn_auth_rule` [ RunTime:0.003128s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `dzjn_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 293 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 276 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 300 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `dzjn_auth_rule` WHERE  `pid` = 301  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.000391s ]
+[ error ] [8]Undefined property: app\admin\controller\Error::$moduleid[D:\code\quanminpin02\application\admin\controller\Error.php:12]

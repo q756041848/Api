@@ -1,0 +1,581 @@
+{include file="common/api_head"/}
+
+<body class="sticky-header sidebar-collapsed">
+	<div id="wrapper">
+	<div class="small-header transition animated">
+		<div class="hpanel">
+			<div class="panel-body" style="vertical-align: middle;">
+				<div class="pull-left"><a href="{:url('index/index')}" class="btn btn-sm btn-primary"><i>项目管理</i></a></div>
+				<div class="pull-right">
+					<!--这里传参ID-->
+					<a href="{:url('preview/index')}?id={$id}" target="_blank" class="btn btn-sm btn-success">
+						<i class="fa fa-eye"></i> 预览
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+			<!-- TOOLBAR SECTION -->
+			<div id="mainContent" class="content animate-panel">
+				<div class="row">
+				    <div class="col-lg-3">
+				        <div class="hpanel">
+				            <div class="panel-heading hbuilt">
+				                <div class="panel-tools">
+				                	<a href="javascript:;" id="apiSettingBtn">
+					                    <span class="fa fa-cog fa-2x"></span>
+					               	</a>
+
+				                    <a href="javascript:;" id="apiSettingBtn2">
+					                    <span class="fa fa-plus-circle fa-2x"></span>
+					               	</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="javascript:void(0);" id="addErrorCodeBtn">
+												<i class="fa fa-exclamation-circle cust-ico"></i>
+												<span>新增错误码</span>
+											</a>
+										</li>
+										<li class="divider"></li>
+
+
+
+										<li>
+											<a href="javascript:void(0);" id="addModuleBtn">
+												<i class="fa fa-folder cust-ico"></i>
+												<span>新增模块</span>
+											</a>
+										</li>
+										<li class="divider"></li>
+
+
+
+										<li onclick="addInterBtn({$id})">
+											<a href="javascript:void(0);" id="addInterBtn">
+												<i class="fa fa-list-alt cust-ico"></i>
+												<span>新增接口</span>
+											</a>
+										</li>
+									</ul>
+
+				                </div>
+
+				                <span>接口管理</span>
+				                <a href="javascript:void(0);" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="模块和接口可通过拖拽排序。" class="text-muted">
+                                	<i class="fa fa-question-circle"></i>
+                                </a>
+				            </div>
+				            <div class="panel-body">
+			            		<div id="treeSearch" class="input-group">
+	                            	<input id="condition" type="text" class="form-control" placeholder="接口名称">
+									<!--/  请求url  /  标签-->
+	                            	<span class="input-group-btn">
+	                                	<button id="searchBtn" type="button" class="btn btn-white">
+	                                		<i class="fa fa-search"></i>
+	                                	</button>
+	                              	</span>
+	                            </div>
+
+								<!--左侧栏内容-->
+								<div class="row">
+									<ul id="interTree" class="ztree" style="-moz-user-select: none;">
+										<!--返回码-->
+										<li id="codelist">
+											<span id="interTree_1_switch" class="glyphicon glyphicon-chevron-right"></span>
+											<a href="javascript:void(0)" id="Cshow_onclick" title="返回码">
+												<span class="glyphicon glyphicon-info-sign"></span>
+												<span >返回码</span>
+											</a>
+											<!--循环遍历返回码列表-->
+											<ul id="Cshow" style="display: none;">
+												{include file="apiadd/api_cuowuma"/}
+											</ul>
+											<!--循环遍历返回码列表-->
+										</li>
+
+										<!--接口列表-->
+										<li id="interTree_2" class="level0" tabindex="0" hidefocus="true" treenode="">
+											<span id="interTree_2_switch" title="" class="glyphicon glyphicon-chevron-right" treenode_switch=""></span>
+											<a onclick="pshow()" title="接口列表">
+												<span class=" glyphicon glyphicon-th-list "></span>
+												<span id="interTree_2_span" class="node_name">接口列表</span>
+											</a>
+											<div id="pshows" style="display:block;"><!--统一控制显示-->
+												<!--所有-->
+												<ul id="interTree_2_ul" class="level0 " style="display:block;"><li id="" class="level1" tabindex="0" hidefocus="true" treenode="">
+													<span id="" title="" class="button level1 switch noline_docu" treenode_switch=""></span>
+													<a onclick="suoyou()"  title="所有">
+														<span id="" title="" treenode_ico="" class="glyphicon glyphicon-object-align-vertical" style=""></span>
+														<span id="" class="node_name">所有<span id="nums"></span></span>
+													</a>
+													<!--所有下面的列表-->
+													<ul id="interTree_3_ul" class="level1 " style="display: block;">
+
+														<!--循环遍历-->
+														<div id="suoyou">
+															{include file="apiadd/api_suoyou"/}
+														</div>
+														<!--循环遍历-->
+
+													</ul>
+												</ul>
+												<!--所有-->
+												<div id="apimokuai">
+													{include file="apiadd/api_mokuai"/}
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!--内容-->
+
+
+				            </div>
+				        </div>
+				    </div>
+
+					<!--右内容-->
+					<!--文档内容-->
+					<div class="col-lg-9" style="display: block" id="wendang">
+						<div class="hpanel nodeInfo" id="docInfoPanel">
+							<ul class="nav nav-tabs">
+								<li class="active" id="apiDocInfoTab">
+									<a href="#apiDocInfo" data-toggle="tab" onclick="tabs('apiDocInfo')">文档设置</a>
+								</li>
+
+								<li id="commonParamInfoTab">
+									<a href="#commonParamInfo" data-toggle="tab" onclick="tabs('commonParamInfo')">公共请求参数</a>
+								</li>
+							</ul>
+					<!--11-->
+					<div class="tab-content">
+
+						<!--文档设置-->
+						<div class="tab-pane active" id="apiDocInfo">
+							<div class="panel-body">
+								<form id="docInfoFrom" class="form-horizontal">
+									{volist name="$date" id="v" key="k"}
+									<div class="form-group">
+										<label class="control-label col-lg-2">文档标题</label>
+										<div class="col-lg-8">
+											<input type="text" name="p_wtitle" class="form-control" value="{$v.p_wtitle}">
+											<input type="hidden" name="p_id" class="form-control" value="{$id}">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-lg-2">文档版本</label>
+										<div class="col-lg-3">
+											<input type="text" name="p_banben" class="form-control" value="{$v.p_banben}">
+										</div>
+
+										<label class="control-label col-lg-2">是否发布</label>
+										<div class="col-lg-3">
+											<select name="p_show" class="form-control">
+												<option {if condition='$v.p_show eq 0'}selected{/if} value="0">是</option>
+												<option  {if condition='$v.p_show eq 1'}selected{/if} value="1">否</option>
+											</select>
+											<a href="javascript:void(0);" data-toggle="popover" data-container="body" data-trigger="hover" data-placement="top" data-content='只有发布后才能在"API文档管理"列表中展示' class="form-control-tip text-muted">
+												<i class="fa fa-question-circle"></i>
+											</a>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-lg-2">文档说明</label>
+										<div class="col-lg-8">
+											<textarea id="docDesc" name="p_txt" class="form-control" rows="10">{$v.p_txt}</textarea>
+										</div>
+									</div>
+									{/volist}
+									<div class="form-group">
+										<div class="col-lg-2 col-lg-offset-2">
+
+											<button id="saveDocBtn" class="btn btn-success" type="button">
+												<i class="fa fa-floppy-o"></i> 保存
+											</button>
+
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+
+						<!--请求参数-->
+						<div class="tab-pane" id="commonParamInfo">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-lg-12">
+										<form id="commonParamForm" class="form-horizontal">
+											<div class="dd" id="commonParamTable">
+												<div class="dd-title form-group">
+													<ul>
+														<li class="col-lg-1 text-center">操作</li>
+														<li class="col-lg-1 text-center">字段</li>
+														<li class="col-lg-3 text-center">参数位置</li>
+														<li class="col-lg-1 text-center">类型</li>
+														<li class="col-lg-2 text-right">默认值</li>
+														<li class="col-lg-2 text-center">必输项</li>
+														<li class="col-lg-1 text-center">描述</li>
+													</ul>
+												</div>
+											</div>
+
+										</form>
+									</div>
+								</div>
+
+								<div class="row" id="ggcs"></div>
+
+								<div class="row">
+
+									<div class="col-md-6" style="margin-top: 20px;">
+										<button id="addCommonParamBtn" type="button" class="btn btn-primary">
+											<i class="fa fa-plus"></i> 新增
+										</button>
+
+										<button id="saveCommonParamBtn" type="button" class="btn btn-success">
+											<i class="fa fa-floppy-o"></i> 保存
+										</button>
+
+										<button id="clearCommonParamBtn" type="button" class="btn btn-danger">
+											<i class="fa fa-trash"></i> 清空
+										</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<!--公共请求参数-->
+					</div>
+
+					<!--11-->
+				</div>
+					</div>
+					<!--文档内容-->
+
+					<!--接口内容-->
+				    <div class="col-lg-9" style="display: none;" id="jiekou">
+						<div class="hpanel nodeInfo changed-tip" id="interPanel">
+
+							<!--头部title-->
+							<div class="panel-heading">
+									<div class="panel-tools pannel-tools-fixed">
+										<button id="saveInterBtn" type="button" class="btn btn-primary">保存</button>
+										<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+									</div>
+								<span>接口信息</span><span class="text-danger" id="interOperNameId"></span>
+							</div>
+
+							<!--右边展示-->
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-lg-12">
+										<h4 class="font-bold">基本信息</h4>
+										<hr>
+										<form id="basicInfoFrom" method="post" class="form-horizontal">
+											<!--项目ID-->
+											<input type="hidden" name="c_pm" value="{$id}">
+											<!--判断增改-->
+											<input type="hidden" name="con_ids" value="0">
+											<!--接口ID-->
+											<input type="hidden" class="form-control" name="c_id">
+											<div class="form-group">
+												<label class="control-label col-lg-2">接口名称</label>
+												<div class="col-lg-8">
+													<input type="text" class="form-control" name="c_title">
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="control-label col-lg-2">请求url</label>
+												<div class="col-lg-8">
+													<input type="text" class="form-control" name="c_url">
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="control-label col-lg-2">所属模块</label>
+												<div class="col-lg-3">
+													<select id="interModuleId" class="form-control" name="c_pidname">
+														<option value="66">未分组</option>
+														{include file="apiadd/api_mokuais"/}
+													</select>
+												</div>
+
+												<label class="control-label col-lg-2">是否弃用</label>
+												<div class="col-lg-3">
+													<select class="form-control" name="c_use" id="c_use">
+														<option value="0">否</option>
+														<option value="1">是</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="control-label col-lg-2">请求方式</label>
+												<div class="col-lg-3">
+													<select class="form-control" name="c_method" id="c_method">
+														<option value="1">GET</option>
+														<option value="2">POST</option>
+														<option value="3">PUT</option>
+														<option value="4">DELETE</option>
+														<option value="5">PATCH</option>
+														<option value="6">OPTIONS</option>
+													</select>
+												</div>
+
+												<label class="control-label col-lg-2">请求协议</label>
+												<div class="col-lg-3">
+													<select class="form-control" name="c_scheme" id="c_scheme">
+														<option value="1">HTTP</option>
+														<option value="2">HTTPS</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="control-label col-lg-2">请求格式</label>
+												<div class="col-lg-3">
+													<select class="form-control" name="c_consume" id="c_consume">
+														<option value="1">application/json</option>
+														<option value="2">application/x-www-form-urlencoded</option>
+														<option value="3">multipart/form-data</option>
+													</select>
+												</div>
+
+												<label class="control-label col-lg-2">响应格式</label>
+												<div class="col-lg-3">
+													<select class="form-control" name="c_produce" id="c_produce">
+														<option value="1">application/json</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="control-label col-lg-2">接口标识</label>
+												<div class="col-lg-3">
+													 <input type="text" class="form-control" name="c_operationId" placeholder="可选，反向生成代码"/>
+												</div>
+
+												<label class="control-label col-lg-2">忽略公共参数</label>
+												<div class="col-lg-3">
+													 <select class="form-control" name="c_skipCommonParam" id="c_skipCommonParam">
+														<option value="0">否</option>
+														<option value="1">是</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="control-label col-lg-2">开发状态</label>
+												<div class="col-lg-3">
+													<select class="form-control" name="c_devStatus" id="c_devStatus">
+														<option value="1">不显示</option>
+														<option value="2">开发中</option>
+														<option value="3">开发完成</option>
+													</select>
+												</div>
+
+												<label class="control-label col-lg-2">责任人</label>
+												<div class="col-lg-3">
+													<input type="text" class="form-control" name="c_developer"/>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="control-label col-lg-2">标签</label>
+												<div class="col-lg-8">
+													 <input type="text" class="form-control" name="c_label" placeholder="可用于快速搜索"/>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="control-label col-lg-2">描述信息</label>
+												<div class="col-lg-8">
+													<textarea id="interDesc" class="form-control" name="c_description" rows="3"></textarea>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+
+								<!--请求参数-->
+								<div class="form-horizontal m-t-lg">
+									<div class="row">
+										<div class="col-lg-12">
+											<h4 class="font-bold">请求参数</h4>
+											<!--<button class="btn btn-default" id="btns">获取内容</button>-->
+											<hr>
+											<div class="dd" id="reqParamTable">
+												<div class="dd-title form-group">
+													<ul>
+														<li class="col-lg-1">操作</li>
+														<li class="col-lg-2">字段</li>
+														<li class="col-lg-2">参数位置</li>
+														<li class="col-lg-2">类型</li>
+														<li class="col-lg-2">默认值</li>
+														<li class="col-lg-2">描述</li>
+													</ul>
+												</div>
+													<!--请求参数-->
+												<ol class="dd-list" id="qingqiu">
+													<!--请求参数-->
+
+												</ol>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6" style="margin-top: 20px;">
+											<button id="addReqParamBtn" type="button" class="btn btn-success"><i class="fa fa-plus"></i> 新增</button>
+											<button id="clearReqParamBtn" type="button" class="btn btn-danger"><i class="fa fa-trash"></i> 清空</button>
+										</div>
+									</div>
+								</div>
+
+								<!--请求响应-->
+								<div class="form-horizontal m-t-lg">
+									<div class="row">
+										<div class="col-lg-12">
+											<h4 class="font-bold">请求响应</h4>
+											<h5 class="text-danger">注意：一个响应代表后端可能返回的一种结果。具体响应结构可以通过响应记录的编辑来创建。</h5>
+											<hr>
+											<div class="dd" id="reqRespTable">
+												<div class="dd-title form-group">
+													<ul>
+														<li class="col-lg-1">操作</li>
+														<li class="col-lg-2">名称</li>
+														<li class="col-lg-2">描述</li>
+														<li class="col-lg-2">类型</li>
+													</ul>
+												</div>
+												<!--请求参数-->
+												<ol class="dd-list" id="xiangying">
+												</ol>
+													<!--请求参数-->
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6" style="margin-top: 20px;">
+											<a id="addRespBtn" href="#moduleFormModal" data-toggle="modal" data-target="#respSchemaFormModal" data-form="respCustSchemaForm" class="btn btn-success">
+												<i class="fa fa-plus"></i> 新增
+											</a>
+
+											<button id="clearReqRespBtn" type="button" class="btn btn-danger">
+												<i class="fa fa-trash"></i> 清空
+											</button>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+				    </div>
+					<!--接口信息-->
+
+					<!--模块信息-->
+					<div class="col-lg-9" style="display: none"  id="mokuai">
+						<div class="hpanel nodeInfo" id="modulePanel">
+							<div class="panel-heading">
+								<div class="panel-tools">
+
+									<button id="saveModuleBtn" type="button" class="btn btn-primary">保存</button>
+
+									<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+								</div>
+
+								<span>模块信息</span>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-lg-12">
+										<form id="moduleForm" role="form" class="form-horizontal">
+											<div class="form-group">
+												<label class="control-label col-lg-3">名称</label>
+												<div class="col-lg-6">
+													<input type="hidden" name="pm_id" id="pm_id" value="{$id}">
+													<input type="hidden" name="p_ids" value="0">
+													<input type="hidden" name="id" value="0">
+													<input name="name" class="form-control" />
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="control-label col-lg-3">描述</label>
+												<div class="col-lg-6">
+													<textarea name="miaoshu" id="miaoshu" class="form-control" rows="5"></textarea>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--模块信息-->
+
+					<!--错误码-->
+					<div class="col-lg-9" style="display: none"  id="cuowuma">
+						<div class="hpanel nodeInfo" id="errorCodePanel">
+							<div class="panel-heading">
+								<div class="panel-tools">
+
+									<button id="saveErrorCodeBtn" type="button" class="btn btn-primary">保存</button>
+
+									<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+								</div>
+
+								<span>返回码信息</span>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-lg-12">
+										<form id="errorCodeForm" role="form" class="form-horizontal">
+											<input type="hidden" name="c_pid" id="c_pid" value="{$id}">
+											<input type="hidden" name="c_ids" id="c_ids" value="0">
+											<input type="hidden" name="c_id"  id="c_id" value="0">
+
+											<div class="form-group">
+												<label class="control-label col-lg-3">返回码</label>
+												<div class="col-lg-6">
+													<input name="c_code" class="form-control" />
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="control-label col-lg-3">返回信息</label>
+												<div class="col-lg-6">
+													<input name="c_mes" class="form-control" />
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-lg-3">说明</label>
+												<div class="col-lg-6">
+													<textarea name="c_explain" id="ctxt" class="form-control" rows="5"></textarea>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--错误码-->
+				</div>
+
+		   	</div>
+        </div>
+	<style type="text/css">
+		.glyphicon.glyphicon-remove {
+			float: left;
+			line-height: 45px;
+			text-align: center;
+			width: 50px;
+		}
+	</style>
+{include file="common/api_foot"/}

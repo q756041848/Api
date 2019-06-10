@@ -1,0 +1,389 @@
+{include file="common/head"/}
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    {include file="common/left"}
+    <div class="main-content">
+        <div class="main-content-inner">
+            {include file="common/header_nav"}
+
+            <div class="page-content">
+                <div class="page-header">
+                    <h1>
+                        您当前操作
+                        <small>
+                            <i class="ace-icon fa fa-angle-double-right"></i>
+                            添加招聘信息
+                        </small>
+                    </h1>
+                </div><!-- /.page-header -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+                        <form class="form-horizontal" role="form" name="adminInsert" id="adminInsert" method="post" action="{:url('recruit_add')}">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="title">公司名称：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <select name="company" id="company" class="col-xs-12 col-md-4">
+                                        {volist name="company" id="c"}
+                                         <option value="{$c.c_id}">{$c.c_name}</option>
+                                        {/volist}
+                                    </select>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="title">招聘标题：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="title" id="title" placeholder="输入招聘标题" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="work">工作岗位：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <!--<select name="work" id="work" class="col-xs-12 col-md-4">-->
+                                        <!--{volist name="wk" id="vo"}-->
+                                        <!--<option  value="{$vo.w_id}">{$vo.w_name}</option>-->
+                                        <!--{/volist}-->
+                                    <!--</select>-->
+                                    <select class="col-xs-3 col-sm-2" id="work" name="work">
+                                        <option value="0">销售</option>
+                                    </select>
+                                    <select class="col-xs-3 col-sm-2" id="work2" name="work2" style="margin-left: 10px;">
+                                        <option value="2">销售代表</option>
+                                    </select>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="scale">薪资要求：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <select name="scale" id="scale" class="col-xs-12 col-md-4">
+                                        {volist name="scale" id="sk"}
+                                        <option value="{$sk.s_id}">{$sk.s_name}</option>
+                                        {/volist}
+                                    </select>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="exper">工作经验：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <select name="exper" id="exper" class="col-xs-12 col-md-4">
+                                        {volist name="exper" id="ep"}
+                                        <option value="{$ep.e_id}">{$ep.e_name}</option>
+                                        {/volist}
+                                    </select>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="number">招聘数量：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="number" id="number" placeholder="输入招聘数量" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="education">个人学历：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <select name="education" id="education" class="col-xs-12 col-md-4">
+                                        {volist name="education" id="edu"}
+                                        <option value="{$edu.e_id}">{$edu.e_name}</option>
+                                        {/volist}
+                                    </select>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="r_privice">工作地点：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <!--<input type="text" name="workplace" id="workplace" placeholder="输入工作地点" class="col-xs-12 col-md-4"/>-->
+                                    <!--<span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>-->
+
+                                    <select class="col-xs-3 col-sm-2" id="r_privice" name="r_privice">
+                                        <option value="2">山东省</option>
+                                    </select>
+                                    <select class="col-xs-3 col-sm-2" id="r_city" name="r_city" style="margin-left: 10px;">
+                                        <option value="2">临沂市</option>
+                                    </select>
+                                    <select class="col-xs-3 col-sm-2" id="r_area" name="r_area" style="margin-left: 10px;">
+                                        <option value="2">兰山区</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="type">工作类型：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <select name="type" id="type" class="col-xs-12 col-md-4">
+                                        {volist name="type" id="type"}
+                                        <option value="{$type.t_id}">{$type.t_name}</option>
+                                        {/volist}
+                                    </select>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">工作福利：</label>
+                                <div class="col-sm-10 col-xs-12" style="line-height: 32px">
+                                    {volist name="welfare" id="wel"}
+                                    <label>
+                                        <input name="welfare[]" value="{$wel.w_name}" class="ace" type="checkbox">
+                                        <span class="lbl">&nbsp;&nbsp;{$wel.w_name}</span>
+                                    </label>
+                                    {/volist}
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">工作描述：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <script id="container" name="desc"  type="text/plain" >
+
+                                    </script>
+                                    <!--编辑器js调用-->
+                                    <!-- 配置文件 -->
+                                    <script type="text/javascript" src="__STATIC__/ueditor/ueditor.config.js"></script>
+                                    <!-- 编辑器源码文件 -->
+                                    <script type="text/javascript" src="__STATIC__/ueditor/ueditor.all.js"></script>
+                                    <script type="text/javascript" src="__STATIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+                                    <!-- 实例化编辑器 -->
+                                    <script type="text/javascript">
+                                        var ue = UE.getEditor('container',{
+                                            initialFrameWidth:518.33, //初始化编辑器宽度,默认1000
+                                            initialFrameHeight:150,
+                                            //是否可以拉伸长高,默认true(当开启时，自动长高失效)
+                                            scaleEnabled:false,
+                                        });
+                                    </script>
+                                    <!--编辑器js调用-->
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <!--<div class="form-group">-->
+                                <!--<label class="col-sm-2 control-label no-padding-right">公司环境：</label>-->
+                                <!--<div class="col-sm-10 col-xs-12" style="line-height: 32px">-->
+                                    <!--<div id="demo" class="demo"></div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="space-4"></div>-->
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right"> 是否审核：</label>
+                                <div class="col-sm-10 col-xs-12" style="padding-top:5px;">
+                                    <label>
+                                        <input name="check" value="0" class="ace ace-switch ace-switch-5" type="radio" checked>
+                                        <span class="lbl">&nbsp;&nbsp;待审核</span>
+                                    </label>
+                                    <label>
+                                        <input name="check" value="1" class="ace ace-switch ace-switch-5" type="radio">
+                                        <span class="lbl">&nbsp;&nbsp;已通过</span>
+                                    </label>
+                                    <label>
+                                        <input name="check" value="2" class="ace ace-switch ace-switch-5" type="radio">
+                                        <span class="lbl">&nbsp;&nbsp;未通过</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="sort">招聘排序：</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="sort" id="sort" placeholder="输入排序数值" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>数值越大越靠前</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <button class="btn btn-info" type="submit">
+                                        <i class="ace-icon fa fa-check bigger-110"></i>
+                                        提交
+                                    </button>
+
+                                    &nbsp; &nbsp; &nbsp;
+                                    <button class="btn" type="reset">
+                                        <i class="ace-icon fa fa-undo bigger-110"></i>
+                                        重置
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    {include file="common/foot" /}
+</div>
+<script>
+    $(function () {
+        //组织冒泡事件
+        $("#replaceImg,#fuwei,#xz,#hx,#sureCut").click(function(event){
+            event.preventDefault(); //阻止默认动作即该链接不会跳转。
+            event.stopPropagation();//阻止冒泡事件，上级的单击事件不会被调用
+            return false;//不仅阻止了事件往上冒泡，而且阻止了事件本身
+        });
+
+        $('#adminInsert').ajaxForm({
+            beforeSubmit: checkForm, //此方法主要是提交前执行的方法，根据需要设置
+            success: complete, //这是提交后的方法
+            dataType: 'json'
+        });
+
+        function checkForm() {
+            if ('' == $.trim($('#title').val())) {
+                layer.alert('招聘标题不能为空!', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#title').focus();
+                });
+                return false;
+            }
+
+
+            if ('' == $.trim($('#sort').val())) {
+                layer.alert('排序数值不能为空', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#sort').focus();
+                });
+                return false;
+            }
+
+        }
+
+    })
+    function complete(data) {
+        if (data.status == 1) {
+            layer.alert(data.info, {icon: 6}, function (index) {
+                layer.close(index);
+                window.location.href = data.url;
+            });
+        } else {
+            layer.alert(data.info, {icon: 5}, function (index) {
+                layer.close(index);
+                $('#username').focus();
+            });
+            return false;
+        }
+    }
+    //显示工作岗位
+    $(function () {
+        //查找分类
+        var url="{:url('getWorkByWpid')}";
+        //设置一级
+        $.post(url,{wpid:0},function (data) {
+//           console.log(data)
+            setWork($("#work"),data);
+            //设置二级
+            var twoWork=$("#work option:checked").attr("value");
+//            console.log(twoWork)
+            $.post(url,{wpid:twoWork},function (twork) {
+//                console.log(twork)
+                setWork($("#work2"),twork)
+            })
+        })
+        //定义选中状态
+        $("#work").change(function () {
+            var onewid=$("#work option:checked").attr("value");
+//        console.log(onewid);
+            $.post(url,{wpid:onewid},function (onework) {
+                setWork($("#work2"),onework)
+            })
+        })
+    })
+
+    //封装函数
+    function  setWork(obj,data) {
+        $(obj).html("");
+        $.map(data, function (p) {
+            var op = $("<option value='"+p.w_id+"' dataid='" + p.w_name + "'>" + p.w_name + "</option>");
+            $(obj).append(op);
+        });
+    }
+
+    //显示地区
+    $(function () {
+        //查找省
+        var url = "{:url('getAddressByPid')}";
+        //设置省
+        $.post(url,{pid:1},function (data) {
+            setAddress($("#r_privice"),data);
+            //设置市
+            var privid = $("#r_privice option:checked").attr("value");
+//            alert($("#r_privice option:checked"));
+            $.post(url,{pid:privid},function (city) {
+                setAddress($("#r_city"),city);
+                //设置区
+                var cityid = $("#r_city option:checked").attr("value");
+                $.post(url,{pid:cityid},function (area) {
+                    setAddress($("#r_area"),area);
+                });
+            });
+        });
+
+
+
+
+        //定义选中状态
+        $("#r_privice").change(function () {
+            var privid = $("#r_privice option:checked").attr("value");
+            $.post(url,{pid:privid},function (city) {
+                setAddress($("#r_city"),city);
+                //设置区
+                var cityid = $("#r_city option:checked").attr("value");
+                $.post(url,{pid:cityid},function (area) {
+                    setAddress($("#r_area"),area);
+                });
+            });
+        });
+        $("#r_city").change(function () {
+            //设置区
+            var cityid = $("#r_city option:checked").attr("value");
+            $.post(url,{pid:cityid},function (area) {
+                setAddress($("#r_area"),area);
+            });
+        });
+    });
+    function  setAddress(obj,data) {
+        $(obj).html("");
+        // if($(obj).attr('id')=='r_area'){
+        //     var op = $("<option value='0'>请选择</option>");
+        //     $(obj).append(op);
+        // }
+        $.map(data, function (p) {
+            var op = $("<option value='"+p.id+"' dataid='" + p.name + "'>" + p.name + "</option>");
+            $(obj).append(op);
+        });
+    }
+</script>
+
+
+
+</body>
+</html>

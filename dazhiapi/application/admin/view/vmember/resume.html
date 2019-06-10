@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>入职登记表</title>
+    <style>
+        .btbg{
+            text-align:center;
+            height: 30px;
+        }
+        .date{text-align:left;}
+        .bottom{
+            width: 800px;
+            margin: 0 auto;
+        }
+        .salary{
+            height: 50px;
+        }
+        .salarys{
+            text-align:right;
+        }
+    </style>
+</head>
+<body>
+<div class="bottom">
+    <table border="0" align="center" width="100%" cellpadding="2" cellspacing="0">
+        <tr>
+            <td align="center" height="100" style="font-weight: 600;font-size: 24px;">入职登记表</td>
+        <tr>
+    </table>
+    <table border="0" align="center" width="100%" cellpadding="2" cellspacing="0">
+        <tr>
+            <td class="date" width="13%">填表日期：</td>
+            <td>{$vipbase.v_time}</td>
+        </tr>
+    </table>
+    <table class="tabtop"width="800px" border="1" cellpadding="1" cellspacing="0" align="center">
+        <tr>
+            <td colspan="6"><b>个人基本信息</b></td>
+            <td colspan="1" width="124px;" rowspan="6" cellpadding="0" class="btbg"><img style="width: 160px;height: 200px;" src="/uploads/{$vipbase.v_photograph}"></td>
+        </tr>
+        <tr>
+
+            <td class="btbg" >姓名</td>
+            <td width="" class="btbg" >{$vipbase.v_name}</td>
+            <td width="" class="btbg" >性别</td>
+            <td width="" class="btbg" >{$vipbase.v_sex}</td>
+            <td class="btbg" width="10%">民族</td>
+            <td class="btbg" width="10%">{$vipbase.v_nation}</td>
+        </tr>
+        <tr>
+            <td class="btbg">政治面貌</td>
+            <td class="btbg">{$vipbase.v_political}</td>
+            <td class="btbg">身高</td>
+            <td class="btbg">{$vipbase.v_height}</td>
+            <td class="btbg">婚否</td>
+            <td class="btbg">{$vipbase.v_marry}</td>
+        </tr>
+        <tr>
+            <td class="btbg">出生年月</td>
+            <td class="btbg" width="15%">{$vipbase.v_birthday}</td>
+            <td class="btbg">籍贯</td>
+            <td class="btbg">{$vipbase.v_place}</td>
+            <td class="btbg">学历</td>
+            <td class="btbg">{$vipbase.v_education}</td>
+        </tr>
+        <tr>
+            <td width="" class="btbg">身份证号码</td>
+            <td colspan="2" width="8%" class="btbg">{$vipbase.v_cardid}</td>
+            <td width="" class="btbg">电话</td>
+            <td colspan="2" width="8%" class="btbg">{$vipbase.v_phone}</td>
+        </tr>
+        <tr>
+            <td width="" class="btbg">手机号码</td>
+            <td colspan="2" width="8%" class="btbg">{$vipbase.v_phone}</td>
+            <td width="" class="btbg">E-mail</td>
+            <td colspan="2" width="8%" class="btbg">{$vipbase.v_email}</td>
+        </tr>
+        <tr>
+            <td colspan="7" style="height: 30px;">通讯地址及邮编：{$vipbase.v_txplace}&nbsp;&nbsp;{$vipbase.v_zipcode}</td>
+        </tr>
+        <tr>
+            <td class="btbg">紧急联系人</td>
+            <td class="btbg">{$vipbase.v_jmam}</td>
+            <td class="btbg">紧急联系电话</td>
+            <td class="btbg" colspan="2">{$vipbase.v_jphone}</td>
+            <td class="btbg">与本人关系</td>
+            <td class="btbg">{$vipbase.v_jrelationship}</td>
+        </tr>
+        <tr>
+            <td colspan="7" style="height: 30px;"><b>学习简历（从高中起填）</b></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="btbg">起始时间</td>
+            <td colspan="2" class="btbg">毕业学校</td>
+            <td colspan="2" class="btbg">专业</td>
+            <td colspan="" class="btbg">学位</td>
+        </tr>
+        {volist name="vipedu" id="edu"}
+        <tr>
+            <td colspan="2" class="btbg">{$edu.e_begintime}至{$edu.e_endtime}</td>
+            <td colspan="2" class="btbg">{$edu.e_schoolname}</td>
+            <td colspan="2" class="btbg">{$edu.e_major}</td>
+            <td colspan="" class="btbg">{$edu.e_edu}</td>
+        </tr>
+        {/volist}
+        <tr>
+            <td colspan="2" class="btbg"></td>
+            <td colspan="2" class="btbg"></td>
+            <td colspan="2" class="btbg"></td>
+            <td colspan="" class="btbg"></td>
+        </tr>
+        <tr>
+            <td colspan="7" style="height: 30px;"><b>工作经历</b></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="btbg">起始时间</td>
+            <td colspan="" class="btbg">工作单位及岗位</td>
+            <td colspan="" class="btbg">薪资状况</td>
+            <td colspan="" class="btbg">离职原因</td>
+            <td colspan="2" class="btbg">证明人及联系方式</td>
+        </tr>
+        {volist name="vipwork" id="work"}
+        <tr>
+            <td colspan="2" class="btbg">{$work.v_begintime}至{$work.v_endtime}</td>
+            <td colspan="" class="btbg">{$work.v_companyname}</td>
+            <td colspan="" class="btbg">{$work.v_salary}</td>
+            <td colspan="" class="btbg">{$work.v_reason}</td>
+            <td colspan="2" class="btbg">{$work.v_witness}&nbsp;{$work.v_phone}</td>
+        </tr>
+        {/volist}
+        <tr>
+            <td colspan="2" class="btbg"></td>
+            <td colspan="" class="btbg"></td>
+            <td colspan="" class="btbg"></td>
+            <td colspan="" class="btbg"></td>
+            <td colspan="2" class="btbg"></td>
+        </tr>
+        <tr>
+            <td colspan="7" style="height: 30px;"><b>家庭基本情况</b></td>
+        </tr>
+        <tr>
+            <td colspan="" class="btbg">姓名</td>
+            <td colspan="" class="btbg">关系</td>
+            <td colspan="" class="btbg">年龄</td>
+            <td colspan="2" class="btbg">现工作单位/岗位</td>
+            <td colspan="2" class="btbg">联系方式</td>
+        </tr>
+        {volist name="vipfamily" id="family"}
+        <tr>
+            <td colspan="" class="btbg">{$family.f_name}</td>
+            <td colspan="" class="btbg">{$family.f_relationship}</td>
+            <td colspan="" class="btbg">{$family.f_age}</td>
+            <td colspan="2" class="btbg">{$family.f_company}&nbsp;&nbsp;{$family.f_work}</td>
+            <td colspan="2" class="btbg">{$family.f_phone}</td>
+        </tr>
+        {/volist}
+        <tr>
+            <td colspan="" class="btbg">&nbsp</td>
+            <td colspan="" class="btbg"></td>
+            <td colspan="" class="btbg"></td>
+            <td colspan="2" class="btbg"></td>
+            <td colspan="2" class="btbg"></td>
+        </tr>
+        <tr>
+            <td colspan="" class="btbg">期望薪金</td>
+            <td colspan="" class="salary salarys" style="border-right: none;">税前：</td>
+            <td colspan="" class="salary salarys" style="border-left: none;border-right: none;">{$vipbase.v_salary}</td>
+            <td colspan="4" class="salary " style="border-left: none;">元/月(年)</td>
+        </tr>
+        <tr>
+            <td colspan="" class="btbg">员工确认</td>
+            <td colspan="" class="salary" style="border-right: none;">&nbsp;</td>
+            <td colspan="" class="salary salarys" style="border-left: none;border-right: none;">签名：</td>
+            <td colspan="" class="salary salarys" style="border-left: none;border-right: none;"></td>
+            <td colspan="" class="salary salarys" style="border-left: none;border-right: none;">日期：</td>
+            <td colspan="2" class="salary salarys" style="border-left: none;border-right: none;"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

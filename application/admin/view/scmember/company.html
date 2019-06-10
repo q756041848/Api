@@ -1,0 +1,215 @@
+{include file="common/head"/}
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    {include file="common/left"}
+    <div class="main-content">
+        <div class="main-content-inner">
+            {include file="common/header_nav"}
+            <div class="page-content">
+                <div class="row maintop">
+                    <div class="col-xs-12 col-sm-2">
+                        <a href="{:url('companyAdd')}">
+                            <button class="btn btn-xs btn-danger">
+                                <i class="ace-icon fa fa-plus bigger-110"></i>
+                                添加企业
+                            </button>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="page-content">
+                                <div class="row maintop">
+                                    <form class="form-horizontal" name="admin_list_sea" class="form-search" method="post" action="{:url('company')}">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label no-padding-right" for="c_name">企业名称</label>
+                                            <div class="col-sm-4 col-xs-10">
+                                                <input type="text" id="c_name" name="c_name" value="{$c_name}" placeholder="企业名称" class="col-xs-3 col-sm-5" />
+                                            </div>
+
+                                            <label class="col-sm-1 control-label no-padding-right"  for="c_contacts">联系人</label>
+                                            <div class="col-sm-4 col-xs-10">
+                                                  <input type="tel" id="c_contacts" name="c_contacts" value="{$c_contacts}" placeholder="联系人" class="col-xs-12 col-sm-5" maxlength="11" />
+                                            </div>
+                                        </div>
+                                        <div class="space-4"></div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label no-padding-right" for="c_phone">联系电话</label>
+                                            <div class="col-sm-4 col-xs-10">
+                                                <input type="text" id="c_phone" name="c_phone" value="{$c_phone}" placeholder="联系电话" class="col-xs-3 col-sm-5" />
+                                            </div>
+
+                                            <label class="col-sm-1 control-label no-padding-right"  for="c_addr">企业地址</label>
+                                            <div class="col-sm-4 col-xs-10">
+                                                  <input type="tel" id="c_addr" name="c_addr" value="{$c_addr}" placeholder="企业地址" class="col-xs-12 col-sm-5" maxlength="11" />
+                                            </div>
+                                        </div>
+                                        <div class="space-4"></div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label no-padding-right" for="c_type">企业类型</label>
+                                            <div class="col-sm-4 col-xs-10">
+                                                <select name="c_type" id="c_type" class="col-xs-3 col-sm-5">
+                                                    <option value="">企业类型</option>
+
+                                                    {volist name="c_type" id="v"}
+                                                    {eq name="v['c_type_name']" value="$type"}
+                                                    <option value="{$v.c_type_name}" selected>{$v.c_type_name}</option>
+                                                    {else/}
+                                                    <option value="{$v.c_type_name}">{$v.c_type_name}</option>
+                                                    {/eq}
+                                                    {/volist}
+                                                </select>
+                                            </div>
+                                            
+                                            <label class="col-sm-1 control-label no-padding-right">企业规模</label>
+                                            <div class="col-sm-4 col-xs-10">
+                                                <select name="c_scale" id="c_scale" class="col-xs-3 col-sm-5">
+                                                    <option value="">企业规模</option>
+                                                    
+                                                    {volist name="c_scale" id="v"}
+                                                    {eq name="v['c_scale_name']" value="$scale"}
+                                                    <option value="{$v.c_scale_name}" selected>{$v.c_scale_name}</option>
+                                                    {else/}
+                                                    <option value="{$v.c_scale_name}">{$v.c_scale_name}</option>
+                                                    {/eq}
+                                                    {/volist}
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="space-4"></div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label no-padding-right" > </label>
+                                            <div class="col-sm-10 col-xs-12">
+                                                <button type="submit" class="btn btn-xs all-btn btn-purple col-xs-3 col-sm-2">
+                                                    <span class="ace-icon fa fa-refresh icon-on-right bigger-110"></span>
+                                                    搜  索
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                    </div>
+                </div>
+                                        <!--样式-->
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="table-responsive">
+                                <table id="simple-table" class="table table-striped table-bordered table-hover center">
+                                    <thead>
+                                    <tr>
+
+
+                                        <th class="center">企业名称</th>
+                                        <th class="center visible-lg visible-md">联系人</th>
+                                        <th class="center">联系电话</th>
+                                        <th class="center hidden-xs">企业类型</th>
+                                        <th class="center hidden-xs">企业规模</th>
+                                        <th class="center visible-lg visible-md">企业地址</th>
+
+                                        <th class="center">创建时间</th>
+                                        <th class="center">公司环境</th>
+                                        {eq name="uid" value="1"}
+                                        <th class="center" style="border-right:1px solid #ddd; ">操作</th>
+                                        {/eq}
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                              <!--           <div id="particulars" style="display: none; width: 50%; height: 70%; position: absolute; top: 10%; left: 20%; background: #ccc;">
+                                            <div id="close" style="width: 30px; height: 25px; position: absolute; right: 0; top: 0; border:1px solid #999; font-weight: bold; text-align: center; line-height: 25px;">X</div>
+                                            
+
+                                        </div>
+                                         -->
+                                    {volist name="$company" id="v"}
+                                    <tr>   
+
+                                        <td class="particulars" ><a href="{:url('companyParticulars',['c_id'=>$v['c_id']])}">{$v.c_name}</a></td>
+                                        <td class=" visible-lg visible-md">{$v.c_contacts}</td>
+                                        <td class="hidden-xs">{$v.c_phone}</td>
+                                        <td class="hidden-xs">{$v.c_type}</td>
+                                        <td class="visible-lg visible-md">{$v.c_scale}</td>
+                                        <td class="visible-lg visible-md">{$v.c_addr}</td>
+
+                                        <td class="hidden-xs">{$v.c_time}</td>
+                                        <td class="hidden-xs">
+                                            <div class="col-xs-12 col-sm-2" style="width: 66px;">
+
+                                                <button class="btn btn-xs btn-danger" onclick="f({$v['c_id']})">
+                                                    <i class=""></i>
+                                                    公司环境
+                                                </button>
+
+                                            </div>
+                                        </td>
+                                        {eq name="uid" value="1"}
+                                        <td>
+                                            <div class="action-buttons">
+                                                <a class="green" href="javascript:;" onclick="return update({$v.c_id})" title="修改">
+                                                    <i class="ace-icon fa fa-pencil bigger-130"></i> </a>
+                                                <a class="red" href="javascript:;" onclick="return del({$v.c_id});" title="删除">
+                                                    <i class="ace-icon fa fa-trash-o bigger-130"></i> </a>
+                                            </div>
+                                        </td>
+                                        {/eq}
+                                    </tr>
+                                    {/volist}
+                                    <tr>
+                                        <td colspan="11" align="center">&nbsp;</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                            </div><!-- /.span -->
+                        </div><!-- /.row -->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+
+        </div>
+    </div><!-- /.main-content -->
+    {include file="common/foot" /}
+
+</div><!-- /.main-container -->
+
+<!-- inline scripts related to this page -->
+<script type="text/javascript">
+    function del(id) {
+        layer.confirm('你确定要删除吗？', {icon: 3}, function (index) {
+            layer.close(index);
+            window.location.href = "{:url('companyDel')}?c_id="+id
+        });
+    }
+    function update(cid) {
+        var url="{:url('companySearch')}";
+        $.post(url,{c_id:cid},function (data) {
+//            console.log(data);
+            if(data.status=='1'){
+                window.location.href = "{:url('companyEdit')}?c_id="+cid
+            }else{
+                layer.alert('该账号未填写基本信息', {icon: 5}, function (index) {
+                    layer.close(index);
+//                    $('#c_name').focus();
+                });
+                return false;
+            }
+        })
+    }
+    //弹出多图选择框
+    function f(id){
+        var url = "{:url('image/show')}"+"/sid/"+id;
+        layer.open({
+            type: 2,
+            area: ['700px', '600px'],
+            fixed: false, //不固定
+            maxmin: true,
+            content:url
+        });
+    }
+</script>
+</body>
+</html>

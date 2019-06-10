@@ -1,0 +1,90 @@
+{include file="common/head"/}
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    {include file="common/left"}
+    <div class="main-content">
+        <div class="main-content-inner">
+            {include file="common/header_nav"}
+            <div class="page-content">
+                <div class="page-header">
+                    <h1>
+                        您当前操作
+                        <small>
+                            <i class="ace-icon fa fa-angle-double-right"></i>
+                            文章预览
+                        </small>
+                    </h1>
+                </div><!-- /.page-header -->
+
+                <div class="col-xs-12" style="width:99%;">
+                    <div class="col-md-offset-2 col-md-10" style="margin:10px 40%">
+                        <button  id="showphone" class="btn btn-info">
+                            <i class="ace-icon fa fa-phone bigger-110"></i>
+                            手机端预览
+                        </button>
+                        <button id="showcomputer" class="btn btn-info">
+                            <i class="ace-icon fa fa-desktop bigger-110"></i>
+                            电脑端预览
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+                            <div class="form-group">
+
+                                <div  id="phone"  style="display:block;margin:40px auto;width:99%;height:600px;overflow:hidden;background-color:#F7F7F7;background-size:257px 563px;background-repeat:no-repeat;background-position:center center;background-image:url('__STATIC__/img/phone.jpg')">
+                                    <div style="margin:91px auto;width:222px;height:422px ;font-size:12px;overflow:auto;overflow-y:yes">
+                                        {$artical.a_content}
+                                    </div>
+
+                                </div>
+
+                                <div  id="computer"   style="display:none;margin:40px auto;background-color:#F7F7F7;width:99%;overflow:hidden;height:500px;">
+                                    <div style="margin:10px auto;width:500px;height:560px; ;font-size:12px ">
+                                        {$artical.a_content}
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="space-4"></div>
+
+
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    {include file="common/foot" /}
+</div>
+<script>
+    $(function () {
+
+        //显示电脑端
+            $('#showcomputer').click(function(){
+                $('#computer').attr("style","display:block;background-color:#F7F7F7;margin:20px auto;width:99%;height:500px;");
+                $('#phone').attr("style","display:none");
+
+            });
+
+
+        //显示手机端
+        $('#showphone').click(function(){
+            $('#computer').attr("style","display:none;");
+            $('#phone').attr("style","display:block;margin:20px auto;width:99%;overflow:hidden;height:600px;background-color:#F7F7F7;background-size:257px 563px;background-repeat:no-repeat;background-position:center center;background-image:url('__STATIC__/img/phone.jpg')");
+
+        });
+
+
+
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+---------------------------------------------------------------
+[ 2018-08-21T17:15:29+08:00 ] 127.0.0.1 GET /resume/waitinto?se=266
+[ info ] www._remese.com/resume/waitinto?se=266 [运行时间：0.234013s][吞吐率：4.27req/s] [内存消耗：2,984.59kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\remeseManager\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'resume',
+    2 => 'waitinto',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._remese.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=tsudl39pmlfhrhttcqhqunour5',
+)
+[ info ] [ PARAM ] array (
+  'se' => '266',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Resume->waitInto[ D:\code\remeseManager\application\admin\controller\Resume.php ]
+[ info ] [ VIEW ] D:\code\remeseManager\public/../application/admin\view\resume\wait_into.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'notice_no_read',
+  6 => 'uid',
+  7 => 'com',
+  8 => 'skill',
+  9 => 'uids',
+  10 => 'sr_name',
+  11 => 'sr_phone',
+  12 => 'sr_company',
+  13 => 'sr_company2',
+  14 => 'sr_skill',
+  15 => 'r_sex',
+  16 => 'r_uid',
+  17 => 'sr_privice',
+  18 => 'sr_city',
+  19 => 'sr_area',
+  20 => 'id',
+  21 => 'data',
+  22 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=localhost;port=3306;dbname=remese;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 230 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 255 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 266  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_notice` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ls_notice` WHERE  `n_uid` = 1  AND `n_isread` = 0 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_data_company` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `c_id`,`c_name` FROM `ls_data_company` ORDER BY `c_sort` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_data_skill` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `s_id`,`s_name` FROM `ls_data_skill` ORDER BY `s_sort` DESC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `admin_id`,`realname` FROM `ls_admin` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_sys_param` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `public`,`protect` FROM `ls_sys_param` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_resume` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ls_resume` INNER JOIN `ls_admin` `a` ON `ls_resume`.`r_uid`=`a`.`admin_id` WHERE  `r_state` = '1'  AND `r_uid` = 1 LIMIT 1 [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_resume` INNER JOIN `ls_admin` `a` ON `ls_resume`.`r_uid`=`a`.`admin_id` WHERE  `r_state` = '1'  AND `r_uid` = 1 ORDER BY `r_time` DESC LIMIT 0,15 [ RunTime:0.021001s ]
+---------------------------------------------------------------
+[ 2018-08-21T17:15:29+08:00 ] 127.0.0.1 POST /datacompany/getaddressbypid
+[ info ] www._remese.com/datacompany/getaddressbypid [运行时间：0.249014s][吞吐率：4.02req/s] [内存消耗：2,642.12kb] [文件加载：51]
+[ info ] [ LANG ] D:\code\remeseManager\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'datacompany',
+    2 => 'getaddressbypid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._remese.com',
+  'connection' => 'keep-alive',
+  'content-length' => '5',
+  'accept' => '*/*',
+  'origin' => 'http://www._remese.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www._remese.com/resume/waitinto?se=266',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=tsudl39pmlfhrhttcqhqunour5',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Datacompany->getAddressByPid[ D:\code\remeseManager\application\admin\controller\Datacompany.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.164009s ] mysql:host=localhost;port=3306;dbname=remese;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 230 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 255 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 266  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_notice` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ls_notice` WHERE  `n_uid` = 1  AND `n_isread` = 0 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_region` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_region` WHERE  (  pid='1' ) ORDER BY `sort` DESC [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-21T17:15:29+08:00 ] 127.0.0.1 GET /favicon.ico
+[ info ] www._remese.com/favicon.ico [运行时间：0.218012s][吞吐率：4.59req/s] [内存消耗：2,703.45kb] [文件加载：54]
+[ info ] [ LANG ] D:\code\remeseManager\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'favicon.ico',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._remese.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._remese.com/resume/waitinto?se=266',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=tsudl39pmlfhrhttcqhqunour5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=remese;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 230 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 255 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 266  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_notice` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ls_notice` WHERE  `n_uid` = 1  AND `n_isread` = 0 LIMIT 1 [ RunTime:0.002001s ]
+[ error ] [8]Undefined property: app\admin\controller\Error::$moduleid[D:\code\remeseManager\application\admin\controller\Error.php:12]
+---------------------------------------------------------------
+[ 2018-08-21T17:15:29+08:00 ] 127.0.0.1 POST /datacompany/getaddressbypid
+[ info ] www._remese.com/datacompany/getaddressbypid [运行时间：0.101006s][吞吐率：9.90req/s] [内存消耗：2,642.04kb] [文件加载：51]
+[ info ] [ LANG ] D:\code\remeseManager\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'datacompany',
+    2 => 'getaddressbypid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._remese.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://www._remese.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'referer' => 'http://www._remese.com/resume/waitinto?se=266',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=tsudl39pmlfhrhttcqhqunour5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Datacompany->getAddressByPid[ D:\code\remeseManager\application\admin\controller\Datacompany.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=remese;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 230 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 255 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 266  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_notice` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ls_notice` WHERE  `n_uid` = 1  AND `n_isread` = 0 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_region` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_region` WHERE  (  pid='1' ) ORDER BY `sort` DESC [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-21T17:15:29+08:00 ] 127.0.0.1 POST /datacompany/getaddressbypid
+[ info ] www._remese.com/datacompany/getaddressbypid [运行时间：0.083004s][吞吐率：12.05req/s] [内存消耗：2,642.04kb] [文件加载：51]
+[ info ] [ LANG ] D:\code\remeseManager\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'datacompany',
+    2 => 'getaddressbypid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._remese.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://www._remese.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'referer' => 'http://www._remese.com/resume/waitinto?se=266',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=tsudl39pmlfhrhttcqhqunour5',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Datacompany->getAddressByPid[ D:\code\remeseManager\application\admin\controller\Datacompany.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=remese;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_admin` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_admin` `a` LEFT JOIN `ls_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` WHERE  `a`.`admin_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_auth_rule` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`css` FROM `ls_auth_rule` WHERE  (  pid=0 AND menustatus=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 230 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 255 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 258 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  (  pid= 1 and menustatus=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_auth_rule` WHERE  `pid` = 266  AND `menustatus` = 1 ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_notice` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ls_notice` WHERE  `n_uid` = 1  AND `n_isread` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ls_region` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `ls_region` WHERE  (  pid='1' ) ORDER BY `sort` DESC [ RunTime:0.001000s ]

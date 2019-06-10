@@ -1,0 +1,144 @@
+{include file="common/head"/}
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    {include file="common/left"}
+    <div class="main-content">
+        <div class="main-content-inner">
+            {include file="common/header_nav"}
+            <div class="page-content">
+                <div class="page-header">
+                    <h1>
+                        您当前操作
+                        <small>
+                            <i class="ace-icon fa fa-angle-double-right"></i>
+                            站点设置
+                        </small>
+                    </h1>
+                </div><!-- /.page-header -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!--<link rel="stylesheet" href="__STATIC__/Css/updata_log.css">-->
+
+                        <div class="main_content">
+                            <div class="grid_c2c">
+                                <!-- 主要内容开始 -->
+                                <div class="mainbar">
+                                    <div class="mainbar_wrapper index_wrapper">
+                                        <div class="main_form">
+                                            <div style="margin: 10px 20px 20px;font-size: 18px;font-weight: bold;">更新动态</div>
+                                            <div class="list" style="padding-left: 20px;">
+
+                                                <div class="dotStyle"></div>
+                                                <div class="lineStyle"></div>
+                                                <div class="version_opt">
+                                                    <span class="code_version_date"></span>
+                                                    <span class="version_update"> </span>
+                                                    <span style="color:#C63A1E;">目前已经是最新版本</span>
+                                                </div>
+                                                <hr>
+                                                <div class="code_version_item" data-vid="v1.2.2" data-tid="74"
+                                                     data-desc="0">
+                                                    <div class="dotStyle"></div>
+                                                    <div class="lineStyle"></div>
+                                                    <div class="version_opt"><span class="code_version_date">2018-08-17 12:15:03</span>
+                                                    </div>
+
+                                                    <div class="code_version_disc">
+
+                                                        <span class="version_id">v1.2.2</span><br>
+                                                        1、添加待录入库简历多人抢单功能<br>
+                                                    </div>
+
+                                                </div>
+
+                                                <hr>
+                                                <div class="code_version_item" data-vid="v1.2.1" data-tid="74"
+                                                     data-desc="0">
+                                                    <div class="dotStyle"></div>
+                                                    <div class="lineStyle"></div>
+                                                    <div class="version_opt"><span class="code_version_date">2018-08-16 19:36:03</span>
+                                                    </div>
+
+                                                    <div class="code_version_disc">
+
+                                                        <span class="version_id">v1.2.1</span><br>
+                                                        1、修复单个人重复输入同一个简历问题<br>
+                                                        2、开放子账号（非管理员正好公库提取权限）<br>
+                                                        3、修复简历冲突后警告不提示bug<br>
+                                                        4、修复公共信息库简历提至个人简历库后，公库依然显示简历bug<br>
+
+                                                    </div>
+
+                                                </div>
+                                                <hr>
+                                                <div class="code_version_item" data-vid="v1.2" data-tid="74"
+                                                     data-desc="2000">
+                                                    <div class="dotStyle"></div>
+                                                    <div class="lineStyle"></div>
+                                                    <div class="version_opt"><span class="code_version_date">2018-07-20 19:36:03</span>
+                                                    </div>
+
+                                                    <div class="code_version_disc">
+
+                                                        <span class="version_id">v1.2</span><br>
+                                                        1、添加显示简历录入时间限制功能<br>
+                                                        2、简历冲突提醒增加未读提醒功能<br>
+                                                        3、优化简历添加未填写限制<br>
+                                                        4、优化年龄出生日期<br>
+                                                        5、添加简历修改日志<br>
+                                                        6、增加简历受保护时间功能<br>
+                                                        7、增加简历待录入功能<br>
+                                                    </div>
+
+                                                </div>
+
+                                                <hr>
+
+                                                <div class="code_version_item" data-vid="v1.1" data-tid="74"
+                                                     data-desc="600" >
+                                                    <div class="dotStyle"></div>
+                                                    <div class="lineStyle"></div>
+                                                    <div class="version_opt"><span class="code_version_date">2018-07-20 19:36:03</span>
+                                                    </div>
+                                                    <div class="code_version_disc">
+                                                        <span class="version_id">v1.1</span><br>
+                                                        1、新建基础数据模块（企业、技能、来源）<br>
+                                                        2、开放员工编辑简历<br>
+                                                        3、添加次级意向企业<br>
+                                                        4、增加简历按照录入人等筛选条件
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="code_version_item" data-vid="" data-tid="73"
+                                                     data-desc="3000" >
+                                                    <div class="dotStyle"></div>
+                                                    <div class="lineStyle"></div>
+                                                    <div class="version_opt"><span class="code_version_date">2018-07-14 10:52:01</span>
+                                                    </div>
+                                                    <div class="code_version_disc"><span class="version_id">v1.0</span><br>
+                                                        系统平台上线：<br>
+                                                        1.简历的录入：<br>
+                                                        2.简历检索：<br>
+                                                        3.公共简历库的建立：<br>
+                                                        4.用户管理权限支撑系统：<br>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 主要内容结束 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    {include file="common/foot" /}
+</div>
+

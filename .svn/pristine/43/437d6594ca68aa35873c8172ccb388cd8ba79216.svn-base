@@ -1,0 +1,219 @@
+{include file="common/head"/}
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    {include file="common/left"}
+    <div class="main-content">
+        <div class="main-content-inner">
+            {include file="common/header_nav"}
+            <div class="page-content">
+                <div class="page-header">
+                    <h1>
+                        您当前操作
+                        <small>
+                            <i class="ace-icon fa fa-angle-double-right"></i>
+                            新闻添加
+                        </small>
+                    </h1>
+                </div><!-- /.page-header -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+                        <form class="form-horizontal" role="form">
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="a_info">新闻标题</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" id="title" name="title" value="" maxlength="50" placeholder="标题" class="col-xs-12 col-sm-5" />
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="a_info">新闻类别</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <select name="type" id="type" class="col-xs-12 col-sm-5">
+                                        {foreach name="$info" id="li"}
+                                        <option value="{$li.id}">{$li.typename}</option>
+                                        {/foreach}
+                                    </select>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="a_hotline">新闻内容</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <div id="editor" class="col-xs-12 col-sm-5">
+
+                                    </div>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="a_service">作者</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" id="author" name="author" value="" placeholder="作者" class="col-xs-12 col-sm-5" />
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+
+
+                            <div class="space-4"></div>
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <button class="btn btn-info" type="button" id="tijiao">
+                                        <i class="ace-icon fa fa-check bigger-110"></i>
+                                        提交
+                                    </button>
+                                    <button class="btn" type="reset">
+                                        <i class="ace-icon fa fa-undo bigger-110"></i>
+                                        重置
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    {include file="common/foot" /}
+</div>
+<style>
+    *{margin: 0px   ;padding: 0px}
+    /*图标间距*/
+    .w-e-toolbar .w-e-menu {
+        position: relative;
+        text-align: center;
+        padding: 5px 4px;
+        cursor: pointer;
+    }
+    /*间距*/
+    div#editor {
+        padding: 0px;
+    }
+</style>
+<script type="text/javascript">
+    var E = window.wangEditor;
+    var editor = new E('#editor');
+    editor.create();
+</script>
+
+<script>
+    var count = editor.txt.html();
+
+    $('#tijiao').click(function () {
+        var title = $(" input[ name='title' ] ").val();
+        var author = $(" input[ name='author' ] ").val();
+        var type =  $("select#type").val();
+        $.ajax({
+            url:"{:url('adds')}",
+            type:'post',
+            data:{content:count,title:title,author:author,type:type},
+            success:function (res){
+                if (res.code=='1'){
+                    window.location.href = 'companylist';
+                }
+            }
+        });
+    })
+
+    // $(function () {
+    //     $('#sys').ajaxForm({
+    //         beforeSubmit: checkForm, //此方法主要是提交前执行的方法，根据需要设置
+    //         success: complete, //这是提交后的方法
+    //         dataType: 'json'
+    //     });
+    //
+    //     function checkForm() {
+    //         if ('' == $.trim($('#a_info').val())) {
+    //             layer.alert('简介不能为空', {icon: 5}, function (index) {
+    //                 layer.close(index);
+    //                 $('#a_info').focus();
+    //             });
+    //             return false;
+    //         }
+    //
+    //
+    //         if ('' == $.trim($('#a_hotline').val())) {
+    //             layer.alert('公司电话不能为空', {icon: 5}, function (index) {
+    //                 layer.close(index);
+    //                 $('#a_hotline').focus();
+    //             });
+    //             return false;
+    //         }
+    //
+    //         //验证手机号或者座机号
+    //         var phonereg=/^\d{3,4}-\d{7,8}$/;
+    //         var mphonereg=/^1\d{10}$/;
+    //         if(!phonereg.test($.trim($('#a_hotline').val()))){
+    //
+    //             if(!mphonereg.test($.trim($('#a_hotline').val()))){
+    //                 layer.alert('请检查手机号或固话格式是否正确！',{icon: 5},function (index) {
+    //                     layer.close(index);
+    //                     $('#a_hotline').focus();
+    //                 });
+    //                 return false;
+    //             }
+    //             return false;
+    //
+    //         }
+    //
+    //         if ('' == $.trim($('#a_website').val())) {
+    //             layer.alert('公司网址不能为空', {icon: 5}, function (index) {
+    //                 layer.close(index);
+    //                 $('#a_website').focus();
+    //             });
+    //             return false;
+    //         }
+    //
+    //         //验证网址 必须以http://或https://开头
+    //         var webreg=/(^#)|(^http(s*):\/\/[^\s]+\.[^\s]+)/;
+    //         if(!webreg.test($.trim($('#a_website').val()))){
+    //             layer.alert('请检查网址格式是否正确',{icon: 5});
+    //             return false;
+    //         }
+    //
+    //
+    //         if ('' == $.trim($('#a_service').val())) {
+    //             layer.alert('公司微信不能为空', {icon: 5}, function (index) {
+    //                 layer.close(index);
+    //                 $('#a_service').focus();
+    //             });
+    //             return false;
+    //         }
+    //         if ('' == $.trim($('#a_address').val())) {
+    //             layer.alert('公司地址不能为空', {icon: 5}, function (index) {
+    //                 layer.close(index);
+    //                 $('#a_address').focus();
+    //             });
+    //             return false;
+    //         }
+    //     }
+    //
+    //
+    //
+    //     function complete(data) {
+    //         if (data.status == 1) {
+    //             layer.alert(data.info, {icon: 6}, function (index) {
+    //                 layer.close(index);
+    //                 window.location.href = data.url;
+    //             });
+    //         } else {
+    //             layer.alert(data.info, {icon: 5}, function (index) {
+    //                 layer.close(index);
+    //                 //window.location.href = "{:url('Sys/sys')}";
+    //             });
+    //         }
+    //     }
+    // })
+
+</script>
+</body>
+</html>

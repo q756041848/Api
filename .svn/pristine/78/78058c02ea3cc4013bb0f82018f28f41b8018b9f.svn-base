@@ -1,0 +1,45 @@
+//显示地区
+$(function () {
+    //查找省
+    var url = "{:url('Datacompany/getAddressByPid')}";
+    //设置省
+    $.post(url,{pid:1},function (data) {
+        setAddress($("#r_privice"),data);
+        //设置市
+        var privid = $("#r_privice option:checked").attr("dataid");
+        $.post(url,{pid:privid},function (city) {
+            setAddress($("#r_city"),city);
+            //设置区
+            var cityid = $("#r_city option:checked").attr("dataid");
+            $.post(url,{pid:cityid},function (area) {
+                setAddress($("#r_area"),area);
+            });
+        });
+    });
+    //定义选中状态
+    $("#r_privice").change(function () {
+        var privid = $("#r_privice option:checked").attr("dataid");
+        $.post(url,{pid:privid},function (city) {
+            setAddress($("#r_city"),city);
+            //设置区
+            var cityid = $("#r_city option:checked").attr("dataid");
+            $.post(url,{pid:cityid},function (area) {
+                setAddress($("#r_area"),area);
+            });
+        });
+    });
+    $("#r_city").change(function () {
+        //设置区
+        var cityid = $("#c_city option:checked").attr("dataid");
+        $.post(url,{pid:cityid},function (area) {
+            setAddress($("#r_area"),area);
+        });
+    });
+});
+function  setAddress(obj,data) {
+    $(obj).html("");
+    $.map(data, function (p) {
+        var op = $("<option dataid='"+p.id+"' value='" + p.name + "'>" + p.name + "</option>");
+        $(obj).append(op);
+    });
+}

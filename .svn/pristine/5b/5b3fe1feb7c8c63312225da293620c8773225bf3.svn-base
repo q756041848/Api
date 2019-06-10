@@ -1,0 +1,239 @@
+{include file="common/head"/}
+<style>
+    td {
+        white-space:nowrap;overflow:hidden;text-overflow: ellipsis;
+    }
+    .table>tbody>tr>td{
+        vertical-align: middle;
+    }
+
+</style>
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('main-container', 'fixed')
+        } catch (e) {
+        }
+    </script>
+    {include file="common/left"}
+    <div class="main-content">
+        <div class="main-content-inner">
+            {include file="common/header_nav"}
+            <div class="page-content">
+                <div class="row maintop">
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="page-content">
+                                <div class="row maintop">
+                                    <form class="form-horizontal" name="admin_list_sea" class="form-search"
+                                          method="post" action="{:url('vipPeople')}">
+
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label no-padding-right"
+                                                   for="v_name">姓名</label>
+                                            <div class="col-sm-4 col-xs-10">
+                                                <input type="text" id="v_name" name="v_name" value="{$testval}"
+                                                       placeholder="姓名" class="col-xs-3 col-sm-5"/>
+                                            </div>
+
+                                            <label class="col-sm-1 control-label no-padding-right"
+                                                   for="v_phone">电话</label>
+                                            <div class="col-sm-4 col-xs-10">
+                                                <input type="tel" id="v_phone" name="v_phone" value="{$v_phone}"
+                                                       placeholder="电话" class="col-xs-12 col-sm-5" maxlength="11"/>
+                                            </div>
+                                        </div>
+                                        <div class="space-4"></div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label no-padding-right"
+                                                   for="v_place">籍贯</label>
+                                            <div class="col-sm-4 col-xs-10">
+                                                <input type="text" id="v_place" name="v_place" value="{$v_place}"
+                                                       placeholder="籍贯" class="col-xs-3 col-sm-5"/>
+                                            </div>
+
+                                            <label class="col-sm-1 control-label no-padding-right"
+                                                   for="v_cardid">身份证</label>
+                                            <div class="col-sm-4 col-xs-10">
+                                                <input type="tel" id="v_cardid" name="v_cardid" value="{$v_cardid}"
+                                                       placeholder="身份证" class="col-xs-12 col-sm-5" maxlength="18"/>
+                                            </div>
+                                        </div>
+                                        <div class="space-4"></div>
+
+                                        <div class="space-4"></div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label no-padding-right"> </label>
+                                            <div class="col-sm-10 col-xs-12">
+                                                <button type="submit"
+                                                        class="btn btn-xs all-btn btn-purple col-xs-3 col-sm-2">
+                                                    <span class="ace-icon fa fa-refresh icon-on-right bigger-110"></span>
+                                                    搜 索
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div class="col-xs-12 col-sm-2" style="margin-bottom: 8px;">-->
+                    <!--<a href="{:url('vipAdd')}">-->
+                        <!--<button class="btn btn-xs btn-danger">-->
+                            <!--<i class="ace-icon fa fa-plus bigger-110"></i>-->
+                            <!--添加高端会员-->
+                        <!--</button>-->
+                    <!--</a>-->
+                <!--</div>-->
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="table-responsive">
+                                    <table id="simple-table"
+                                           class="table table-striped table-bordered table-hover center" style="table-layout: fixed;">
+                                        <thead>
+                                        <tr>
+                                            <th class="center">登陆账号</th>
+                                            <th class="center">账号昵称</th>
+                                            <th class="center visible-lg visible-md">姓名</th>
+                                            <th class="center">性别</th>
+                                            <th class="center visible-lg visible-md">身份证</th>
+                                            <th class="center">出生年月</th>
+                                            <th class="center">籍贯</th>
+                                            <th class="center" style="border-right:1px solid #ddd; ">学历</th>
+                                            <th class="center visible-lg visible-md">电话</th>
+                                            <th class="center">邮箱</th>
+                                            <th class="center">记录添加时间</th>
+                                            <th class="center"  style="width: 260px;">详情信息</th>
+                                            {eq name="uid" value="1"}
+                                            <th class="center">操作</th>
+                                            {/eq}
+                                        </tr>
+                                        </thead>
+
+                                        <tbody>
+                                        {volist name="res" id="vo"}
+                                        <tr>
+                                            <td class="particulars" name='c_id'>{$vo.l_phone}</td>
+                                            <td class="particulars" name='c_id'>{$vo.l_name}</td>
+                                            <td class=" visible-lg visible-md"><a href="{:url('resume',['v_id'=>$vo['v_id']])}" target="_blank">{$vo.v_name}</a></td>
+                                            <td>{$vo.v_sex}</td>
+                                            <td title="{$vo.v_cardid}">{$vo.v_cardid}</td>
+                                            <td title="{$vo.v_birthday}">{$vo.v_birthday}</td>
+                                            <td title="{$vo.v_place}">{$vo.v_place}</td>
+                                            <td title="{$vo.v_education}">{$vo.v_education}</td>
+                                            <td title="{$vo.v_phone}">{$vo.v_phone}</td>
+                                            <td title="{$vo.v_email}">{$vo.v_email}</td>
+                                            <td title="{$vo.v_time}">{$vo.v_time}</td>
+                                            <td>
+                                                <div class="col-xs-12 col-sm-2" style="width: 66px;">
+                                                    <a href="{:url('vipeduAdd',['v_id'=>$vo['v_id']])}">
+                                                        <button class="btn btn-xs btn-danger">
+                                                            <i class=""></i>
+                                                            教育经历
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-2" style="width: 66px;">
+                                                    <a href="{:url('vipworkAdd',['v_id'=>$vo['v_id']])}">
+                                                        <button class="btn btn-xs btn-danger">
+                                                            <i class=""></i>
+                                                            工作经历
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-2" style="width: 90px;">
+                                                    <a href="{:url('vipfamilyAdd',['v_id'=>$vo['v_id']])}">
+                                                        <button class="btn btn-xs btn-danger">
+                                                            <i class=""></i>
+                                                            家庭基本情况
+                                                        </button>
+                                                    </a>
+                                                </div>
+
+                                            </td>
+                                            {eq name="uid" value="1"}
+                                            <td>
+                                                <div class="action-buttons">
+                                                    <a class="green" href="javascript:;" onclick="return update({$vo.v_id});"
+                                                       title="修改">
+                                                        <i class="ace-icon fa fa-pencil bigger-130"></i> </a>
+                                                    <a class="red" href="javascript:;" onclick="return del({$vo.l_id});"
+                                                       title="删除">
+                                                        <i class="ace-icon fa fa-trash-o bigger-130"></i> </a>
+                                                </div>
+                                            </td>
+                                            {/eq}
+                                        </tr>
+                                        {/volist}
+
+                                        <tr>
+                                            <td colspan="12" align="center">&nbsp;{$page}</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div><!-- /.span -->
+                        </div><!-- /.row -->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+
+        </div>
+    </div><!-- /.main-content -->
+    {include file="common/foot" /}
+
+</div><!-- /.main-container -->
+
+<!-- inline scripts related to this page -->
+<script type="text/javascript">
+    function del(id) {
+//        console.log(id);
+        layer.confirm('你确定要删除吗？', {icon: 3}, function (index) {
+            layer.close(index);
+            window.location.href = "{:url('vipDel')}?v_id=" + id;
+        });
+    }
+    function update(vid) {
+        var url="{:url('vipSearch')}";
+        $.post(url,{v_id:vid},function (data) {
+            if(data.status=='1'){
+                window.location.href = "{:url('vipUpdate')}?v_id="+vid
+            }else{
+                layer.alert('该账号未填写基本信息!', {icon: 5}, function (index) {
+                    layer.close(index);
+                });
+                return false;
+            }
+        })
+    }
+
+    function stateyes(id) {
+        $.post('{:url("adminState")}', {'id': id}, function (data) {
+            if (data.status == 1) {
+                if (data.info == '状态禁止') {
+                    var a = '<button class="btn btn-minier btn-danger">状态禁用</button>'
+                    $('#zt' + id).html(a);
+                    return false;
+                } else {
+                    var b = '<button class="btn btn-minier btn-yellow">状态开启</button>'
+                    $('#zt' + id).html(b);
+                    return false;
+                }
+            } else {
+                layer.alert(data.info, {icon: 4});
+                return false;
+            }
+        });
+        return false;
+    }
+</script>
+</body>
+</html>

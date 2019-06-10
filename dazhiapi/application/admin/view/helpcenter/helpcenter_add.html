@@ -1,0 +1,163 @@
+{include file="common/head"/}
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    {include file="common/left"}
+    <div class="main-content">
+        <div class="main-content-inner">
+            {include file="common/header_nav"}
+            <div class="page-content">
+                <div class="page-header">
+                    <h1>
+                        您当前操作
+                        <small>
+                            <i class="ace-icon fa fa-angle-double-right"></i>
+                            小程序帮助中心疑问解答添加
+                        </small>
+                    </h1>
+                </div><!-- /.page-header -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+                        <form class="form-horizontal" role="form" name="sys" id="sys" method="post" action="{:url('helpcenter_doAdd')}">
+
+
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="h_titleid">问题序号</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" id="h_titleid" name="h_titleid" value="" maxlength="10" placeholder="问题序号只能是数字" class="col-xs-12 col-sm-5" />
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填，决定问题显示的顺序</span>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="h_title">问题标题</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" id="h_title" name="h_title" value="" placeholder="请输入问题标题" class="col-xs-12 col-sm-5" />
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">解答内容</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <script id="container" name="h_content"  type="text/plain" ></script>
+                                    <!--编辑器js调用-->
+                                    <!-- 配置文件 -->
+                                    <script type="text/javascript" src="__STATIC__/ueditor/ueditor.config.js"></script>
+                                    <!-- 编辑器源码文件 -->
+                                    <script type="text/javascript" src="__STATIC__/ueditor/ueditor.all.js"></script>
+                                    <script type="text/javascript" src="__STATIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+                                    <!-- 实例化编辑器 -->
+                                    <script type="text/javascript">
+                                        var ue = UE.getEditor('container',{
+                                            initialFrameWidth:518.33, //初始化编辑器宽度,默认1000
+                                            initialFrameHeight:150,
+                                            //是否可以拉伸长高,默认true(当开启时，自动长高失效)
+                                            scaleEnabled:false,
+                                        });
+                                        //覆盖编辑器自动添加P标签，改为回车换行
+                                        var editor = UE.getEditor('editor',{
+                                            enterTag : 'br'
+                                        });
+                                    </script>
+                                    <!--编辑器js调用-->
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+
+
+                            <div class="space-4"></div>
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <button class="btn btn-info" type="submit">
+                                        <i class="ace-icon fa fa-check bigger-110"></i>
+                                        提交
+                                    </button>
+                                    <button class="btn" type="reset">
+                                        <i class="ace-icon fa fa-undo bigger-110"></i>
+                                        重置
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    {include file="common/foot" /}
+</div>
+<script>
+    $(function () {
+        $('#sys').ajaxForm({
+            beforeSubmit: checkForm, //此方法主要是提交前执行的方法，根据需要设置
+            success: complete, //这是提交后的方法
+            dataType: 'json'
+        });
+
+        function checkForm() {
+            if ('' == $.trim($('#h_titleid').val())) {
+                layer.alert('问题序号不能为空', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#h_titleid').focus();
+                });
+
+                return false;
+            }
+
+                //验证只能输入数字
+                var num=/^[0-9]*$/;
+                if(!num.test($.trim($('#h_titleid').val()))){
+                    layer.alert('问题序号只能为数字', {icon: 5}, function (index) {
+                        layer.close(index);
+                        $('#h_titleid').focus();
+                    });
+                    return false;
+                }
+
+
+
+            if ('' == $.trim($('#h_title').val())) {
+                layer.alert('问题标题不能为空', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#h_title').focus();
+                });
+                return false;
+            }
+
+
+            if (ue.getContent()=='') {
+                layer.alert('解答内容不能为空', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#container').focus();
+                });
+                return false;
+            }
+        }
+
+
+
+        function complete(data) {
+            if (data.status == 1) {
+                layer.alert(data.info, {icon: 6}, function (index) {
+                    layer.close(index);
+                    window.location.href = data.url;
+                });
+            } else {
+                layer.alert(data.info, {icon: 5}, function (index) {
+                    layer.close(index);
+                    //window.location.href = "{:url('Sys/sys')}";
+                });
+            }
+        }
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"/Users/shuyuan/Desktop/api/public/../application/admin/view/preview/index.html";i:1555728794;}*/ ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dz_Api</title>
+    <link href='/static/css/typography.css' media='screen' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='/static/css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+    .ext-hidden {
+        display: none;
+    }
+
+    #condition {
+        width: 410px;
+    }
+
+    #apiKey {
+        width: 170px;
+    }
+
+    #apiPosition {
+        font-size: 0.9em;
+        height: 1.8em;
+        width: 180px;
+    }
+
+    #btn-api-auth {
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 6px 8px;
+        font-size: 0.9em;
+        color: white;
+        background-color: #547f00;
+        border-radius: 4px;
+    }
+
+    ul.api-auth {
+        display: none;
+        position: absolute;
+        top: 40px;
+        overflow: hidden;
+        background-color: #fff;
+        overflow-y: auto;
+        border: 1px solid #999;
+        border-top: 0;
+        box-shadow: 0 3px 5px #999;
+        z-index: 9999;
+        padding: 10px 0;
+    }
+
+    ul.api-auth li {
+        height: 30px;
+        line-height: 30px;
+        overflow: hidden;
+        padding: 0 10px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .input-select {
+        width: 200px;
+        height: 25px;
+
+    }
+
+    .input-select input {
+        background-color: #fff;
+        position: absolute;
+        border: 0;
+        outline: 0;
+        background: none;
+    }
+
+    .input-select ul {
+        width: 200px;
+        display: none;
+        position: absolute;
+        top: 40px;
+        overflow: hidden;
+        background-color: #fff;
+        overflow-y: auto;
+        /*border: 1px solid #999;*/
+        border-top: 0;
+        box-shadow: 0 3px 5px #999;
+        z-index: 9999;
+    }
+
+    .input-select ul li {
+        height: 30px;
+        line-height: 30px;
+        overflow: hidden;
+        padding: 0 10px;
+        cursor: pointer;
+    }
+
+    .input-select ul li.on {
+        background-color: #e0e0e0;
+    }
+
+    #apiBtn {
+        text-decoration: none;
+        font-weight: bold;
+        padding: 6px 8px;
+        font-size: 0.9em;
+        color: white;
+        background-color: #547f00;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -o-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -khtml-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    .dev-status a {
+        text-transform: uppercase;
+        text-decoration: none !important;
+        color: white !important;
+        background-color: #e67e22;
+        display: inline-block;
+        width: 50px;
+        font-size: 0.7em;
+        text-align: center;
+        padding: 7px 4px 4px 4px;
+        border-radius: 2px;
+        text-decoration: none;
+    }
+
+    .swagger-section #header a#logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-decoration: none;
+        background: transparent url(/static/img/API.png) no-repeat left center;
+        padding: 20px 0 20px 40px;
+        color: white;
+    }
+
+    .toggleOperation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+</style>
+<body class="swagger-section">
+<!--头部-->
+<div id='header'>
+    <div class="swagger-ui-wrap" style="max-width:1000px;">
+        <a id="logo">Dz_exclusive</a>
+        <form id='api_selector'>
+            <div class='input'>
+                <input placeholder="接口名称  /  请求url  /  标签" id="condition" name="condition" type="text"/>
+            </div>
+            <div class='input'>
+                <a id="explore" href="javascript:void(0);">浏览</a>
+            </div>
+        </form>
+    </div>
+</div>
+<!--默认分组-->
+<div class=" container">
+    <h3>
+        <a data-toggle="collapse" data-parent="#accordion"
+           href="#accordion" class="toggleEndpointList" data-id="默认分组">默认分组</a>
+    </h3>
+</div>
+<!--折叠（Collapse）插件-->
+<div class="panel-group container " id="accordion">
+    <?php if(is_array($info) || $info instanceof \think\Collection || $info instanceof \think\Paginator): $i = 0; $__LIST__ = $info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+    <div class="panel panel-default ">
+        <div class="panel-heading ">
+            <h4 class="panel-title  toggleOperation">
+
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#<?php echo $vo['s_id']; ?>">
+                    GET <?php echo $vo['s_url']; ?>
+                </a>
+
+
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href='#<?php echo $vo['s_id']; ?>'><?php echo $vo['s_name']; ?></a>
+            </h4>
+        </div>
+        <div id="<?php echo $vo['s_id']; ?>" class="content">
+            <div class="panel-body">
+                <h4>最后更新时间：</h4>
+             <h5>
+              2019年04月19日08:20:14
+             </h5>
+                <!--接口说明-->
+                <h4>接口说明:</h4>
+                <div class="markdown">接口内容</div>
+                <h5> companyname 公司名字</h5>
+                <h5> linkman 介绍人</h5>
+                <h5> phone 手机号</h5>
+                <h5>address 地址</h5>
+                <h5>types 服务类型</h5>
+                scale 规模</h5>
+            </div>
+            <!--请求参数-->
+            <form accept-charset="UTF-8" class="sandbox container">
+                <div style="margin:0;padding:0;display:inline"></div>
+                <h4 data-sw-translate="">请求参数</h4>
+                <table class="fullwidth">
+                    <thead>
+                    <tr>
+                        <th style="width: 100px; max-width: 100px" data-sw-translate="">参数</th>
+                        <th style="width: 310px; max-width: 310px" data-sw-translate="">值</th>
+                        <th style="width: 200px; max-width: 200px" data-sw-translate="">说明</th>
+                        <th style="width: 100px; max-width: 100px" data-sw-translate="">参数位置</th>
+                        <th style="width: 220px; max-width: 230px" data-sw-translate="">数据类型</th>
+                    </tr>
+                    </thead>
+                    <tbody class="operation-params">
+                    <tr>
+                        <td class="code"><label for="mstuid0.25661465392014693">stuid</label></td>
+                        <td>
+                            <input class="parameter" minlength="0" name="stuid" placeholder=""
+                                   id="mstuid0.25661465392014693" type="text" value="">
+                        </td>
+                        <td class="markdown"></td>
+                        <td>query</td>
+                        <td>
+                            <span class="model-signature">string</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="code"><label for="mopenid0.20435746935394683">openid</label></td>
+                        <td>
+
+                            <input class="parameter" minlength="0" name="openid" placeholder=""
+                                   id="mopenid0.20435746935394683" type="text" value="">
+                        </td>
+                        <td class="markdown"></td>
+                        <td>query</td>
+                        <td>
+                            <span class="model-signature">string</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="sandbox_header">
+                    <input class="submit" type="button" value="测试" data-sw-translate="">
+                    <a href="#" class="response_hider" style="display:none" data-sw-translate="">隐藏响应</a>
+                    <span class="response_throbber" style="display:none"></span>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+    <?php endforeach; endif; else: echo "" ;endif; ?>
+
+
+</div>
+<body>
+
+</html>

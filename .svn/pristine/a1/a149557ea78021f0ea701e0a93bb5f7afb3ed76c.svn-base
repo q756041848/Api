@@ -1,0 +1,134 @@
+{include file="common/head"/}
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    {include file="common/left"}
+    <div class="main-content">
+        <div class="main-content-inner">
+            {include file="common/header_nav"}
+            <div class="page-content">
+                <div class="page-header">
+                    <h1>
+                        您当前操作
+                        <small>
+                            <i class="ace-icon fa fa-angle-double-right"></i>
+                            文章添加
+                        </small>
+                    </h1>
+                </div><!-- /.page-header -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+                        <form class="form-horizontal" role="form" name="sys" id="sys" method="post" action="{:url('artical_doAdd')}">
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="a_type">文章类型</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <select name="a_type" id="a_type" class="col-select col-xs-12 col-sm-4">
+                                        <option value="">请选择文章类型</option>
+                                        {foreach name="type" id="v"}
+                                        <option value="{$v.t_id}">{$v.t_name}</option>
+                                        {/foreach}
+                                    </select>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>文章类型不能为空</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="container">文章内容</label>
+                                <div class="col-sm-10 col-xs-12">
+
+                                    <script id="container" name="a_content"  type="text/plain" ></script>
+                                    <!--编辑器js调用-->
+                                    <!-- 配置文件 -->
+                                    <script type="text/javascript" src="__STATIC__/ueditor/ueditor.config.js"></script>
+                                    <!-- 编辑器源码文件 -->
+                                    <script type="text/javascript" src="__STATIC__/ueditor/ueditor.all.js"></script>
+                                    <script type="text/javascript" src="__STATIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+                                    <!-- 实例化编辑器 -->
+                                    <script type="text/javascript">
+                                        var ue = UE.getEditor('container',{
+                                            initialFrameWidth:518.33, //初始化编辑器宽度,默认1000
+                                            initialFrameHeight:150,
+                                            //是否可以拉伸长高,默认true(当开启时，自动长高失效)
+                                            scaleEnabled:false,
+                                        });
+                                        //覆盖编辑器自动添加P标签，改为回车换行
+                                        var editor = UE.getEditor('editor',{
+                                            enterTag : 'br'
+                                        });
+                                    </script>
+                                    <!--编辑器js调用-->
+                                </div>
+                            </div>
+
+
+
+                            <div class="space-4"></div>
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <button class="btn btn-info" type="submit">
+                                        <i class="ace-icon fa fa-check bigger-110"></i>
+                                        提交
+                                    </button>
+                                    <button class="btn" type="reset">
+                                        <i class="ace-icon fa fa-undo bigger-110"></i>
+                                        重置
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    {include file="common/foot" /}
+</div>
+<script>
+    $(function () {
+        $('#sys').ajaxForm({
+            beforeSubmit: checkForm, //此方法主要是提交前执行的方法，根据需要设置
+            success: complete, //这是提交后的方法
+            dataType: 'json'
+        });
+
+        function checkForm() {
+            if ('' == $.trim($('#a_type').val())) {
+                layer.alert('文章类型不能为空', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#a_type').focus();
+                });
+                return false;
+            }
+            if ( ue.getContent()=='') {
+                layer.alert('文章内容不能为空', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#container').focus();
+                });
+                return false;
+            }
+        }
+
+
+
+        function complete(data) {
+            if (data.status == 1) {
+                layer.alert(data.info, {icon: 6}, function (index) {
+                    layer.close(index);
+                    window.location.href = data.url;
+                });
+            } else {
+                layer.alert(data.info, {icon: 5}, function (index) {
+                    layer.close(index);
+                    //window.location.href = "{:url('Sys/sys')}";
+                });
+            }
+        }
+    })
+
+</script>
+</body>
+</html>

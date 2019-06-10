@@ -1,0 +1,175 @@
+$(function() {
+    initTab();
+    initLogin();
+    initRegist();
+    initSendActiveCode();
+    initSendResetCode()
+});
+function initTab() {
+    $(".list-inline li > a").click(function() {
+        var a = $(this).attr("href") + " > form";
+        $(a).addClass("magictime swap");
+        setTimeout(function() {
+            $(a).removeClass("magictime swap")
+        }, 1000)
+    })
+}
+function initSendActiveCode() {
+    $("#activeForm").bootstrapValidator({
+        fields: {
+            email: {
+                trigger: "blur",
+                validators: {
+                    notEmpty: {
+                        message: "邮箱不能为空"
+                    },
+                    emailAddress: {
+                        message: "邮箱格式错误"
+                    }
+                }
+            }
+        }
+    });
+    $("#sendActiveCodeBtn").click(function() {
+        if (isFormValid("activeForm")) {
+            var a = new Object();
+            a.email = $("#activeCodeEmail").val();
+            doPost("regist/json/sendActiveCode.htm", a, function(b) {
+                notice("发送成功")
+            })
+        }
+    })
+}
+function initSendResetCode() {
+    $("#forgotForm").bootstrapValidator({
+        fields: {
+            email: {
+                trigger: "blur",
+                validators: {
+                    notEmpty: {
+                        message: "邮箱不能为空"
+                    },
+                    emailAddress: {
+                        message: "邮箱格式错误"
+                    }
+                }
+            }
+        }
+    });
+    $("#sendResetCodeBtn").click(function() {
+        if (isFormValid("forgotForm")) {
+            var a = new Object();
+            a.email = $("#resetCodeEmail").val();
+            doPost("json/sendResetCode.htm", a, function(b) {
+                notice("发送成功")
+            })
+        }
+    })
+}
+function initLogin() {
+    var a = $("#loginValidCodeImg").attr("src");
+    $("#loginValidCodeImg").click(function() {
+        this.src = a + "&rand=" + Math.random()
+    });
+    $("#loginBtn").click(function() {
+        $.cookie("autoLogin", "", {
+            expires: -1
+        });
+        $.cookie("loginName", "", {
+            expires: -1
+        });
+        $.cookie("loginPasswd", "", {
+            expires: -1
+        })
+    });
+    $("#loginForm").bootstrapValidator({
+        fields: {
+            loginName: {
+                trigger: "blur",
+                validators: {
+                    notEmpty: {
+                        message: "登陆邮箱不能为空"
+                    },
+                    emailAddress: {
+                        message: "邮箱格式错误"
+                    }
+                }
+            },
+            passwd: {
+                validators: {
+                    notEmpty: {
+                        message: "密码不能为空"
+                    }
+                }
+            },
+            validCode: {
+                validators: {
+                    notEmpty: {
+                        message: "验证码不能为空"
+                    }
+                }
+            }
+        }
+    })
+}
+function initRegist() {
+    var a = $("#registValidCodeImg").attr("src");
+    $("#registValidCodeImg").click(function() {
+        this.src = a + "&rand=" + Math.random()
+    });
+    $("#registForm").bootstrapValidator({
+        fields: {
+            nickName: {
+                validators: {
+                    notEmpty: {
+                        message: "昵称不能为空"
+                    }
+                }
+            },
+            loginName: {
+                trigger: "blur",
+                validators: {
+                    notEmpty: {
+                        message: "邮箱不能为空"
+                    },
+                    emailAddress: {
+                        message: "邮箱格式错误"
+                    },
+                    remote: {
+                        message: "该邮箱已注册",
+                        type: "GET",
+                        url: "regist/validEmail.htm",
+                        name: "email"
+                    }
+                }
+            },
+            passwd: {
+                validators: {
+                    notEmpty: {
+                        message: "密码不能为空"
+                    }
+                }
+            },
+            confirmPasswd: {
+                trigger: "blur",
+                validators: {
+                    notEmpty: {
+                        message: "密码确认不能为空"
+                    },
+                    identical: {
+                        field: "passwd",
+                        message: "输入的密码不一致"
+                    }
+                }
+            },
+            validCode: {
+                validators: {
+                    notEmpty: {
+                        message: "验证码不能为空"
+                    }
+                }
+            }
+        }
+    })
+}
+;

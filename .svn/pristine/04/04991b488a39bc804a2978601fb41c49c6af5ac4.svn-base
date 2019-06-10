@@ -1,0 +1,573 @@
+<?php
+namespace clt;
+use clt\Leftnav;
+class Form{
+    public $data = array();
+
+    public function __construct($data=array()) {
+        $this->data = $data;
+    }
+
+    public function catid($info,$value){
+        $validate = getvalidate($info);
+        $list = db('category')->select();;
+        foreach ($list as $lk=>$v){
+            $Category[$v['id']] = $v;
+        }
+        $id = $field = $info['field'];
+        $value = $value ? $value : $this->data[$field];
+        $moduleid =$info['moduleid'];
+        foreach ($Category as $r){
+            if($r['type']==1) continue;
+            $arr= explode(",",$r['arrchildid']);
+            $show=0;
+            foreach((array)$arr as $rr){
+                if($Category[$rr]['moduleid'] ==$moduleid) $show=1;
+            }
+            if(empty($show)){
+                continue;
+            }
+            if($r['child']){
+                $r['disabled'] = ' disabled';
+            }else{
+                $r['disabled'] = ' ';
+            }
+            $array[] = $r;
+        }
+        $str  = "<option value='\$id' \$disabled \$selected>\$spacer \$catname</option>";
+        $tree = new Tree ($array);
+        $parseStr = '<select  id="'.$id.'" name="'.$field.'"  '.$validate.'>';
+        $parseStr .= '<option value="">请选择</option>';
+        $parseStr .= $tree->get_tree(0, $str, $value);
+        $parseStr .= '</select>';
+        return $parseStr;
+    }
+
+
+    public function title($info,$value){
+        $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
+        $thumb=$info['setup']['thumb'];
+        $style=$info['setup']['style'];
+        $id = $field = $info['field'];
+        $validate = getvalidate($info);
+        $value = $value ? $value : $this->data[$field];
+        if(array_key_exists('title_style',$this->data)){
+            if($this->data['title_style']){
+                $title_style = explode(';',$this->data['title_style']);
+                $style_color = explode(':',$title_style[0]);
+                $style_bold = explode(':',$title_style[1]);
+                $style_color = $style_color[1];
+                $style_bold = $style_bold[1];
+            }
+        }
+        if(isset($style_bold)){
+            $boldchecked= $style_bold=='bold' ? 'checked' : '';
+        }else{
+            $boldchecked='';
+        }
+        if(empty($info['setup']['upload_maxsize'])){
+            $info['setup']['upload_maxsize'] =  intval(byte_format(config('attach_maxsize')));
+        }
+        $thumb_ico = imgUrl($this->data['thumb']);
+        $thumbstr ='</div></div><div class="space-4"></div>';
+        $thumbstr .='<div class="form-group"><label class="col-sm-2 control-label no-padding-right">缩略图</label><div class="col-md-4 col-sm-10 col-xs-12">';
+
+        $thumbstr.='<div class="thumb_box"  id="thumb_box"><div id="thumb_aid_box"></div>';
+
+            $thumbstr.='<a href="javascript:swfupload(\'thumb_uploadfile\',\'thumb\',\'图片上传\',1,1,1,\'jpeg,jpg,png,gif\',3,'.$info['moduleid'].',yesdo,nodo)"><img src="'.$thumb_ico.'" id="thumb_pic" ></a>';
+
+
+        $thumbstr.='<br> <input type="button" value="取消缩略图" onclick="javascript:clean_thumb(\'thumb\');" class="btn btn-success btn-sm" style="margin-top: 5px;" />';
+        $thumbstr.='<input type="hidden"  id="thumb" name="thumb"  value="'.$this->data['thumb'].'" /></div>';
+
+        $parseStr   = '<input type="text" class="input-text input-title f_l col-xs-12 col-md-4" name="'.$field.'" id="'.$id.'" value="'.$value.'" size="'.$info['setup']['size'].'" '.$validate.'  /> ';
+        $colorValue = array('555','ac725e','d06b64','f83a22','fa573c','ff7537','ffad46','42d692','16a765','7bd148','b3dc6c','fbe983','fad165','92e1c0','9fe1e7',
+            '9fc6e7','4986e7','9a9cff','b99aff','c2c2c2','cabdbf','cca6ac','f691b2','cd74e6','a47ae2');
+        if(isset($style_color)){
+            $stylestr ='<div class="colorimg"><select id="simple-colorpicker-1" name="style_color" class="hide">';
+            foreach ($colorValue as $k=>$v){
+                if($style_color =='#'.$v){
+                    $stylestr.='<option selected value="#'.$v.'">#'.$v.'</option>';
+                }else{
+                    $stylestr.='<option value="#'.$v.'">#'.$v.'</option>';
+                }
+
+            }
+            $stylestr .='</select></div>';
+
+            $stylestr .='<div class="colorimg"><label><input name="style_bold" type="checkbox" class="ace" value="bold" '.$boldchecked.' /><span class="lbl">加粗</span></label></div>';
+        }else{
+            $stylestr ='<div class="colorimg"><select id="simple-colorpicker-1" name="style_color" class="hide">';
+            foreach ($colorValue as $k=>$v){
+                $stylestr.='<option value="#'.$v.'">#'.$v.'</option>';
+            }
+            $stylestr .='</select></div>';
+            $stylestr .='<div class="colorimg"><label><input name="style_bold" type="checkbox" class="ace" value="bold" '.$boldchecked.' /><span class="lbl">加粗</span></label></div>';
+        }
+
+        if($style){
+            $parseStr = $parseStr.$stylestr;
+        }
+        if($thumb){
+            $parseStr = $parseStr.$thumbstr;
+        }
+        return $parseStr;
+    }
+
+    public function text($info,$value){
+        $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
+        $id = $field = $info['field'];
+        $validate = getvalidate($info);
+        if(array_key_exists('ispassowrd',$info['setup'])){
+            $info['setup']['ispassowrd'] ? $inputtext = 'passowrd' : $inputtext = 'text';
+        }else{
+            $inputtext = 'text';
+        }
+        $action = ACTION_NAME;
+        if($action=='add'){
+            $value = $value ? $value : $info['setup']['default'];
+        }else{
+            $value = $value ? $value : $this->data[$field];
+        }
+        $parseStr   = '<input type="'.$inputtext.'" class="col-xs-12 col-md-2" name="'.$field.'"  id="'.$id.'" value="'.$value.'" size="'.$info['setup']['size'].'"  '.$validate.'/> ';
+        return $parseStr;
+    }
+
+    public function number($info,$value){
+        $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
+        $id = $field = $info['field'];
+        $validate = getvalidate($info);
+        if(isset($info['setup']['ispassowrd'])){
+            $inputtext = 'passowrd';
+        }else{
+            $inputtext = 'text';
+        }
+        $action = ACTION_NAME;
+        if($action=='add'){
+            $value = $value ? $value : $info['setup']['default'];
+        }else{
+            $value = $value ? $value : $this->data[$field];
+        }
+        if(isset($info['setup']['size'])){
+            $size = $info['setup']['size'];
+        }else{
+            $size = "";
+        }
+        $parseStr   = '<input type="'.$inputtext.'"   class="input-text '.$info['class'].'" name="'.$field.'"  id="'.$id.'" value="'.$value.'" size="'.$size.'"  '.$validate.'/> ';
+        return $parseStr;
+    }
+
+    public function textarea($info,$value){
+        $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
+        $id = $field = $info['field'];
+        $validate = getvalidate($info);
+        $action = ACTION_NAME;
+        if($action=='add'){
+            $value = $value ? $value : $info['setup']['default'];
+        }else{
+            $value = $value ? $value : $this->data[$field];
+        }
+
+        $parseStr   = '<textarea  class="col-xs-12 col-md-4" name="'.$field.'"  rows="'.$info['setup']['rows'].'" cols="'.$info['setup']['cols'].'"  id="'.$id.'"   '.$validate.'/>'.$value.'</textarea>';
+        return $parseStr;
+    }
+
+
+    public function select($info,$value){
+
+        $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
+        $id = $field = $info['field'];
+        $validate = getvalidate($info);
+        $action = ACTION_NAME;
+        if($action=='add'){
+            $value = $value ? $value : $info['setup']['default'];
+        }else{
+            $value = $value ? $value : $this->data[$field];
+        }
+        if($value != '') $value = strpos($value, ',') ? explode(',', $value) : $value;
+        if(is_array($info['options'])){
+            $optionsarr = $info['options'];
+        }else{
+            $options    = $info['setup']['options'];
+            $options = explode("\n",$info['setup']['options']);
+            foreach($options as $r) {
+                $v = explode("|",$r);
+                $k = trim($v[1]);
+                $optionsarr[$k] = $v[0];
+            }
+        }
+        if(!empty($info['setup']['multiple'])) {
+            $onchange = '';
+            if(isset($info['setup']['onchange'])){
+                $onchange = $info['setup']['onchange'];
+            }
+            $parseStr = '<select id="'.$id.'" name="'.$field.'"  onchange="'.$onchange.'" class="'.$info['class'].'"  '.$validate.' size="'.$info['setup']['size'].'" multiple="multiple" >';
+        }else {
+            $onchange = '';
+            if(isset($info['setup']['onchange'])){
+                $onchange = $info['setup']['onchange'];
+            }
+            $parseStr = '<select id="'.$id.'" name="'.$field.'" onchange="'.$onchange .'"  class="'.$info['class'].'" '.$validate.'>';
+        }
+
+        if(is_array($optionsarr)) {
+            foreach($optionsarr as $key=>$val) {
+                if(!empty($value)){
+                    $selected='';
+                    if(is_array($value)){
+                        if(in_array($key,$value)){
+                            $selected = ' selected="selected"';
+                        }
+                    }else{
+                        if($value==$key){
+                            $selected = ' selected="selected"';
+                        }
+                    }
+                    $parseStr   .= '<option '.$selected.' value="'.$key.'">'.$val.'</option>';
+                }else{
+                    $parseStr   .= '<option value="'.$key.'">'.$val.'</option>';
+                }
+            }
+        }
+        $parseStr   .= '</select>';
+        return $parseStr;
+    }
+    public function checkbox($info,$value){
+
+        $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
+        $id = $field = $info['field'];
+        $validate = getvalidate($info);
+        $action = ACTION_NAME;
+        if($action=='add'){
+            $value = $value ? $value : $info['setup']['default'];
+        }else{
+            $value = $value ? $value : $this->data[$field];
+        }
+        $labelwidth = $info['setup']['labelwidth'];
+
+
+        if(is_array($info['options'])){
+            $optionsarr = $info['options'];
+        }else{
+            $options    = $info['setup']['options'];
+            $options = explode("\n",$info['setup']['options']);
+            foreach($options as $r) {
+                $v = explode("|",$r);
+                $k = trim($v[1]);
+                $optionsarr[$k] = $v[0];
+            }
+        }
+        if($value != '') $value = strpos($value, ',') ? explode(',', $value) : array($value);
+        $i = 1;
+        $parseStr ='';
+        foreach($optionsarr as $key=>$r) {
+            $key = trim($key);
+            if($i>1){
+                $validate='';
+            }
+            $checked = ($value && in_array($key, $value)) ? 'checked' : '';
+            $parseStr .= '<div class="checkbox" style="float:left;"><label><input name="'.$field.'[]" id="'.$id.'_'.$i.'" '.$checked.' value="'.htmlspecialchars($key).'"  '.$validate.' type="checkbox" class="ace"/><span class="lbl">'.htmlspecialchars($r).'</span></label></div>';
+            $i++;
+        }
+        return $parseStr;
+
+    }
+    public function radio($info,$value)
+    {
+
+        $info['setup'] = is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
+        $id = $field = $info['field'];
+        $validate = getvalidate($info);
+
+        $action = ACTION_NAME;
+        if ($action == 'add') {
+            $value = $value ? $value : $info['setup']['default'];
+        } else {
+            $value = $value ? $value : $this->data[$field];
+        }
+        $labelwidth = $info['setup']['labelwidth'];
+        $parseStr='';
+        if (isset($info['options'])) {
+            if (is_array($info['options'])) {
+                $optionsarr = $info['options'];
+            }
+        } else if (isset($info['setup']['options'])) {
+            $options = $info['setup']['options'];
+            $options = explode("\n", $info['setup']['options']);
+            foreach ($options as $r) {
+                $v = explode("|", $r);
+                $k = trim($v[1]);
+                $optionsarr[$k] = $v[0];
+            }
+        }else {
+            return $parseStr;
+        }
+        $i = 1;
+        foreach($optionsarr as $key=>$r) {
+            if($i>1){
+                $validate ='';
+            }
+            $checked = trim($value)==trim($key) ? 'checked' : '';
+            if(empty($value) && empty($key) ){
+                $checked = 'checked';
+            }
+            $parseStr .= '<div class="radio" style="float:left;"><label><input name="'.$field.'" id="'.$id.'_'.$i.'" '.$checked.' value="'.$key.'" '.$validate.' type="radio" class="ace" /><span class="lbl"> '.$r.'</span></label></div>';
+            $i++;
+        }
+        return $parseStr;
+    }
+    public function editor($info,$value){
+        $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
+        $id = $field = $info['field'];
+        $validate = getvalidate($info);
+        $action = ACTION_NAME;
+        if($action=='add'){
+            $value = $value ? $value : $info['setup']['default'];
+        }else{
+            $value = $value ? $value : $this->data[$field];
+        }
+
+        $textareaid = $field;
+        $toolbar = $info['setup']['toolbar'];
+        $moduleid = $info['moduleid'];
+        $height = $info['setup']['height'] ? $info['setup']['height'] : 300;
+        $flashupload = $info['setup']['flashupload'];
+        $alowuploadexts = $info['setup']['alowuploadexts'];
+        $show_page=$info['setup']['showpage'];
+
+        $file_size = intval(byte_format(config('attach_maxsize')));
+        if(empty($alowuploadexts)) $alowuploadexts = 'jpg,gif,png';
+        $str ='';
+//        $str .='<script src="__PUBLIC__/ueditor/ueditor.config.js" type="text/javascript"></script>';
+//        $str .='<script src="__PUBLIC__/ueditor/ueditor.all.js" type="text/javascript"></script>';
+        $str .='<textarea name="'.$field.'" class="'.$info['class'].'" id="myEditor'.$id.'" '.$validate.' >'.$value.'</textarea>';
+        $str .='<script>var editor = new UE.ui.Editor();editor.render("myEditor'.$id.'");</script>';
+        return $str;
+    }
+    public function datetime($info,$value){
+        $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
+        $id = $field = $info['field'];
+        $validate = getvalidate($info);
+        $action = ACTION_NAME;
+        if($action=='add'){
+            $value = $value ? $value : $info['setup']['default'];
+        }else{
+            $value = $value ? $value : $this->data[$field];
+        }
+        $value = $value ?  toDate($value,"Y-m-d H:i:s") : toDate(time(),"Y-m-d H:i:s");
+
+
+        /*$parseStr = '<div class="input-group">';
+        $parseStr .= '<input class="form-control date-picker col-md-4 col-xs-12" id="id-date-picker-1" value="'.$value.'" type="text"  name="'.$field.'" id="'.$id.'" data-date-format="yyyy-mm-dd" />';
+        $parseStr .= '<span class="input-group-addon"><i class="fa fa-calendar bigger-110"></i></span></div>';*/
+
+        $parseStr = '<div class="input-group clo-xs-12 col-md-4"><input class="form-control input-text'.$info['class'].'"  '.$validate.'  name="'.$field.'" type="text" id="'.$id.'" size="25" onFocus="WdatePicker({dateFmt:\'yyyy-MM-dd HH:mm:ss\'
+		})" value="'.$value.'" />';
+        $parseStr .= '<span class="input-group-addon"><i class="fa fa-calendar bigger-110"></i></span></div>';
+        return $parseStr;
+    }
+    public function groupid($info,$value){
+        $newinfo = $info;
+        $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
+        $list = db('role')->select();;
+        foreach ($list as $lk=>$v){
+            $groups[$v['id']] = $v;
+        }
+        $options=array();
+        foreach($groups as $key=>$r) {
+            if($r['status']){
+                $options[$key]=$r['name'];
+            }
+        }
+        $newinfo['options']=$options;
+        $fun=$info['setup']['inputtype'];
+        return $this->$fun($newinfo,$value);
+    }
+    public function posid($info,$value){
+        $newinfo = $info;
+        $list = db('posid')->select();
+        foreach ($list as $lk=>$v){
+            $posids[$v['id']] = $v;
+        }
+
+        $options=array();
+        $options[0]= "请选择";
+        foreach($posids as $key=>$r) {
+            $options[$key]=$r['name'];
+        }
+        $newinfo['options']=$options;
+        if(isset($info['setup']['inputtype'])){
+            $fun=$info['setup']['inputtype'];
+        }
+        return $this->select($newinfo,$value);
+    }
+
+    public function typeid($info,$value){
+        $newinfo = $info;
+        $list = db('type')->select();
+        foreach ($list as $lk=>$v){
+            $types[$v['id']] = $v;
+        }
+
+        $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
+
+        $parentid=$info['setup']['default'];
+
+        $options=array();
+        $options[0]= '请选择';
+        foreach($types as $key=>$r) {
+            if($r['parentid']!=$parentid || empty($r['status'])) continue;
+            $options[$key]=$r['name'];
+        }
+        $newinfo['options']=$options;
+        $fun=$info['setup']['inputtype'];
+        return $this->$fun($newinfo,$value);
+    }
+
+    public function template($info,$value){
+        $templates= template_file(MODULE_NAME);
+
+        $newinfo = $info;
+        $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
+        $options=array();
+        $options[0]= "请选择";
+        if($templates){
+            foreach($templates as $key=>$r) {
+                if(strstr($r['value'],'-show')){
+                    $options[$r['value']]=$r['filename'];
+                }
+            }
+        }
+        $newinfo['options']=$options;
+        $fun=$info['setup']['inputtype'];
+        return $this->select($newinfo,$value);
+    }
+    public function image($info,$value){
+        $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
+        $id = $field = $info['field'];
+        $validate = getvalidate($info);
+        $action = ACTION_NAME;
+        if($action=='add'){
+            $value = $value ? $value : $info['setup']['default'];
+        }else{
+            $value = $value ? $value : $this->data[$field];
+        }
+        if(empty($info['setup']['upload_maxsize'])){
+            $info['setup']['upload_maxsize'] =  intval(byte_format(config('attach_maxsize')));
+        }
+        $parseStr   = ' <div id="'.$field.'_aid_box"></div><input type="text"   class="input-text '.$info['class'].'" name="'.$field.'"  id="'.$id.'" value="'.$value.'" size="'.$info['setup']['size'].'"  '.$validate.'/> <input type="button"  style="margin-top:-4px;" class="btn btn-success btn-sm" value="图片上传" onclick="javascript:swfupload(\''.$field.'_uploadfile\',\''.$field.'\',\'图片上传\','.$info['setup']['more'].',1,1,\''.$info['setup']['upload_allowext'].'\','.$info['setup']['upload_maxsize'].','.$info['moduleid'].',up_image,nodo)"> ';
+        return $parseStr;
+    }
+
+    public function images($info,$value){
+        $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
+        $id = $field = $info['field'];
+        $validate = getvalidate($info);
+        $action = ACTION_NAME;
+        if($action=='add'){
+            $value = $value ? $value : $info['setup']['default'];
+        }else{
+            $value = $value ? $value : $this->data[$field];
+        }
+        $data='';
+        $i=0;
+        if($value){
+            $options = explode(":::",$value);
+            if(is_array($options)){
+                foreach($options as  $r) {
+                    $v = explode("|",$r);
+                    $k = trim($v[1]);
+                    $optionsarr[$k] = $v[0];
+
+                    if(substr($v[0],0,4)=='http'){
+                        $src = $v[0];
+                    }else{
+                        $src = '__ROOT__'.$v[0];
+                    }
+                    $data .='<div id="uplistd_'.$i.'" class="col-md-2 "><div class="upimgs">
+                    <div class="upimg"><img src="'.$src.'"></div>
+                   
+                    <input type="hidden" name="'.$field.'[]" value="'.$v[0].'" /> 
+                    <input type="text" class="form-control" name="'.$field.'_name[]" value="'.$v[1].'" size="30" />
+                    <textarea class="form-control" name="'.$field.'_text[]" rows="4" cols="" style="margin:5px 0;" placeholder="请填写图片简介">'.$v[2].'</textarea>
+                    <div class="clearfix"></div>
+                    <a href="javascript:remove_this(\'uplistd_'.$i.'\');" class="btn btn-danger btn-block btn-xs">移除</a>
+                    </div></div>';
+                    $i++;
+                }
+            }
+        }
+        if(empty($info['setup']['upload_maxsize'])){
+            $info['setup']['upload_maxsize'] =  intval(byte_format(config('attach_maxsize')));
+        }
+        $parseStr   = '
+		<fieldset class="images_box">
+        <legend>图片上传<span style="font-size: 16px;">(最多同时可以上传 <font color=\'red\'>'.$info['setup']['upload_maxnum'].'</font> 张)</span></legend><center></center>
+		<div id="'.$field.'_images" class="imagesList row">'.$data.'</div>
+		</fieldset>
+		<div class="c"></div>
+		<input type="button" class="btn btn-success btn-sm" value="图片上传" onclick="javascript:swfupload(\''.$field.'_uploadfile\',\''.$field.'\',\'文件上传\','.$info['setup']['more'].',1,'.$info['setup']['upload_maxnum'].',\''.$info['setup']['upload_allowext'].'\','.$info['setup']['upload_maxsize'].','.$info['moduleid'].',up_images,nodo)">  ';
+
+        return $parseStr;
+    }
+    public function file($info,$value){
+        $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
+        $id = $field = $info['field'];
+        $validate = getvalidate($info);
+        $action = ACTION_NAME;
+        if($action=='add'){
+            $value = $value ? $value : $info['setup']['default'];
+        }else{
+            $value = $value ? $value : $this->data[$field];
+        }
+        if(empty($info['setup']['upload_maxsize'])){
+            $info['setup']['upload_maxsize'] =  intval(byte_format(config('attach_maxsize')));
+        }
+        $parseStr   = ' <div id="'.$field.'_aid_box"></div><input type="text"   class="input-text '.$info['class'].'" name="'.$field.'"  id="'.$id.'" value="'.$value.'" size="'.$info['setup']['size'].'"  '.$validate.'/> <input type="button" class="btn btn-success btn-sm" value="上传文件" style="margin-top:-4px;" onclick="javascript:swfupload(\''.$field.'_uploadfile\',\''.$field.'\',\'文件上传\','.$info['setup']['more'].',0,1,\''.$info['setup']['upload_allowext'].'\','.$info['setup']['upload_maxsize'].','.$info['moduleid'].',up_image,nodo)"> ';
+        return $parseStr;
+    }
+
+    public function files($info,$value){
+        $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
+        $id = $field = $info['field'];
+        $validate = getvalidate($info);
+        $action = ACTION_NAME;
+        if($action=='add'){
+            $value = $value ? $value : $info['setup']['default'];
+        }else{
+            $value = $value ? $value : $this->data[$field];
+        }
+        $data='';
+        $i=0;
+        if($value){
+            $options = explode(":::",$value);
+            if(is_array($options)){
+                foreach($options as  $r) {
+                    $v = explode("|",$r);
+                    $k = trim($v[1]);
+                    $optionsarr[$k] = $v[0];
+                    $data .='<div id="uplistd_'.$i.'" class="col-md-6 ">
+                    <div class="upimgs">
+                    <input type="text"  class="form-control" name="'.$field.'[]" value="'.$v[0].'" style="margin-bottom:5px;"/> 
+                    <input type="text" class="form-control" name="'.$field.'_name[]" value="'.$v[1].'" placeholder="请填写文件标题"/>
+                    <textarea class="form-control" name="'.$field.'_text[]" rows="2" cols="" style="margin:5px 0;" placeholder="请填写文件简介">'.$v[2].'</textarea>
+                    <div class="clearfix"></div>
+                    <a href="javascript:remove_this(\'uplistd_'.$i.'\');" class="btn btn-danger btn-block btn-xs">移除</a>
+                    </div></div>';
+                    $i++;
+                }
+            }
+        }
+        if(empty($info['setup']['upload_maxsize'])){
+            $info['setup']['upload_maxsize'] =  intval(byte_format(config('attach_maxsize')));
+        }
+        $parseStr   = '<fieldset class="images_box">
+        <legend>文件上传<span style="font-size: 16px;">（最多同时可以上传 <font color=\'red\'>'.$info['setup']['upload_maxnum'].'</font>张）</span></legend><center></center>
+		<div id="'.$field.'_images" class="imagesList row">'.$data.'</div>
+		</fieldset>
+		<input type="button" class="btn btn-success btn-sm" value="文件上传" onclick="javascript:swfupload(\''.$field.'_uploadfile\',\''.$field.'\',\'文件上传\','.$info['setup']['more'].',0,\''.$info['setup']['upload_maxnum'].'\',\''.$info['setup']['upload_allowext'].'\','.$info['setup']['upload_maxsize'].','.$info['moduleid'].',up_images,nodo)">  ';
+
+        return $parseStr;
+    }
+}
+?>

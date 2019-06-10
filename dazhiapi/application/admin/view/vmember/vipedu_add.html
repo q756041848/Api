@@ -1,0 +1,177 @@
+{include file="common/head"/}
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    {include file="common/left"}
+    <div class="main-content">
+        <div class="main-content-inner">
+            {include file="common/header_nav"}
+
+            <div class="page-content">
+                <div class="page-header">
+                    <h1>
+                        您当前操作
+                        <small>
+                            <i class="ace-icon fa fa-angle-double-right"></i>
+                            添加教育经历
+                        </small>
+                    </h1>
+                </div><!-- /.page-header -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+                        <form class="form-horizontal" role="form" name="adminInsert" id="adminInsert" method="post" action="{:url('dovipeduAdd')}">
+                            <input name="e_pid" type="hidden" value="{$vid}"/>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="e_schoolname">学校名称</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="e_schoolname" id="e_schoolname" placeholder="输入学校名称" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="">
+                                <label class="col-sm-2 control-label no-padding-right" for="mydate">入学时间</label>
+
+                                <div>
+                                    <script language="javascript" type="text/javascript" src="__STATIC__/MyDate/skin/WdatePicker.css"></script>
+                                    <script type="text/javascript">
+                                        $(function () {
+                                            var myDate = new Date();
+                                            var year=myDate.getFullYear();
+                                            var month=myDate.getMonth()+1;
+                                            var date=myDate.getDate();
+                                            $('#mydate').click(function () {
+                                                WdatePicker({el:this,dateFmt:'yyyy-MM-dd',minDate:'1949-10-01',maxDate:year+"-"+month+"-"+date});
+                                            })
+                                        })
+                                    </script>
+
+                                    <input name="e_begintime" id="mydate" style="margin-left: 5px;" value="2008-09-01" class="Wdate" type="text">
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="">
+                                <label class="col-sm-2 control-label no-padding-right" for="mydate">毕业时间</label>
+
+                                <div>
+                                    <script language="javascript" type="text/javascript" src="__STATIC__/MyDate/skin/WdatePicker.css"></script>
+                                    <script type="text/javascript">
+                                        $(function () {
+                                            var myDate = new Date();
+                                            var year=myDate.getFullYear();
+                                            var month=myDate.getMonth()+1;
+                                            var date=myDate.getDate();
+                                            $('#mydate2').click(function () {
+                                                WdatePicker({el:this,dateFmt:'yyyy-MM-dd',minDate:'1949-10-01',maxDate:year+"-"+month+"-"+date});
+                                            })
+                                        })
+                                    </script>
+
+                                    <input name="e_endtime" id="mydate2" style="margin-left: 5px;" value="2011-07-01" class="Wdate" type="text">
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="e_edu">学历</label>
+                                <div class="col-sm-10 col-xs-12">
+
+                                    <select name="e_edu" id="e_edu" class="col-select col-xs-12 col-sm-4">
+                                        {volist name="edu" id="v"}
+                                        {if condition="$res['v_education'] eq $v['e_name']"}
+                                        <option value="{$v.e_name}" selected>{$v.e_name}</option>
+                                        {else/}
+                                        <option value="{$v.e_name}">{$v.e_name}</option>
+                                        {/if}
+                                        {/volist}
+                                    </select>
+
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="e_major">专业</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="e_major" id="e_major" placeholder="输入专业" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red">*</span>必填</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="v_email">排序</label>
+                                <div class="col-sm-10 col-xs-12">
+                                    <input type="text" name="e_sort" id="v_email" placeholder="输入排序" class="col-xs-12 col-md-4"/>
+                                    <span class="lbl">&nbsp;&nbsp;<span class="red"></span>选填</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <button class="btn btn-info" type="submit">
+                                        <i class="ace-icon fa fa-check bigger-110"></i>
+                                        提交
+                                    </button>
+
+                                    &nbsp; &nbsp; &nbsp;
+                                    <button class="btn" type="reset">
+                                        <i class="ace-icon fa fa-undo bigger-110"></i>
+                                        重置
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    {include file="common/foot" /}
+</div>
+<script>
+    $(function () {
+        $('#adminInsert').ajaxForm({
+            beforeSubmit: checkForm, //此方法主要是提交前执行的方法，根据需要设置
+            success: complete, //这是提交后的方法
+            dataType: 'json'
+        });
+
+        function checkForm() {
+            //姓名
+            if ('' == $.trim($('#e_schoolname').val())) {
+                layer.alert('学校名称不能为空!', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#e_schoolname').focus();
+                });
+                return false;
+            }
+            if ('' == $.trim($('#e_major').val())) {
+                layer.alert('专业不能为空!', {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#e_major').focus();
+                });
+                return false;
+            }
+        }
+
+        function complete(data) {
+            if (data.status == 1) {
+                layer.alert(data.info, {icon: 6}, function (index) {
+                    layer.close(index);
+                    window.location.href = data.url;
+                });
+            } else {
+                layer.alert(data.info, {icon: 5}, function (index) {
+                    layer.close(index);
+                    $('#username').focus();
+                });
+                return false;
+            }
+        }
+    })
+
+</script>
+</body>
+</html>

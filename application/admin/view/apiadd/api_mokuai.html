@@ -1,0 +1,40 @@
+ <!--文件夹-->
+    <ul id="file" class="level0 " style="display: block;">
+
+        <!--循环遍历文件夹-->
+        {volist name="$pfolder" id="v"}
+        <li class="file" id="f{$v.id}">
+            <span class="button level1 switch noline_docu"></span>
+            <a title="{$v.name}" onclick="fileshow({$v.id})">
+                <span class="glyphicon glyphicon-folder-close"></span>
+                <span>{$v.name}</span>
+                <span class="file_count" style="display: none;">
+                    <span title="新添接口" class="glyphicon glyphicon-plus" onclick="pfolder_add({$v.id})"></span>
+                    <span title="编辑模块" class="glyphicon glyphicon-pencil" onclick="pfolder_upd({$v.id})"></span>
+                    <span title="删除模块" class="glyphicon glyphicon-trash" onclick="pfolder_del({$v.id})"></span>
+				</span>
+            </a>
+
+            <!--文件夹下面的列表-->
+            <ul id="{$v.id}"  style="display: none;">
+                <!--循环遍历接口列表-->
+                {volist name="$v.con" id="con"}
+                <div class="j{$con.c_id}">
+                <li class="level"  id="j{$con.c_id}">
+                    <span class="button level2 switch noline_docu"></span>
+                    <a title="{$con.c_url}" onclick="connector_ajax({$con.c_id})">
+                        <span id="interTree_8_ico" class="glyphicon glyphicon-align-justify" ></span>
+                        <span>{$con.c_title}</span>
+                        <span title='删除接口' class='glyphicon glyphicon-trash' onclick="jiekou_del({$con.c_id})"></span>
+                    </a>
+                </li>
+                </div>
+                {/volist}
+                <!--循环遍历接口列表-->
+            </ul>
+            <!--文件夹下面的列表-->
+        </li>
+        {/volist}
+        <!--循环遍历文件夹-->
+    </ul>
+    <!--文件夹-->

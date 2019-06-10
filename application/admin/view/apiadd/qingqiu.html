@@ -1,0 +1,38 @@
+{volist name="$date" id="v" key="k"}
+<li class="dd-item lidel dd-item-drag">
+<span onclick='lidel(this)' class="glyphicon glyphicon-remove"></span>
+<!--<form class='form' id='form"nums"'>"-->
+    <div class="dd-content">
+        <ul class="list-inline">
+            <li class="col-lg-2"><input id='rd_title{$k}' class='form-control rd_title' name="code" type="text" value="{$v.code}"></li>
+            <li class="col-lg-2">
+                <select name="position" id='position{$k}' class="form-control req-param-position">
+                <option {if condition="$v.position eq 'formData'"} selected {/if} value="formData">formData</option>
+                <option {if condition="$v.position eq 'path'"} selected {/if} value="path">path</option>
+                <option {if condition="$v.position eq 'query'"} selected {/if} value="query">query</option>
+                <option {if condition="$v.position eq 'body'"} selected {/if} value="body">body</option>
+                <option {if condition="$v.position eq 'header'"} selected {/if} value="header">header</option>
+                <option {if condition="$v.position eq 'cookie'"} selected {/if} value="cookie">cookie</option>
+                </select>
+                </li>
+            <li class="col-lg-2">
+                <select name="type" id='type{$k}' class="form-control req-param-type chzn-select">
+                <option {if condition="$v.type eq 'string'"} selected {/if} value="string">string</option>
+                <option {if condition="$v.type eq 'date'"} selected {/if} value="date">date</option>
+                <option {if condition="$v.type eq 'datetime'"} selected {/if} value="datetime">datetime</option>
+                <option {if condition="$v.type eq 'boolean'"} selected {/if} value="boolean">boolean</option>
+                <option {if condition="$v.type eq 'int32'"} selected {/if} value="int32">int</option>
+                <option {if condition="$v.type eq 'int64'"} selected {/if} value="int64">long</option>
+                <option {if condition="$v.type eq 'float'"} selected {/if} value="float">float</option>
+                <option {if condition="$v.type eq 'double'"} selected {/if} value="double">double</option>
+                <option {if condition="$v.type eq 'decimal'"} selected {/if} value="decimal">decimal</option>
+                </select>
+                </li>
+            <li class="col-lg-2"><input id='default{$k}' class='form-control default' placeholder='默认值' name='default' type="text" value="{$v.default}"></li>
+            <li class="col-lg-2"><input id='titles{$k}' class='form-control titles' placeholder='描述' name='titles' type="text" value="{$v.titles}"></li>
+            </li>
+            </ul>
+        </div>
+    <!--</form>-->
+</li>
+{/volist}

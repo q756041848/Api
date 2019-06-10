@@ -1,0 +1,218 @@
+{include file="common/head"/}
+<style>
+    .form-group{
+        margin-bottom: 13px;
+        height: 35px;
+    }
+    .control-label{
+        width: 70px;
+        line-height: 32px;
+    }
+    .col-sm-4{
+        width: 25%;
+    }
+</style>
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+    {include file="common/left"}
+    <div class="main-content">
+        <div class="main-content-inner">
+            {include file="common/header_nav"}
+            <div class="page-content">
+                <div class="row maintop">
+                    <div class="col-xs-12 col-sm-2">
+                        <a href="{:url('recruitAdd')}">
+                            <button class="btn btn-xs btn-danger">
+                                <i class="ace-icon fa fa-plus bigger-110"></i>
+                                添加招聘信息
+                            </button>
+                        </a>
+                    </div>
+                    <form name="admin_list_sea" class="form-search" method="post" action="{:url('index')}">
+                        <div class="col-xs-12 col-sm-6 btn-sespan">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="page-content" style="width: 900px;padding-bottom: 0">
+                                        <div class="row maintop">
+                                            <form class="form-horizontal" name="admin_list_sea" class="form-search" method="post" action="{:url('index')}">
+
+                                                <div class="form-group" style="width: 900px;">
+                                                    <label class="col-sm-2 control-label no-padding-right">招聘标题</label>
+                                                    <div class="col-sm-4 col-xs-10">
+                                                        <input type="text" name="r_title" value="{$tl}" placeholder="招聘标题" class="col-xs-3 col-sm-12" />
+                                                    </div>
+
+                                                    <label class="col-sm-2 control-label no-padding-right" style="width: 70px;">工作经验</label>
+                                                    <div class="col-sm-4 col-xs-10">
+                                                        <select name="r_exp" class="col-xs-3 col-sm-12">
+                                                            <option value="0">工作经验</option>
+                                                            {volist name="exper" id="exp"}
+                                                            {if condition="$exp.e_name == $ep"}
+                                                            <option value="{$exp.e_name}" selected>{$exp.e_name}</option>
+                                                            {else /}
+                                                            <option value="{$exp.e_name}">{$exp.e_name}</option>
+                                                            {/if}
+                                                            {/volist}
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                                <div class="space-4"></div>
+
+                                                <div class="form-group">
+
+
+                                                    <label class="col-sm-2 control-label no-padding-right">工作地点</label>
+                                                    <div class="col-sm-4 col-xs-10">
+                                                        <input type="text" name="r_place" value="{$wp}" placeholder="工作地点" class="col-xs-3 col-sm-12" />
+                                                    </div>
+
+                                                    <label class="col-sm-2 control-label no-padding-right">工作类型</label>
+                                                    <div class="col-sm-4 col-xs-10">
+                                                        <select class="col-xs-3 col-sm-12" name="r_type">
+                                                            <option value="0">工作类型</option>
+                                                            {volist name="type" id="tp"}
+                                                            {if condition="$tp.t_name == $typ"}
+                                                            <option value="{$tp.t_name}" selected>{$tp.t_name}</option>
+                                                            {else /}
+                                                            <option value="{$tp.t_name}">{$tp.t_name}</option>
+                                                            {/if}
+                                                            {/volist}
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                                <div class="space-4"></div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-2 control-label no-padding-right" > </label>
+                                                    <div class="col-sm-10 col-xs-12">
+                                                        <button type="submit" class="btn btn-xs all-btn btn-purple col-xs-3 col-sm-2">
+                                                            <span class="ace-icon fa fa-refresh icon-on-right bigger-110"></span>
+                                                            搜  索
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="table-responsive">
+                                <table id="simple-table" class="table table-striped table-bordered table-hover center">
+                                    <thead>
+                                    <tr>
+                                        <th class="center">招聘ID</th>
+                                        <th class="center">公司名称</th>
+                                        <th class="center visible-lg visible-md">招聘标题</th>
+                                        <th class="center">工作岗位</th>
+                                        <th class="center">薪资要求</th>
+                                        <th class="center visible-lg visible-md">工作经验</th>
+                                        <th class="center">招聘数量</th>
+                                        <th class="center">个人学历</th>
+                                        <th class="center visible-lg visible-md">工作地点</th>
+                                        <th class="center">工作类型</th>
+                                        <!--<th class="center visible-lg visible-md">工作描述</th>-->
+                                        <th class="center">招聘审核</th>
+                                        <th class="center">招聘排序</th>
+                                        <th class="center hidden-xs">创建时间</th>
+                                        <!--<th class="center">详细配置</th>-->
+                                        <th class="center" style="border-right:1px solid #ddd; ">操作</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    {volist name="$admin_list" id="v"}
+                                    <tr>
+                                        <td>{$v.r_id}</td>
+                                        <td>{$v.c_name}</td>
+                                        <td class=" visible-lg visible-md"><a href="{:url('recruitDetails',['r_id'=>$v['r_id']])}">{$v.r_title}</a></td>
+                                        <td>{$v.r_work}</td>
+                                        <td>{$v.r_scale}</td>
+                                        <td>{$v.r_exper}</td>
+                                        <td>{$v.r_number}</td>
+                                        <td>{$v.r_education}</td>
+                                        <td>{$v.r_province}{$v.r_city}{$v.r_area}{$v.r_detailaddress}</td>
+                                        <td>{$v.r_welfare}</td>
+                                        <!--<td>{$v.r_desc|html_entity_decode|strip_tags}</td>-->
+                                        <td>{$v.ck_name}</td>
+                                        <td>{$v.r_sort}</td>
+                                        <td class="hidden-xs">{$v.r_time}</td>
+                                        <!--<td>-->
+                                            <!--<div class="col-xs-12 col-sm-2" style="width: 66px;">-->
+                                                <!--&lt;!&ndash;<a href="{:url('image/show',['v_id'=>$v['r_id']])}">&ndash;&gt;-->
+                                                    <!--<button class="btn btn-xs btn-danger" onclick="f({$v['r_id']})">-->
+                                                        <!--<i class=""></i>-->
+                                                        <!--公司环境-->
+                                                    <!--</button>-->
+                                                <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                                            <!--</div>-->
+                                        <!--</td>-->
+                                        <td>
+                                            <div class="action-buttons">
+                                                <a class="green" href="{:url('recruitUpdate',['r_id'=>$v['r_id']])}" title="修改">
+                                                    <i class="ace-icon fa fa-pencil bigger-130"></i> </a>
+                                                {eq name="admin_id" value="1"}
+                                                <a class="red" href="javascript:;" onclick="return del({$v.r_id});" title="删除">
+                                                    <i class="ace-icon fa fa-trash-o bigger-130"></i> </a>
+                                                {else/}
+                                                <a class="red" style="display: none" href="javascript:;" onclick="return del({$v.r_id});" title="删除">
+                                                    <i class="ace-icon fa fa-trash-o bigger-130"></i> </a>
+                                                {/eq}
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    {/volist}
+                                    <tr>
+                                        <td colspan="15" align="center">&nbsp;{$page}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                            </div><!-- /.span -->
+                        </div><!-- /.row -->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+
+        </div>
+    </div><!-- /.main-content -->
+    {include file="common/foot" /}
+
+</div><!-- /.main-container -->
+
+<!-- inline scripts related to this page -->
+<script type="text/javascript">
+    function del(id) {
+        var url="{:url('recruitDel')}";
+        layer.confirm('你确定要删除吗？', {icon: 3}, function (index) {
+            $.post(url,{'r_id':id},function (data) {
+                console.log(data)
+                if (data.code == 0) {
+                    layer.alert(data.msg, {icon: 5}, function (index) {
+                        layer.close(index);
+                    });
+                    return false;
+                }
+                if(data==1){
+                    window.parent.location.reload(); //刷新父页面
+                    var index = parent.layer.getFrameIndex(window.name); //获取窗口索引
+                    parent.layer.close(index);  // 关闭layer
+                }
+            })
+
+        });
+    }
+
+</script>
+</body>
+</html>

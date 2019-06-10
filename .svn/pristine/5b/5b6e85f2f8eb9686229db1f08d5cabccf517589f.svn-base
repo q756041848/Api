@@ -1,0 +1,815 @@
+//======================================目录================================================//
+
+//======================================公共函数============================================//
+//======================================左侧导航栏==========================================//
+//======================================文档===============================================//
+//======================================公共请求参数========================================//
+//======================================接口===============================================//
+//======================================文件夹=============================================//
+//======================================返回码=============================================//
+//======================================请求参数===========================================//
+//======================================请求响应===========================================//
+
+
+
+
+//======================================公共函数BEGIN================================================//
+//加工form
+function numbers(objs){
+    var obj = {};
+    $.each(objs,function(i,v){ obj[v.name] = v.value; });
+    return obj;
+}
+
+//显示函数
+function shows(obj){
+    var a = $('#wendang');var b = $('.dropdown-menu');var c = $('#jiekou');var d = $('#mokuai');var e = $('#cuowuma');var nums = [a,b,c,d,e];
+    for (var i=0;i<6;i++){
+        if (obj.is(nums[i])){
+            obj.show();
+        }else{
+            nums[i].hide();
+        }
+    }
+}
+//判断字符是否为空的方法
+function isEmpty(obj){
+    if(typeof obj == "undefined" || obj == null || obj == ""){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+//公共参数  返回json后的数组
+function required(){
+    var arr = [];
+    for (var i=0;i<=$('.form').length;i++){
+        //输出以数组形式序列化表单值
+        var data = $('#form'+i).serializeArray();var obj = {};
+        $.each(data,function(i,v){
+            obj[v.name] = v.value;
+        });
+        arr[i] = obj;
+    }
+    arr.splice($('.form').length,1);
+    // console.log(JSON.stringify(arr));
+    return JSON.stringify(arr);
+}
+
+//请求响应 返回json后的数组
+function response(){
+    var arr = [];
+    for (var i=0;i<=$('.forms').length;i++){
+        //输出以数组形式序列化表单值
+        var data = $('#forms'+i).serializeArray();var obj = {};
+        $.each(data,function(i,v){
+            obj[v.name] = v.value;
+        });
+        arr[i] = obj;
+    }
+    arr.splice($('.forms').length,1);
+    // console.log(JSON.stringify(arr));
+    return JSON.stringify(arr);
+}
+
+//公共请求响应
+function commonParamInfoTab(){
+    var arr = [];
+    for (var i=0;i<=$('.forma').length;i++){
+        //输出以数组形式序列化表单值
+        var data = $('#forma'+i).serializeArray();var obj = {};
+        $.each(data,function(i,v){
+            obj[v.name] = v.value;
+        });
+        arr[i] = obj;
+    }
+    arr.splice($('.forma').length,1);
+    // console.log(JSON.stringify(arr));
+    return JSON.stringify(arr);
+}
+//顶部所有的刷新
+function suoyou(){
+    $.ajax({
+        'url':'api_suoyou',
+        'type':'post',
+        'data':{id:$("input[name='c_pm']").val()},
+        success:function(result){
+            $("#suoyou").empty();           //移除本来的
+            $("#suoyou").append(result);    //添加最新的
+        }
+    });
+}
+
+
+
+//======================================公共函数END================================================//
+
+
+
+
+//======================================左侧导航栏================================================//
+//左侧栏搜索
+$(".input-group-btn").click(function () {
+    var txt = $("#condition").val();
+    var ida = $("input[name='c_pm']").val();
+    if (!isEmpty(txt)) {
+        $.ajax({
+            'url':'api_jiekou',
+            'type':'post',
+            'data':{con:txt,pid:ida},
+            success:function(result){
+                $("#codelist").hide();
+                $("#file").hide();
+                $('#interTree_3_ul').empty();
+                $('#interTree_3_ul').append(result);
+            }
+        });
+    }else {
+        $.ajax({
+            'url':'api_jiekou',
+            'type':'post',
+            'data':{pid:ida},
+            success:function(result){
+                $('#interTree_3_ul').empty();
+                $('#interTree_3_ul').append(result);
+            }
+        });
+        $("#codelist").show();
+        $("#file").show();
+    }
+});
+
+//左侧导航栏的加号  ==  新建接口\项目\返回码
+$('#apiSettingBtn2').click(function () {
+    var status = $('.dropdown-menu').css("display")=='none'?'block':'none';
+    $('.dropdown-menu').css("display",status);
+});
+
+//点击展开/隐藏返回码
+$('#Cshow_onclick').click(function () {
+    var status = $('#Cshow').css("display")=='none'?'block':'none';
+    $('#Cshow').css("display",status);
+    if ($('#Cshow').css("display")=='none'){
+        $('#interTree_1_switch').removeClass('glyphicon-chevron-down');
+        $('#interTree_1_switch').addClass('glyphicon-chevron-right');
+    }else{
+        $('#interTree_1_switch').removeClass('glyphicon-chevron-right');
+        $('#interTree_1_switch').addClass('glyphicon-chevron-down');
+    }
+});
+
+//点击展开/隐藏接口列表
+function pshow(){
+    var status = $('#pshows').css("display")=='none'?'block':'none';
+    $('#pshows').css("display",status);
+    if ($('#pshows').css("display")=='none'){
+        $('#interTree_2_switch').removeClass('glyphicon-chevron-down');
+        $('#interTree_2_switch').addClass('glyphicon-chevron-right');
+    }else{
+        $('#interTree_2_switch').removeClass('glyphicon-chevron-right');
+        $('#interTree_2_switch').addClass('glyphicon-chevron-down');
+    }
+}
+
+//点击展开/隐藏所有接口列表
+function suoyou(){
+    var status = $('#interTree_3_ul').css("display")=='none'?'block':'none';
+    $('#interTree_3_ul').css("display",status);
+}
+
+
+//点击展开/隐藏文件夹
+function fileshow(val){
+    var status = $('#'+val).css("display")=='none'?'block':'none';
+    $('#'+val).css("display",status);
+}
+
+//文件夹的增删改功能的hover      选择file元素,this自身的find每个元素的后代找到file_count
+$('.file').hover(function(){$(this).find(".file_count").show();},function(){$(this).find(".file_count").hide();});
+
+//导航切换
+function tabs(val){
+    var obj = $('#'+val);var a = $('#apiDocInfo');var b = $('#baseUrlInfo');var c = $('#commonParamInfo');var nums = [a,b,c];
+    for (var i=0;i<=2;i++){
+        if (obj.is(nums[i])){
+            var name = nums[i].selector.substr(1)+"Tab";
+            //判断是否点击了公共参数，如果点击了走ajax把返回的值动态添加到上面
+            if (name=='commonParamInfoTab'){
+                $.ajax({
+                    'url':"commonParamInfo",
+                    'type':'post',
+                    'data':{p_id:$("input[name='p_id']").val()},
+                    success:function(result){
+                        $('#ggcs').empty();
+                        var arr2 = JSON.parse(result.p_commonParamInfoTab);
+                        for (var i=0;i<=arr2.length-1;i++){
+                            $('#ggcs').append("<li class='dd-item dd-item-drag'>"
+                                +"<span onclick='lidel(this)' class=\"glyphicon glyphicon-remove\"></span>"
+                                +"<form class='forma' id='forma"+i+"'>"
+                                +"<div class='dd-content'>"
+                                +"<ul class='list-inline'>"
+                                +"<li class='col-lg-2'><input name='code' type='text' class='form-control' value="+arr2[i].code+"></li>"
+                                +"<li class='col-lg-2'>"
+                                +"<select id='position' name=\"position\" class=\"form-control req-param-position\">"
+                                +"<option value=\"formData\">formData</option>"
+                                +"<option value=\"path\">path</option>"
+                                +"<option value=\"query\">query</option>"
+                                +"<option value=\"body\">body</option>"
+                                +"<option value=\"header\">header</option>"
+                                +"<option value=\"cookie\">cookie</option>"
+                                +"</select>"
+                                +"</li>"
+                                +"<li class='col-lg-2'>"
+                                +"<select name=\"type\" class=\"form-control req-param-type chzn-select\">"
+                                +"<option value=\"string\">string</option>"
+                                +"<option value=\"date\">date</option>"
+                                +"<option value=\"datetime\">datetime</option>"
+                                +"<option value=\"boolean\">boolean</option>"
+                                +"<option value=\"int32\">int</option>"
+                                +"<option value=\"int64\">long</option>"
+                                +"<option value=\"float\">float</option>"
+                                +"<option value=\"double\">double</option>"
+                                +"<option value=\"decimal\">decimal</option>"
+                                +"</select>"
+                                +"</li>"
+                                +"<li class='col-lg-2'><input name='defValue' type='text' class='form-control' value="+arr2[i].defValue+"></li>"
+                                +"<li class='col-lg-1'>"
+                                +"<select name='required' class='form-control'>"
+                                +"<option value='false' selected='selected'>否</option>"
+                                +"<option value='true'>是</option>"
+                                +"</select>"
+                                +"</li>"
+                                +"<li class='col-lg-2'><input name='description' type='text' class='form-control' value="+arr2[i].description+"></li>"
+                                +"</ul>"
+                                +"</div>"
+                                +"</form>"
+                                +"</li>");
+                            // $("#position").val(arr2[i].position);
+                            // console.log(arr2[i].position);
+                        };
+                    }
+                });
+            }
+            $("#"+name).addClass("active");
+            nums[i].addClass("active");
+        }else{
+            var name = nums[i].selector.substr(1)+"Tab";
+            $("#"+name).removeClass("active");
+            nums[i].removeClass("active");
+        }
+    }
+}
+//======================================左侧导航栏文档END================================================//
+
+
+
+
+
+
+
+//======================================文档BEGIN================================================//
+//左侧齿轮按钮    文档说明页面显示
+$('#apiSettingBtn').click(function () {
+    shows($('#wendang'));
+});
+
+//一.文档说明页面提交
+$('#saveDocBtn').click(function () {
+    var datas = $("#docInfoFrom").serializeArray();var url = "wendang";var data = numbers(datas);
+    // console.log(data);
+    $.ajax({
+        'url':url,
+        'type':'post',
+        'data':data,
+        success:function(result){
+            layer.msg('保存成功');
+        }
+    });
+});
+//======================================文档END================================================//
+
+
+//======================================公共请求参数================================================//
+//保存
+$("#saveCommonParamBtn").click(function (){
+    var p_id = $("input[name='p_id']").val();
+    var p_commonParamInfoTab = commonParamInfoTab();
+    $.ajax({
+        'url':'commonParamInfoTab',
+        'type':'post',
+        'data':{p_id:p_id,p_commonParamInfoTab:p_commonParamInfoTab},
+        success:function(result){
+            layer.msg('保存成功');
+        }
+    });
+});
+
+//新建
+$('#addCommonParamBtn').click(function () {
+        var i = $('.forma').length;
+        var txt = "<li class='dd-item dd-item-drag'>"
+        +"<span onclick='lidel(this)' class=\"glyphicon glyphicon-remove\"></span>"
+        +"<form class='forma' id='forma"+i+"'>"
+        +"<div class='dd-content'>"
+        +"<ul class='list-inline'>"
+        +"<li class='col-lg-2'><input name='code' type='text' class='form-control'></li>"
+        +"<li class='col-lg-2'>"
+        +"<select name=\"position\" class=\"form-control req-param-position\">"
+        +"<option value=\"formData\">formData</option>"
+        +"<option value=\"path\">path</option>"
+        +"<option value=\"query\">query</option>"
+        +"<option value=\"body\">body</option>"
+        +"<option value=\"header\">header</option>"
+        +"<option value=\"cookie\">cookie</option>"
+        +"</select>"
+        +"</li>"
+        +"<li class='col-lg-2'>"
+        +"<select name=\"type\" class=\"form-control req-param-type chzn-select\">"
+        +"<option value=\"string\">string</option>"
+        +"<option value=\"date\">date</option>"
+        +"<option value=\"datetime\">datetime</option>"
+        +"<option value=\"boolean\">boolean</option>"
+        +"<option value=\"int32\">int</option>"
+        +"<option value=\"int64\">long</option>"
+        +"<option value=\"float\">float</option>"
+        +"<option value=\"double\">double</option>"
+        +"<option value=\"decimal\">decimal</option>"
+        +"</select>"
+        +"</li>"
+        +"<li class='col-lg-2'><input name='defValue' type='text' class='form-control'></li>"
+        +"<li class='col-lg-1'>"
+        +"<select name='required' class='form-control'>"
+        +"<option value='false' selected='selected'>否</option>"
+        +"<option value='true'>是</option>"
+        +"</select>"
+        +"</li>"
+        +"<li class='col-lg-2'><input name='description' type='text' class='form-control'></li>"
+        +"</ul>"
+        +"</div>"
+        +"</form>"
+        +"</li>"
+    $("#ggcs").append(txt);
+})
+
+//======================================公共请求参数END================================================//
+
+
+//======================================接口BEGIN================================================//
+//删除接口
+function jiekou_del(val){
+    layer.confirm('是否进行删除操作？', { btn: ['确定', '取消'] }, function () {
+    layer.close(layer.index);
+        $.ajax({
+             'url':'jiekou_del',
+             'type':'post',
+             'data':{id:val},
+              success:function(result){
+                 $('.j'+val).remove();
+                 $(":input","#basicInfoFrom").not($("input[name='c_pm']")).val("");
+                 $("input[name='con_ids']").val(0);
+             }});
+}, function () {});
+}
+
+//修改接口
+function connector_ajax(val){
+    $("input[name='con_ids']").val(1);
+    $.ajax({
+        'url':'djiekou',
+        'type':'post',
+        'data':{c_id:val},
+        success:function(result){
+            $("#interDesc").text(result.c_description);
+            $("input[name='c_id']").val(result.c_id);
+            $("input[name='c_title']").val(result.c_title);
+            $("input[name='c_url']").val(result.c_url);
+            $("#interModuleId").val(result.c_pidname);
+            $("#c_use").val(result.c_use);
+            $("#c_method").val(result.c_method);
+            $("#c_scheme").val(result.c_scheme);
+            $("#c_consume").val(result.c_consume);
+            $("#c_produce").val(result.c_produce);
+            $("#c_skipCommonParam").val(result.c_skipCommonParam);
+            $("#c_devStatus").val(result.c_devStatus);
+            $("input[name='c_developer']").val(result.c_developer);
+            $("input[name='c_label']").val(result.c_label);
+            $("input[name='c_description']").val(result.c_description);
+            $('#qingqiu').empty();
+            $('#xiangying').empty();
+            var arr1 = JSON.parse(result.c_required);
+            var arr2 = JSON.parse(result.c_response);
+            if (arr1){ for (var i=0;i<=arr1.length-1;i++){
+                    $('#qingqiu').append("<li class=\"dd-item lidel dd-item-drag\">"
+                        +"<span onclick='lidel(this)' class=\"glyphicon glyphicon-remove\"></span>"
+                        +"<form class='form' id='form"+i+"'>"
+                        +"<div class=\"dd-content\">"
+                        +"<ul class=\"list-inline\">"
+                        +"<li class=\"col-lg-2\"><input class='form-control rd_title' name=\"code\" type=\"text\" value="+arr1[i].code+"></li>"
+                        +"<li class=\"col-lg-2\">"
+                        +"<select name=\"position\" class=\"form-control req-param-position\">"
+                        +"<option value=\"formData\">formData</option>"
+                        +"<option value=\"path\">path</option>"
+                        +"<option value=\"query\">query</option>"
+                        +"<option value=\"body\">body</option>"
+                        +"<option value=\"header\">header</option>"
+                        +"<option value=\"cookie\">cookie</option>"
+                        +"</select>"
+                        +"</li>"
+                        +"<li class=\"col-lg-2\">"
+                        +"<select name=\"type\" class=\"form-control req-param-type chzn-select\">"
+                        +"<option value=\"string\">string</option>"
+                        +"<option value=\"date\">date</option>"
+                        +"<option value=\"datetime\">datetime</option>"
+                        +"<option value=\"boolean\">boolean</option>"
+                        +"<option value=\"int32\">int</option>"
+                        +"<option value=\"int64\">long</option>"
+                        +"<option value=\"float\">float</option>"
+                        +"<option value=\"double\">double</option>"
+                        +"<option value=\"decimal\">decimal</option>"
+                        +"</select>"
+                        +"</li>"
+                        +"<li class=\"col-lg-2\"><input class='form-control default' placeholder='默认值' name='default' type=\"text\" value="+arr1[i].default+"></li>"
+                        +"<li class=\"col-lg-2\"><input class='form-control titles' placeholder='描述' name='titles' type=\"text\" value="+arr1[i].titles+"></li>"
+                        +"</li>"
+                        +"</ul>"
+                        +"</div>"
+                        +"</form>"
+                        +"</li>");
+                };}
+            if (arr2){ for (var j=0;j<=arr2.length-1;j++){
+                    $('#xiangying').append("<li class=\"dd-item lidel dd-item-drag\">"
+                        +"<span onclick='lidel(this)' class=\"glyphicon glyphicon-remove\"></span>"
+                        +"<form class='forms' id='forms"+j+"'>"
+                        +"<div class=\"dd-content\">"
+                        +"<ul class=\"list-inline\">"
+                        +"<li class=\"col-lg-2\"><input name=\"name\" type=\"text\" value="+arr2[j].name+" class='form-control names'></li>"
+                        +"<li class=\"col-lg-2\"><input name=\"miaoshu\" type=\"text\" value="+arr2[j].miaoshu+" class=\"form-control\"></li>"
+                        +"<li class=\"col-lg-2\">"
+                        +"<select name=\"type\" class=\"form-control req-param-type chzn-select\">"
+                        +"<option value=\"string\">string</option>"
+                        +"<option value=\"date\">date</option>"
+                        +"<option value=\"datetime\">datetime</option>"
+                        +"<option value=\"boolean\">boolean</option>"
+                        +"<option value=\"int32\">int</option>"
+                        +"<option value=\"int64\">long</option>"
+                        +"<option value=\"float\">float</option>"
+                        +"<option value=\"double\">double</option>"
+                        +"<option value=\"decimal\">decimal</option>"
+                        +"</select>"
+                        +"</li>"
+                        +"</ul>"
+                        +"</div>"
+                        +"</form>"
+                        +"</li>");
+                };}
+            shows($('#jiekou'));
+        }
+    });
+}
+
+//新建接口
+$('#addInterBtn').click(function () {
+    $(":input","#basicInfoFrom").not($("input[name='c_pm']")).val("");
+    $("input[name='con_ids']").val(0);
+    $('#qingqiu').empty();
+    $('#xiangying').empty();
+    shows($('#jiekou'));
+});
+
+//处理新接口前重置多选
+function addInterBtn(val){
+    $.ajax({
+        'url':"api_mokuais",
+        'type':'post',
+        'data':{id:val},
+        success:function(result){
+            $("#interModuleId").empty();           //移除本来的
+            $("#interModuleId").append(result);    //添加最新的
+        }
+    });
+}
+
+
+//接口页面提交
+$("#saveInterBtn").click(function(){
+    var datas = $("#basicInfoFrom").serializeArray();
+    var date = numbers(datas);
+    date.c_required = required();
+    date.c_response = response();
+    $.ajax({
+        'url':'jiekou',
+        'type':'post',
+        'data':date,
+        success:function(result){
+            // console.log(result.status);
+            layer.msg("保存成功");
+              var fanid = result.id['c_pidname'];
+                $.ajax({
+                    'url':"api_jiekou",
+                    'type':'post',
+                    'data':{id:result.id['c_pidname']},
+                    success:function(result){
+                        $("#"+fanid).empty();           //移除本来的
+                        $("#"+fanid).append(result);    //添加最新的
+                        $.ajax({
+                            'url':'api_suoyou',
+                            'type':'post',
+                            'data':{id:$("input[name='c_pm']").val()},
+                            success:function(result){
+                                $("#suoyou").empty();           //移除本来的
+                                $("#suoyou").append(result);    //添加最新的
+                            }
+                        });
+                        $(":input","#basicInfoFrom").not($("input[name='c_pm']")).val("");
+                        $("input[name='con_ids']").val(0);
+                        $('#qingqiu').empty();
+                        $('#xiangying').empty();
+                        shows($('#jiekou'));
+                    }
+                });
+              $('#'+fanid).css('display','block');
+        }
+    });
+});
+//======================================接口END================================================//
+
+
+
+//======================================文件夹BEGIN================================================//
+//点击文件夹新建接口
+function pfolder_add(val){
+    $('#qingqiu').empty();
+    $('#xiangying').empty();
+    $(":input","#basicInfoFrom").not($("input[name='c_pm']")).val("");
+    $("input[name='con_ids']").val(0);
+    $("#interModuleId").val(val);
+    shows($('#jiekou'));
+}
+
+
+//新建文件夹
+$('#addModuleBtn').click(function () {
+    $(":input","#moduleForm").not("#pm_id").val("")
+    $("input[name='p_ids']").val(0);
+    shows($('#mokuai'));
+});
+
+
+
+//修改文件夹   逻辑->点击左侧导航的返回码form表单已经填写好
+function pfolder_upd(val) {
+    $("input[name='p_ids']").val(1);
+    $.ajax({
+        'url':'dpfolder',
+        'type':'post',
+        'data':{id:val},
+        success:function(result){
+            $("#moduleForm")[0].reset();
+            $("#miaoshu").text(result.miaoshu);
+            $("input[name='name']").val(result.name);
+            $("input[name='id']").val(result.id);
+
+            shows($('#mokuai'));
+        }
+    });
+}
+
+
+
+//删除文件夹
+function pfolder_del(val,val2){
+    layer.confirm('确认删除该模块？\n' +
+        '删除后该模块下接口移到默认分组。', { btn: ['确定', '取消'] }, function () {
+        layer.close(layer.index);
+        $.ajax({
+            'url':'pfolder_del',
+            'type':'post',
+            'data':{id:val,num:val2},
+            success:function(result){
+                $('#f'+val).remove();
+                // layer.msg(result.status);
+            }
+        });
+    }, function () {});
+}
+
+
+//提交文件夹走的form       提交完后还要在左边生成一个刚刚添加的文件夹
+$('#saveModuleBtn').click(function () {
+    var datas = $("#moduleForm").serializeArray();var obj = {};
+    $.each(datas,function(i,v){ obj[v.name] = v.value; });
+    $.ajax({
+        'url':"mokuai",
+        'type':'post',
+        'data':obj,
+        success:function(result){
+            layer.msg("保存成功");
+            $.ajax({
+                'url':"api_mokuai",
+                'type':'post',
+                'data':{id:result.id['pm_id']},
+                success:function(result){
+                    $("#apimokuai").empty();           //移除本来的
+                    $("#apimokuai").append(result);    //添加最新的
+                    $('.file').hover(function(){$(this).find(".file_count").show();},function(){$(this).find(".file_count").hide();});
+                        //每次操作完模块都重置接口表单
+                        var ids = $("input[name='c_pm']").val()
+                        $.ajax({
+                            'url':"api_mokuais",
+                            'type':'post',
+                            'data':{id:ids},
+                            success:function(result){
+                                $("#interModuleId").empty();           //移除本来的
+                                $("#interModuleId").append(result);    //添加最新的
+                            }
+                        });
+                }
+            });
+        }
+    });
+});
+//======================================文件夹END================================================//
+
+
+
+
+//======================================返回码BEGIN================================================//
+//删除返回码
+function code_del(val){
+    layer.confirm('是否进行删除操作？', { btn: ['确定', '取消'] }, function () {
+        layer.close(layer.index);
+        $.ajax({ type: 'post',
+        url: "code_del",
+        data: {c_id:val},
+        success:function () {
+            $('#c'+val).remove();
+            shows($('#wendang'));
+        } });
+    }, function () {});
+}
+
+
+//添改返回码
+$('#saveErrorCodeBtn').click(function () {
+    var datas = $("#errorCodeForm").serializeArray();var data = numbers(datas);
+    $.ajax({
+        'url':"code",
+        'type':'post',
+        'data':data,
+        success:function(result){
+            layer.msg(result.status);
+            $.ajax({
+                'url':"api_cuowuma",
+                'type':'post',
+                'data':{id:result.data['c_pid']},
+                success:function(result){
+                    $("#Cshow").empty();           //移除本来的
+                    $("#Cshow").append(result);    //添加最新的
+                    $('.file').hover(function(){$(this).find(".file_count").show();},function(){$(this).find(".file_count").hide();});//重新绑定事件
+                    $('#Cshow').show();
+                }
+            });
+        }
+    });
+});
+
+//点击修改返回码之前的表单清空
+$('#addErrorCodeBtn').click(function () {
+    $(":input","#errorCodeForm").not("#c_pid").val("")
+    $("input[name='c_ids']").val(0);
+    shows($('#cuowuma'));
+});
+
+
+
+//修改返回码   逻辑->点击左侧导航的返回码form表单已经填写好
+function code_ajax(val) {
+    $.ajax({
+        'url':'cdate',
+        'type':'post',
+        'data':{c_id:val},
+        success:function(result){
+            $("#errorCodeForm")[0].reset();
+            $("#ctxt").text(result.c_explain);
+            $("input[name='c_id']").val(result.c_id);
+            $("input[name='c_code']").val(result.c_code);
+            $("input[name='c_ids']").val(1);
+            $("input[name='c_mes']").val(result.c_mes);
+
+            shows($('#cuowuma'));//显示
+    }
+    });
+    $("input[name='c_ids']").val(0);
+}
+//======================================返回码END================================================//
+
+
+
+
+
+//请求参数的全局变量
+//======================================请求参数================================================//
+
+//新添参数
+$('#addReqParamBtn').click(function () {
+    var nums = $('.form').length;
+    var txt = "<li class=\"dd-item lidel dd-item-drag\">"
+        +"<span onclick='lidel(this)' class=\"glyphicon glyphicon-remove\"></span>"
+        +"<form class='form' id='form"+nums+"'>"
+        +"<div class=\"dd-content\">"
+        +"<ul class=\"list-inline\">"
+        +"<li class=\"col-lg-2\"><input id='rd_title"+nums+"' class='form-control rd_title' name=\"code\" type=\"text\" value=\"\"></li>"
+        +"<li class=\"col-lg-2\">"
+            +"<select name=\"position\" id='position"+nums+"' class=\"form-control req-param-position\">"
+                +"<option value=\"formData\">formData</option>"
+                +"<option value=\"path\">path</option>"
+                +"<option value=\"query\">query</option>"
+                +"<option value=\"body\">body</option>"
+                +"<option value=\"header\">header</option>"
+                +"<option value=\"cookie\">cookie</option>"
+            +"</select>"
+        +"</li>"
+        +"<li class=\"col-lg-2\">"
+            +"<select name=\"type\" id='type"+nums+"' class=\"form-control req-param-type chzn-select\">"
+                +"<option value=\"string\">string</option>"
+                +"<option value=\"date\">date</option>"
+                +"<option value=\"datetime\">datetime</option>"
+                +"<option value=\"boolean\">boolean</option>"
+                +"<option value=\"int32\">int</option>"
+                +"<option value=\"int64\">long</option>"
+                +"<option value=\"float\">float</option>"
+                +"<option value=\"double\">double</option>"
+                +"<option value=\"decimal\">decimal</option>"
+            +"</select>"
+        +"</li>"
+        +"<li class=\"col-lg-2\"><input id='default"+nums+"' class='form-control default' placeholder='默认值' name='default' type=\"text\" value=\"\"></li>"
+        +"<li class=\"col-lg-2\"><input id='titles"+nums+"' class='form-control titles' placeholder='描述' name='titles' type=\"text\" value=\"\"></li>"
+        +"</li>"
+        +"</ul>"
+        +"</div>"
+        +"</form>"
+        +"</li>"
+    $('#qingqiu').append(txt);
+})
+
+//清空参数
+$('#clearReqParamBtn').click(function () {
+    $("#qingqiu").empty();           //移除本来的
+})
+
+//单个删除
+function lidel(val){ $(val).parent().remove();}
+//======================================请求参数END================================================//
+
+
+//======================================请求响应================================================//
+//新添响应
+$('#addRespBtn').click(function () {
+    var nums = $('.forms').length;
+    var txt = "<li class=\"dd-item lidel dd-item-drag\">"
+        +"<span onclick='lidel(this)' class=\"glyphicon glyphicon-remove\"></span>"
+        +"<form class='forms' id='forms"+nums+"'>"
+        +"<div class=\"dd-content\">"
+        +"<ul class=\"list-inline\">"
+        +"<li class=\"col-lg-2\"><input name=\"name\" type=\"text\" value=\"\" class='form-control names'></li>"
+        +"<li class=\"col-lg-2\"><input name=\"miaoshu\" type=\"text\" value=\"\" class=\"form-control\"></li>"
+            +"<li class=\"col-lg-2\">"
+                +"<select name=\"type\" class=\"form-control req-param-type chzn-select\">"
+                    +"<option value=\"string\">string</option>"
+                    +"<option value=\"date\">date</option>"
+                    +"<option value=\"datetime\">datetime</option>"
+                    +"<option value=\"boolean\">boolean</option>"
+                    +"<option value=\"int32\">int</option>"
+                    +"<option value=\"int64\">long</option>"
+                    +"<option value=\"float\">float</option>"
+                    +"<option value=\"double\">double</option>"
+                    +"<option value=\"decimal\">decimal</option>"
+                +"</select>"
+            +"</li>"
+        +"</ul>"
+        +"</div>"
+        +"</form>"
+        +"</li>"
+    $('#xiangying').append(txt);
+});
+
+
+//响应清空
+$("#clearReqRespBtn").click(function () {
+    $("#xiangying").empty();           //移除本来的
+    nums1 = 0;
+})
+
+
+//======================================请求响应END================================================//
+
+
+
+
+//获取新建内容
+$("#btns").click(function(){
+    required();
+    //已经json写进去了，接下来解开读出来就好了
+    //先解成数组形式，然后循环遍历映射就好了
+});

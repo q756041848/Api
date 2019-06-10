@@ -1,0 +1,1175 @@
+---------------------------------------------------------------
+[ 2018-11-23T13:55:57+08:00 ] 127.0.0.1 GET /
+[ info ] www._chengyan.com/ [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：1,777.88kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T13:55:57+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._chengyan.com/login/login [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：1,889.84kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\chengyan\newcode\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\chengyan\newcode\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T13:55:58+08:00 ] 127.0.0.1 GET /static/assets/css/font-awesome.min.css
+[ info ] www._chengyan.com/static/assets/css/font-awesome.min.css [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,837.93kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._chengyan.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'font-awesome.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T13:55:58+08:00 ] 127.0.0.1 GET /static/assets/css/ace-rtl.min.css
+[ info ] www._chengyan.com/static/assets/css/ace-rtl.min.css [运行时间：0.037003s][吞吐率：27.02req/s] [内存消耗：1,838.02kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._chengyan.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'ace-rtl.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T13:55:58+08:00 ] 127.0.0.1 GET /captcha
+[ info ] www._chengyan.com/captcha [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,505.48kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._chengyan.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\chengyan\newcode\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T13:55:58+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._chengyan.com/login/login [运行时间：0.044003s][吞吐率：22.73req/s] [内存消耗：1,740.30kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._chengyan.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\chengyan\newcode\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\chengyan\newcode\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T13:55:58+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._chengyan.com/login/login [运行时间：0.077004s][吞吐率：12.99req/s] [内存消耗：1,740.38kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._chengyan.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\chengyan\newcode\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\chengyan\newcode\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T13:55:58+08:00 ] 127.0.0.1 GET /favicon.ico
+[ info ] www._chengyan.com/favicon.ico [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,837.98kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'favicon.ico',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._chengyan.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T13:55:58+08:00 ] 127.0.0.1 GET /login/login
+[ info ] www._chengyan.com/login/login [运行时间：0.024001s][吞吐率：41.67req/s] [内存消耗：1,740.41kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._chengyan.com/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\chengyan\newcode\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\chengyan\newcode\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T13:58:25+08:00 ] 127.0.0.1 GET /
+[ info ] www._chengyan.com/ [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：1,494.09kb] [文件加载：37]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'home'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\code\chengyan\newcode\application\Home\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined method app\home\controller\Index::fetch()[D:\code\chengyan\newcode\application\Home\controller\Index.php:13]
+---------------------------------------------------------------
+[ 2018-11-23T13:58:26+08:00 ] 127.0.0.1 GET /favicon.ico
+[ info ] www._chengyan.com/favicon.ico [运行时间：0.032001s][吞吐率：31.25req/s] [内存消耗：1,486.84kb] [文件加载：36]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'home'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'favicon.ico',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._chengyan.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T13:58:48+08:00 ] 127.0.0.1 GET /
+[ info ] www._chengyan.com/ [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,864.08kb] [文件加载：42]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'home'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\code\chengyan\newcode\application\Home\controller\Index.php ]
+[ info ] [ VIEW ] D:\code\chengyan\newcode\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T14:23:19+08:00 ] 127.0.0.1 GET /admin.php
+[ info ] www._chengyan.com/admin.php [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,778.48kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T14:23:19+08:00 ] 127.0.0.1 GET /admin.php/login/login
+[ info ] www._chengyan.com/admin.php/login/login [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：1,890.36kb] [文件加载：43]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\chengyan\newcode\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\chengyan\newcode\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T14:23:19+08:00 ] 127.0.0.1 GET /admin.php/captcha
+[ info ] www._chengyan.com/admin.php/captcha [运行时间：0.021001s][吞吐率：47.62req/s] [内存消耗：1,505.58kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._chengyan.com/admin.php/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\chengyan\newcode\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T14:23:19+08:00 ] 127.0.0.1 GET /static/assets/css/font-awesome.min.css
+[ info ] www._chengyan.com/static/assets/css/font-awesome.min.css [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：1,487.36kb] [文件加载：36]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'home'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._chengyan.com/admin.php/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'font-awesome.min.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T14:23:19+08:00 ] 127.0.0.1 GET /static/assets/css/ace-rtl.min.css
+[ info ] www._chengyan.com/static/assets/css/ace-rtl.min.css [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：1,487.33kb] [文件加载：36]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'home'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._chengyan.com/admin.php/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'ace-rtl.min.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T14:23:32+08:00 ] 127.0.0.1 POST /admin.php/login/action
+[ info ] www._chengyan.com/admin.php/login/action [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：2,569.95kb] [文件加载：49]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'action',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www._chengyan.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www._chengyan.com/admin.php/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'code' => 'ha2k',
+)
+[ info ] [ RUN ] app\admin\controller\Login->action[ D:\code\chengyan\newcode\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1049]SQLSTATE[HY000] [1049] Unknown database 'zhuyou56'[D:\code\chengyan\newcode\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2018-11-23T14:23:33+08:00 ] 127.0.0.1 POST /admin.php/login/action
+[ info ] www._chengyan.com/admin.php/login/action [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：2,544.60kb] [文件加载：49]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'action',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www._chengyan.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www._chengyan.com/admin.php/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'code' => 'ha2k',
+)
+[ info ] [ RUN ] app\admin\controller\Login->action[ D:\code\chengyan\newcode\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T14:23:35+08:00 ] 127.0.0.1 GET /admin.php/captcha?0.5442983318637533
+[ info ] www._chengyan.com/admin.php/captcha?0.5442983318637533 [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,505.75kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._chengyan.com/admin.php/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+  '0_5442983318637533' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\chengyan\newcode\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T14:23:40+08:00 ] 127.0.0.1 POST /admin.php/login/action
+[ info ] www._chengyan.com/admin.php/login/action [运行时间：0.048002s][吞吐率：20.83req/s] [内存消耗：2,569.95kb] [文件加载：49]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'action',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www._chengyan.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www._chengyan.com/admin.php/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'code' => '6yxc',
+)
+[ info ] [ RUN ] app\admin\controller\Login->action[ D:\code\chengyan\newcode\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1049]SQLSTATE[HY000] [1049] Unknown database 'zhuyou56'[D:\code\chengyan\newcode\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2018-11-23T14:24:17+08:00 ] 127.0.0.1 GET /admin.php/login/login
+[ info ] www._chengyan.com/admin.php/login/login [运行时间：0.026001s][吞吐率：38.46req/s] [内存消耗：1,740.42kb] [文件加载：41]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\code\chengyan\newcode\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\code\chengyan\newcode\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T14:24:17+08:00 ] 127.0.0.1 GET /static/assets/css/font-awesome.min.css
+[ info ] www._chengyan.com/static/assets/css/font-awesome.min.css [运行时间：0.027002s][吞吐率：37.03req/s] [内存消耗：1,487.36kb] [文件加载：36]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'home'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._chengyan.com/admin.php/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'font-awesome.min.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T14:24:17+08:00 ] 127.0.0.1 GET /static/assets/css/ace-rtl.min.css
+[ info ] www._chengyan.com/static/assets/css/ace-rtl.min.css [运行时间：0.027002s][吞吐率：37.03req/s] [内存消耗：1,487.33kb] [文件加载：36]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'home'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'static',
+    2 => 'assets',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www._chengyan.com/admin.php/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'ace-rtl.min.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T14:24:17+08:00 ] 127.0.0.1 GET /admin.php/captcha
+[ info ] www._chengyan.com/admin.php/captcha [运行时间：0.041003s][吞吐率：24.39req/s] [内存消耗：1,505.55kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._chengyan.com/admin.php/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\chengyan\newcode\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T14:25:10+08:00 ] 127.0.0.1 POST /admin.php/login/action
+[ info ] www._chengyan.com/admin.php/login/action [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：2,545.10kb] [文件加载：49]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'action',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www._chengyan.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www._chengyan.com/admin.php/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'code' => 'l2e8',
+)
+[ info ] [ RUN ] app\admin\controller\Login->action[ D:\code\chengyan\newcode\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T14:25:11+08:00 ] 127.0.0.1 GET /admin.php/captcha?0.1230260896169153
+[ info ] www._chengyan.com/admin.php/captcha?0.1230260896169153 [运行时间：0.024002s][吞吐率：41.66req/s] [内存消耗：1,505.77kb] [文件加载：34]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www._chengyan.com/admin.php/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+  '0_1230260896169153' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\code\chengyan\newcode\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-23T14:25:17+08:00 ] 127.0.0.1 POST /admin.php/login/action
+[ info ] www._chengyan.com/admin.php/login/action [运行时间：0.167010s][吞吐率：5.99req/s] [内存消耗：2,683.20kb] [文件加载：52]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'action',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www._chengyan.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www._chengyan.com/admin.php/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'code' => 'uxqu',
+)
+[ info ] [ RUN ] app\admin\controller\Login->action[ D:\code\chengyan\newcode\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.034002s ] mysql:host=47.104.173.59;port=3306;dbname=chengyan;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zydz_admin` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT * FROM `zydz_admin` WHERE  `a_username` = 'admin'  AND `a_is_open` = 1 LIMIT 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] UPDATE `zydz_admin`  SET `a_hits`=`a_hits`+1  WHERE  `a_id` = 1 [ RunTime:0.024001s ]
+[ sql ] [ SQL ] UPDATE `zydz_admin`  SET `a_ip`='127.0.0.1'  WHERE  `a_id` = 1 [ RunTime:0.022002s ]
+---------------------------------------------------------------
+[ 2018-11-23T14:25:17+08:00 ] 127.0.0.1 GET /admin.php/index/index
+[ info ] www._chengyan.com/admin.php/index/index [运行时间：0.185011s][吞吐率：5.41req/s] [内存消耗：2,738.86kb] [文件加载：53]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._chengyan.com/admin.php/login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\code\chengyan\newcode\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\code\chengyan\newcode\public/../application/admin\view\index\index.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021001s ] mysql:host=47.104.173.59;port=3306;dbname=chengyan;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zydz_admin` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `zydz_admin` `a` LEFT JOIN `zydz_auth_group` `ag` ON `a`.`a_id`=`ag`.`g_id` WHERE  `a`.`a_id` = 1 LIMIT 1 [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zydz_auth_rule` [ RunTime:0.020002s ]
+[ sql ] [ SQL ] SELECT `r_id`,`r_name`,`r_title`,`r_css` FROM `zydz_auth_rule` WHERE  (  r_pid=0 AND r_menustatus=1 ) ORDER BY `r_sort` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `zydz_auth_rule` WHERE  (  r_pid= 318 and r_menustatus=1 ) ORDER BY `r_sort` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `zydz_auth_rule` WHERE  (  r_pid= 1 and r_menustatus=1 ) ORDER BY `r_sort` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `zydz_auth_rule` WHERE  `r_pid` IS NULL  AND `r_menustatus` = 1 ORDER BY `r_sort` [ RunTime:0.016001s ]
+---------------------------------------------------------------
+[ 2018-11-23T14:31:58+08:00 ] 127.0.0.1 GET /admin.php/sys/database?se=3
+[ info ] www._chengyan.com/admin.php/sys/database?se=3 [运行时间：0.288016s][吞吐率：3.47req/s] [内存消耗：2,950.20kb] [文件加载：53]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'database',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._chengyan.com/admin.php/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+  'se' => '3',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->database[ D:\code\chengyan\newcode\application\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\code\chengyan\newcode\public/../application/admin\view\sys\database.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'dataList',
+  6 => 'total',
+  7 => 'tableNum',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029002s ] mysql:host=47.104.173.59;port=3306;dbname=chengyan;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zydz_admin` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `zydz_admin` `a` LEFT JOIN `zydz_auth_group` `ag` ON `a`.`a_id`=`ag`.`g_id` WHERE  `a`.`a_id` = 1 LIMIT 1 [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zydz_auth_rule` [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT `r_id`,`r_name`,`r_title`,`r_css` FROM `zydz_auth_rule` WHERE  (  r_pid=0 AND r_menustatus=1 ) ORDER BY `r_sort` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `zydz_auth_rule` WHERE  (  r_pid= 318 and r_menustatus=1 ) ORDER BY `r_sort` [ RunTime:0.037002s ]
+[ sql ] [ SQL ] SELECT * FROM `zydz_auth_rule` WHERE  (  r_pid= 1 and r_menustatus=1 ) ORDER BY `r_sort` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `zydz_auth_rule` WHERE  `r_pid` = 3  AND `r_menustatus` = 1 ORDER BY `r_sort` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SHOW TABLE STATUS LIKE '%' [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2018-11-23T14:47:36+08:00 ] 127.0.0.1 GET /admin.php/sys/database?se=3
+[ info ] www._chengyan.com/admin.php/sys/database?se=3 [运行时间：0.271016s][吞吐率：3.69req/s] [内存消耗：2,778.62kb] [文件加载：51]
+[ info ] [ LANG ] D:\code\chengyan\newcode\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'sys',
+    2 => 'database',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www._chengyan.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www._chengyan.com/admin.php/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mvbkeh9v13sjvp1src1hvm9863',
+)
+[ info ] [ PARAM ] array (
+  'se' => '3',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sys->database[ D:\code\chengyan\newcode\application\admin\controller\Sys.php ]
+[ info ] [ VIEW ] D:\code\chengyan\newcode\public/../application/admin\view\sys\database.html [ array (
+  0 => 'nav',
+  1 => 'headNav',
+  2 => 'sysname',
+  3 => 'controllerName',
+  4 => 'actionName',
+  5 => 'dataList',
+  6 => 'total',
+  7 => 'tableNum',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.036002s ] mysql:host=47.104.173.59;port=3306;dbname=chengyan;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zydz_admin` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `zydz_admin` `a` LEFT JOIN `zydz_auth_group` `ag` ON `a`.`a_id`=`ag`.`g_id` WHERE  `a`.`a_id` = 1 LIMIT 1 [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zydz_auth_rule` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `r_id`,`r_name`,`r_title`,`r_css` FROM `zydz_auth_rule` WHERE  (  r_pid=0 AND r_menustatus=1 ) ORDER BY `r_sort` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT * FROM `zydz_auth_rule` WHERE  (  r_pid= 320 and r_menustatus=1 ) ORDER BY `r_sort` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `zydz_auth_rule` WHERE  (  r_pid= 1 and r_menustatus=1 ) ORDER BY `r_sort` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `zydz_auth_rule` WHERE  `r_pid` = 3  AND `r_menustatus` = 1 ORDER BY `r_sort` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SHOW TABLE STATUS LIKE '%' [ RunTime:0.040003s ]

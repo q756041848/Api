@@ -1,0 +1,10 @@
+{volist name="$connector" id="con"}
+<li class="level" id="j{$con.c_id}">
+    <span class="button level2 switch noline_docu"></span>
+    <a title="{$con.c_url}" onclick="connector_ajax({$con.c_id})">
+        <span id="interTree_8_ico" class="glyphicon glyphicon-align-justify" ></span>
+        <span>{$con.c_title}</span>
+        <span title='删除接口' class='glyphicon glyphicon-trash' onclick="jiekou_del({$con.c_id})"></span>
+    </a>
+</li>
+{/volist}

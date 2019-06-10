@@ -1,0 +1,104 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: shuyuan
+ * Date: 2019/4/18
+ * Time: 11:15 AM
+ */
+
+namespace app\admin\controller;
+use think\Controller;
+use common;
+class Preview extends Controller
+{
+
+    //主页
+    public  function index(){
+        //$scheme 请求协议    //    $method 请求方式//
+    
+
+
+ $scheme=array();
+        $scheme=
+        [
+            '1'=>'application/json',
+            '2'=>'application/x-www-form-urlencoded',
+            '3'=>'multipart/form-data'
+        ];
+        $method=array();
+        $method=
+        [
+                '1'=>'GET',
+                '2'=>'POST',
+                '3'=>'PUT',
+                '4'=>'DELETE',
+                '5'=>'PATCH',
+                '6'=>'OPTIONS'
+        ];
+
+        //接口和文件夹
+        $pfolder = \db('pfolder')->where('pm_id',input('id'))->select();
+        foreach($pfolder as $key=>&$v)
+        {
+            $v['con']=db('connector')->where('c_pidname='.$v['id'])->select();
+        }
+
+        //返回码
+        $code = db('code')->where('c_pid',input('id'))->select();
+        //所有接口
+        $con = db('connector')
+            ->where('c_pm',input('id'))
+            ->alias('a')
+            ->join('pfolder b','a.c_pidname = b.id')
+            ->field('a.*,b.name')
+            ->select();
+            // echo "<pre>";
+            // print_r($con);
+            // exit();
+
+        $word = db('pm')->field('p_title,p_txt')->where('p_id',input('id'))->find();
+        $this->assign('p_title',$word['p_title']);
+        $this->assign('p_txt',$word['p_txt']);
+        $this->assign('con',$con);
+        $this->assign('code',$code);
+        $this->assign('scheme',$scheme);
+        $this->assign('method',$method);
+        $this->assign('pfolder',$pfolder);
+      
+
+ 
+        return $this->fetch();
+    }
+
+    //响应内容
+    public function curl()
+    {
+
+
+
+           $po=input('post.');
+            $id=$po['id'];
+            $type=$po['code'];
+           $info=db('connector')->value('c_url');
+           $curl=geturl("$info/?$type=$id");
+        $toub=get_head("$info/?$type=$id");
+        $cu=getCurlCommand();
+        $header_info=get_headers("$info/?stuid=$id");
+        $arr=[$curl,$toub,$cu,$header_info];
+        return $arr;
+    }
+
+
+
+
+      //请求参数请求响应
+    public   function parameter()
+    {
+        return  db('connector')->where(input('post.'))->value('c_required');
+    }
+    //请求响应
+    public function response(){
+        return  db('connector')->where(input('post.'))->value('c_response');
+  
+    }
+}

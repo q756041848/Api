@@ -1,0 +1,328 @@
+{include file="common/head"/}
+<style>
+    td {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+</style>
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('main-container', 'fixed')
+        } catch (e) {
+        }
+    </script>
+    {include file="common/left"}
+    <div class="main-content">
+        <div class="main-content-inner">
+            {include file="common/header_nav"}
+            <div class="page-content">
+                <div class="row maintop">
+                    <!--<div class="col-xs-12 col-sm-2">-->
+                    <!--<a href="{:url('simAdd')}">-->
+                    <!--<button class="btn btn-xs btn-danger">-->
+                    <!--<i class="ace-icon fa fa-plus bigger-110"></i>-->
+                    <!--添加会员-->
+                    <!--</button>-->
+                    <!--</a>-->
+                    <!--</div>-->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="page-content">
+                                <div class="row maintop">
+                                    <form class="form-horizontal" name="admin_list_sea" class="form-search"
+                                          method="post" action="{:url('simPeople')}">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label no-padding-right"
+                                                   for="s_name">姓名</label>
+                                            <div class="col-sm-4 col-xs-10">
+                                                <input type="text" id="s_name" name="s_name" value="{$s_name}"
+                                                       placeholder="姓名" class="col-xs-3 col-sm-5"/>
+                                            </div>
+
+                                            <label class="col-sm-1 control-label no-padding-right"
+                                                   for="s_phone">电话</label>
+                                            <div class="col-sm-4 col-xs-10">
+                                                <input type="tel" id="r_phone" name="s_phone" value="{$s_phone}"
+                                                       placeholder="电话" class="col-xs-12 col-sm-5" maxlength="11"/>
+                                            </div>
+                                        </div>
+                                        <div class="space-4"></div>
+
+                                        <div class="form-group">
+
+                                            <label class="col-sm-2 control-label no-padding-right"
+                                                   for="s_job">求职意向</label>
+                                            <div class="col-sm-4 col-xs-10">
+                                                <select name="s_job" id="s_job" class="col-xs-3 col-sm-5">
+                                                    <option value="">全部</option>
+                                                    {volist name="job" id="v"}
+                                                    {eq name="v['w_name']" value="$s_job"}
+                                                    <option value="{$v.w_name}" selected>{$v.w_name}</option>
+                                                    {else/}
+                                                    <option value="{$v.w_name}">{$v.w_name}</option>
+                                                    {/eq}
+                                                    {/volist}
+                                                </select>
+                                            </div>
+                                            <label class="col-sm-1 control-label no-padding-right">现居住地</label>
+                                            <div class="col-sm-4 col-xs-10">
+                                                <select class="col-xs-3 col-sm-3" id="r_privice" name="r_privice">
+                                                    <option value="1">山东省</option>
+                                                </select>
+                                                <select class="col-xs-3 col-sm-3" id="r_city" name="r_city"
+                                                        style="margin-left: 10px;">
+                                                    <option value="1">临沂市</option>
+                                                </select>
+                                                <select class="col-xs-3 col-sm-3" id="r_area" name="r_area"
+                                                        style="margin-left: 10px;">
+                                                    <option value="1">兰山区</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="space-4"></div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label no-padding-right"> </label>
+                                            <div class="col-sm-10 col-xs-12">
+                                                <button type="submit"
+                                                        class="btn btn-xs all-btn btn-purple col-xs-3 col-sm-2">
+                                                    <span class="ace-icon fa fa-refresh icon-on-right bigger-110"></span>
+                                                    搜 索
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+
+                                    <div class="col-xs-12">
+                                        <div class="table-responsive">
+                                            <table id="simple-table"
+                                                   class="table table-striped table-bordered table-hover center">
+                                                <thead>
+                                                <tr>
+                                                    <th class="center">登陆账号</th>
+                                                    <th class="center">账号昵称</th>
+                                                    <th class="center">姓名</th>
+                                                    <th class="center visible-lg visible-md">性别</th>
+                                                    <th class="center">生日</th>
+                                                    <th class="center hidden-xs">电话号码</th>
+
+                                                    <th class="center visible-lg visible-md">求职意向</th>
+
+                                                    <th class="center">注册时间</th>
+                                                    {eq name="uid" value="1"}
+                                                    <th class="center" style="border-right:1px solid #ddd; ">操作</th>
+                                                    {/eq}
+                                                </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                {volist name="$simpeoplelist" id="v"}
+                                                <tr>
+                                                    <td class="particulars" name='c_id'>{$v.l_phone}</td>
+                                                    <td class="particulars" name='c_id'>{$v.l_name}</td>
+                                                    <td>
+                                                        <a href="{:url('simSelect',['s_id'=>$v['s_id']])}">{$v.s_name}</a>
+                                                    </td>
+                                                    <td class=" visible-lg visible-md">{$v.s_sex}</td>
+                                                    <td>{$v.s_birthday}</td>
+                                                    <td class="hidden-xs">{$v.s_phone}</td>
+
+                                                    <td class="visible-lg visible-md">{$v.s_job}</td>
+                                                    <td class="visible-lg visible-md">{$v.s_time|date="Y-m-d H:i",###}
+                                                    </td>
+
+                                                    {eq name="uid" value="1"}
+                                                    <td>
+                                                        <div class="action-buttons">
+                                                            <a class="green"
+                                                               href="javascript:;" onclick="return update({$v.s_id});" title="修改">
+                                                                <i class="ace-icon fa fa-pencil bigger-130"></i> </a>
+
+                                                            <a class="red" href="javascript:;"
+                                                               onclick="return del({$v.l_id});" title="删除">
+                                                                <i class="ace-icon fa fa-trash-o bigger-130"></i> </a>
+
+                                                        </div>
+                                                    </td>
+                                                    {/eq}
+                                                </tr>
+                                                {/volist}
+                                                <tr>
+                                                    <td colspan="10" align="center">&nbsp;{$page}</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div><!-- /.span -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col-xs-12">
+                <!-- PAGE CONTENT BEGINS -->
+        <div class="row">
+
+        </div><!-- /.row -->
+    </div><!-- /.col -->
+</div><!-- /.row --> -->
+</div><!-- /.page-content -->
+{include file="common/foot" /}
+</div><!-- /.main-container -->
+<!-- inline scripts related to this page -->
+<script type="text/javascript">
+    function del(id) {
+        console.log(id)
+        layer.confirm('你确定要删除吗？', {icon: 3}, function (index) {
+            layer.close(index);
+            window.location.href = "{:url('simDel')}?s_id=" + id;
+        });
+    }
+    function update(sid) {
+        var url="{:url('simSearch')}";
+        $.post(url,{s_id:sid},function (data) {
+            if(data.status=='1'){
+                window.location.href = "{:url('simEdit')}?s_id="+sid
+            }else{
+                layer.alert('该账号未填写基本信息!', {icon: 5}, function (index) {
+                    layer.close(index);
+                });
+                return false;
+            }
+        })
+    }
+    function stateyes(id) {
+        $.post('{:url("adminState")}', {'id': id}, function (data) {
+            if (data.status == 1) {
+                if (data.info == '状态禁止') {
+                    var a = '<button class="btn btn-minier btn-danger">状态禁用</button>'
+                    $('#zt' + id).html(a);
+                    return false;
+                } else {
+                    var b = '<button class="btn btn-minier btn-yellow">状态开启</button>'
+                    $('#zt' + id).html(b);
+                    return false;
+                }
+            } else {
+                layer.alert(data.info, {icon: 4});
+                return false;
+            }
+        });
+        return false;
+    }
+    //显示地区
+    $(function () {
+        //查找省
+        var url = "{:url('getAddressByPid')}";
+        //设置省
+        $.post(url, {pid: 1}, function (data) {
+            setAddress($("#r_privice"), data);
+            //设置市
+            var privid = $("#r_privice option:checked").attr("value");
+            $.post(url, {pid: privid}, function (city) {
+                setAddress($("#r_city"), city);
+                if (privid == 0) {
+                    setAddressAll("#r_city");
+                } else {
+                    setAddress($("#r_city"), city);
+                }
+                //设置区
+                var cityid = $("#r_city option:checked").attr("value");
+                $.post(url, {pid: cityid}, function (area) {
+
+                    if (cityid == 0) {
+                        setAddressAll($("#r_area"));
+                    } else {
+                        setAddress($("#r_area"), area);
+                    }
+                });
+            });
+        });
+        //定义选中状态
+        $("#r_privice").change(function () {
+            var privid = $("#r_privice option:checked").attr("value");
+            // $.post(url,{pid:privid},function (city) {
+            //     setAddress($("#r_city"),city);
+            //     //设置区
+            //     var cityid = $("#r_city option:checked").attr("value");
+            //     $.post(url,{pid:cityid},function (area) {
+            //         setAddress($("#r_area"),area);
+            //     });
+            // });
+            if (privid == 0) {
+                setAddressAll($("#r_city"));
+                setAddressAll($("#r_area"));
+            } else {
+                $.post(url, {pid: privid}, function (city) {
+                    setAddress($("#r_city"), city);
+                    //设置区
+                    var cityid = $("#r_city option:checked").attr("value");
+                    $.post(url, {pid: cityid}, function (area) {
+                        if (cityid == 0) {
+                            setAddressAll($("#r_area"));
+                        } else {
+                            setAddress($("#r_area"), area);
+                        }
+                    });
+                });
+            }
+
+        });
+
+
+        $("#r_city").change(function () {
+            //设置区
+            var cityid = $("#r_city option:checked").attr("value");
+            $.post(url, {pid: cityid}, function (area) {
+                setAddress($("#r_area"), area);
+            });
+        });
+    });
+    // function  setAddress(obj,data) {
+    //     $(obj).html("");
+    //     // if($(obj).attr('id')=='r_area'){
+    //     //     var op = $("<option value='0'>请选择</option>");
+    //     //     $(obj).append(op);
+    //     // }
+    //     $.map(data, function (p) {
+    //         var op = $("<option value='"+p.id+"' dataid='" + p.name + "'>" + p.name + "</option>");
+    //         $(obj).append(op);
+    //     });
+    // }
+    // //设置全部
+    // function setAddressAll(obj) {
+    //     $(obj).html("");
+    //     var op = $("<option dataid='全部' value='0'>全部</option>");
+    //     $(obj).append(op);
+    // }
+
+
+    function setAddress(obj, data) {
+        $(obj).html("");
+        var op = $("<option dataid='全部' value='0'>全部</option>");
+        $(obj).append(op);
+        $.map(data, function (p) {
+            if (p.id == "{$sr_privice}" || p.id == "{$sr_city}" || p.id == "{$sr_area}") {
+                op = $("<option value='" + p.id + "' dataid='" + p.name + "'selected>" + p.name + "</option>");
+            } else {
+                op = $("<option value='" + p.id + "' dataid='" + p.name + "'>" + p.name + "</option>");
+            }
+            $(obj).append(op);
+        });
+    }
+
+
+    //设置全部
+    function setAddressAll(obj) {
+        $(obj).html("");
+        var op = $("<option dataid='全部' value='0'>全部</option>");
+        $(obj).append(op);
+    }
+</script>
+</body>
+</html>
